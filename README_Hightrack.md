@@ -21,3 +21,9 @@ SublimeText 3
 
 Install support for SASS
 https://packagecontrol.io/packages/Sass
+
+---
+After clone again:
+9. bundle install
+10. bundle exec jekyll serve
+11. http://localhost:9001
