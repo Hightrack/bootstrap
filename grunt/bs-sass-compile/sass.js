@@ -31,6 +31,12 @@ module.exports = function configureRubySass(grunt) {
         files: {
           'docs/assets/css/docs.min.css': 'docs/assets/scss/docs.scss'
         }
+      },
+      hightrack: {
+        options: options,
+        files: {
+          'dist/css/<%= pkg.name %>-hightrack.css': 'scss/<%= pkg.name %>-hightrack.scss'
+        }
       }
     }
   });
