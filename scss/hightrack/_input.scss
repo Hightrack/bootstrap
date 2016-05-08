@@ -1,0 +1,35 @@
+input {
+	min-height: 50px;
+}
+
+input[type='radio']:checked:after {
+	width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -4px;
+    left: -2px;
+    position: relative;
+    background-color: #EAF6F4;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 7px solid #70C1B3;
+}
+
+input[type='radio']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -4px;
+    left: -2px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #A1A1A1;
+}
+
+.radio label input:only-child, .checkbox label input:only-child {
+    margin-right: 11px;
+}

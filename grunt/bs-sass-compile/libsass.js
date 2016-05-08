@@ -30,7 +30,7 @@ module.exports = function configureLibsass(grunt) {
       },
       hightrack: {
         files: {
-          'dist/css/<%= pkg.name %>-hightrack.css': 'scss/<%= pkg.name %>-hightrack.scss'
+          'dist/css/<%= pkg.name %>.css': 'scss/<%= pkg.name %>-hightrack.scss'
         }
       }
     }
