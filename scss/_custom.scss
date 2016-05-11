@@ -36,12 +36,24 @@
 // Colors
 // Basic
 
-$hightrack-primary:             #6A4E8F !default;
-$hightrack-secondary:			#E0E0E0 !default;
+$hightrack-primary:             #559288 !default;
+$hightrack-primary-medium:      #70C1B3 !default;
+$hightrack-primary-light:       #F0F8F7 !default;
+
+$hightrack-secondary:			      #E0E0E0 !default;
+$hightrack-secondary-light:     #f7f7f9 !default;
+
 $hightrack-success:             #70C1B3 !default;
+$hightrack-success-light:       #80E0C1 !default;
+
 $hightrack-info:                #4A90E2 !default;
+$hightrack-info-light:          #5AEEF2 !default;
+
 $hightrack-warning:             #f0ad4e !default;
+$hightrack-warning-light:       #ffb859 !default;
+
 $hightrack-danger:              #D3234B !default;
+$hightrack-danger-light:        #FF4D80 !default;
 
 // Text
 $hightrack-textcolor-dark: 		#000000 !default;
@@ -49,6 +61,11 @@ $hightrack-textcolor-normal:	#222222 !default;
 $hightrack-textcolor-light:		#333333 !default;
 $hightrack-textcolor-white:		#ffffff !default;
 
+// Quickbar
+$quickbar-height: 60px;
+
+
+// BOOTSTRAP
 // Grayscale and brand colors for use across Bootstrap.
 $gray-dark:                 #333333 !default;
 $gray:                      #555555 !default;
@@ -58,11 +75,23 @@ $gray-lightest:             #f7f7f9 !default;
 
 // Primary
 $brand-primary:             $hightrack-primary !default;
+$brand-primary-medium:      $hightrack-primary-medium !default;
+$brand-primary-light:       $hightrack-primary-light !default;
+
 $brand-secondary:           $hightrack-secondary !default;
+$brand-secondary-light:     $hightrack-secondary-light !default;
+
 $brand-success:             $hightrack-success !default;
+$brand-success-light:       $hightrack-success-light !default;
+
 $brand-info:                $hightrack-info !default;
+$brand-info-light:          $hightrack-info-light !default;
+
 $brand-warning:             $hightrack-warning !default;
+$brand-warning-light:       $hightrack-warning-light !default;
+
 $brand-danger:              $hightrack-danger !default;
+$brand-danger-light:        $hightrack-danger-light !default;
 
 
 // Options
@@ -281,26 +310,32 @@ $btn-active-box-shadow:          inset 0 3px 5px rgba(0,0,0,.125) !default;
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
+$btn-primary-border-light:       $brand-primary-light !default;
 
 $btn-secondary-color:            $gray-dark !default;
 $btn-secondary-bg:               $brand-secondary !default;
-$btn-secondary-border:           $brand-secondary !default;
+$btn-secondary-border:           $btn-secondary-bg !default;
+$btn-secondary-border-light:     $brand-secondary-light !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                $btn-info-bg !default;
+$btn-info-border-light:          $brand-info-light !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             $btn-success-bg !default;
+$btn-success-border-light:       $brand-success-light !default;
 
 $btn-warning-color:              #fff !default;
 $btn-warning-bg:                 $brand-warning !default;
 $btn-warning-border:             $btn-warning-bg !default;
+$btn-warning-border-light:       $brand-warning-light !default;
 
 $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              $btn-danger-bg !default;
+$btn-danger-border-light:        $brand-danger-light !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
@@ -361,12 +396,12 @@ $input-group-addon-bg:           $gray-lighter !default;
 $input-group-addon-border-color: $input-border-color !default;
 
 $input-radio-size: 20px;
-$input-radio-padding-x: -2px;
-$input-radio-padding-y: -4px;
+$input-radio-padding-x: -1px;
+$input-radio-padding-y: -3px;
 
 $input-checkbox-size: 16px;
 $input-checkbox-padding-x: -2px;
-$input-checkbox-padding-y: -3px;
+$input-checkbox-padding-y: 0px;
 
 $input-checkbox-checked-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='white' stroke-width='1' viewBox='-7.5 0 6 100'%3E%3Cpath transform='rotate(90)' fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") !default;
 $input-checkbox-checked-icon-invert: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='white' stroke-width='1' viewBox='-2 0 7 9'%3E%3Cpath fill='%23000' d='m1.50331 0l3.75827 3.68145l1.61009 -1.5798l1.50331 1.47585l-3.1134 3.0475l-5.26158 -5.15424l1.50331 -1.47075l0 -0.00001z'/%3E%3C/svg%3E") !default;
@@ -842,3 +877,4 @@ $pre-bg:                      #f7f7f9 !default;
 $pre-color:                   $gray-dark !default;
 $pre-border-color:            #ccc !default;
 $pre-scrollable-max-height:   340px !default;
+

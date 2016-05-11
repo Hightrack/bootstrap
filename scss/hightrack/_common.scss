@@ -1,0 +1,16 @@
+.ht-quickbar{
+	height: 60px;
+	background: rgba(33,116,147,0.50);
+	border: 0px solid transparent;
+	margin-bottom: 10px;
+
+	.ht-focusbar{
+		margin-top: 15px;
+	}
+}
+
+.ht-background-theme-primary{
+	/* Fondo: */
+	background-image: linear-gradient(-135deg, #247BA0 0%, #F3FFBD 100%);
+	background-image: linear-gradient(-180deg, #70C1B3 0%, #B2DBBF 100%);
+}
