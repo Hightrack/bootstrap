@@ -1,0 +1,32 @@
+.ht-icon {
+	margin:0px;
+	vertical-align: middle;	
+	cursor: inherit;
+
+	&.ht-icon-like{
+		background: $like-white-icon no-repeat;
+		width: 20px;
+		height: 16px;
+		&.ht-icon-on{
+			background: $like-red-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-matrix{
+		background: $matrix-white-icon no-repeat;
+		width: 18px;
+		height: 16px;
+		&.ht-icon-on{
+			background: $matrix-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-list{
+		background: $list-white-icon no-repeat;
+		width: 18px;
+		height: 16px;
+		&.ht-icon-on{
+			background: $list-on-icon no-repeat;
+		}
+	}
+}

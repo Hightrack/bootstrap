@@ -155,39 +155,3 @@ Make a set of buttons appear vertically stacked rather than horizontally. **Spli
 ## Tooltips and popovers
 
 Due to the specific implementation (and some other components), a bit of special casing is required for tooltips and popovers within button groups. **You'll have to specify the option `container: 'body'`** to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).
-
-## Focusbar
-
-Instead of applying button border classes to every button in a group, just add `.btn-group-border` to each `.btn-group`, including each one when nesting multiple groups.
-<div class="ht-background-theme-primary">
-  <div class="bd-example">
-    <div class="btn-group btn-group-lg ht-focusbar" role="group" aria-label="Large button group">
-      <button type="button" class="btn btn-primary">Left</button>
-      <button type="button" class="btn btn-primary">Middle</button>
-      <button type="button" class="btn btn-primary active">Right</button>
-    </div>
-    <div class="btn-group ht-focusbar" role="group" aria-label="Default button group">
-      <button type="button" class="btn btn-secondary">Left</button>
-      <button type="button" class="btn btn-secondary active">Middle</button>
-      <button type="button" class="btn btn-secondary">Right</button>
-    </div>
-    <div class="btn-group btn-group-sm ht-focusbar" role="group" aria-label="Small button group">
-        <button type="button" class="btn btn-danger">Left</button>
-        <button type="button" class="btn btn-danger">Middle</button>
-        <button type="button" class="btn btn-danger active">Right</button>
-      </div>
-    <div class="ht-quickbar">
-      <div class="btn-group btn-group-sm ht-focusbar" role="group" aria-label="Small button group">
-        <button type="button" class="btn btn-danger">Left</button>
-        <button type="button" class="btn btn-danger">Middle</button>
-        <button type="button" class="btn btn-danger active">Right</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-{% highlight html %}
-<div class="btn-group btn-group-lg btn-group-border" role="group" aria-label="...">...</div>
-<div class="btn-group btn-group-border" role="group" aria-label="...">...</div>
-<div class="btn-group btn-group-sm btn-group-border" role="group" aria-label="...">...</div>
-{% endhighlight %}

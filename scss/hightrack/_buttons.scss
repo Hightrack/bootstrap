@@ -1,5 +1,14 @@
 .btn {
   min-width: 120px;
+  min-height: 36px;
+  
+  &.btn-lg{
+  	min-height: 43.5px;
+  }
+
+  &.btn-sm{
+  	min-height: 30px;
+  }
 }
 
 .btn-group {
