@@ -109,7 +109,11 @@ Note that pre-checked buttons require you to manually add the `.active` class to
 </div>
 {% endexample %}
 
-<label class="ht-icon ht-icon-like ht-icon-on"></label><label class="ht-icon ht-icon-matrix ht-icon-on"></label><label class="ht-icon ht-icon-list ht-icon-on"></label>
+<label class="ht-icon ht-icon-like ht-icon-on"></label>
+<label class="ht-icon ht-icon-matrix ht-icon-on"></label>
+<label class="ht-icon ht-icon-list ht-icon-on"></label>
+<label class="ht-icon ht-icon-day-13 ht-icon-on"></label>
+<label class="ht-icon ht-icon-month-E ht-icon-on"></label>
 
 ### Methods
 
