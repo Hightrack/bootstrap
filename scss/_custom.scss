@@ -927,7 +927,7 @@ $day-1-white-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www
     }
 }
 
-$months-list: A B C D E F J H I J K L M N O P Q R S T U V W X Y Z;
+$months-list: A B C D E F J G H I J K L M N O P Q R S T U V W X Y Z;
 @each $current-month in $months-list{
 
     .ht-icon-month-#{$current-month} { 
