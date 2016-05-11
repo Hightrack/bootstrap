@@ -38,7 +38,7 @@
 
 $hightrack-primary:             #6A4E8F !default;
 $hightrack-secondary:			#E0E0E0 !default;
-$hightrack-success:             #5cb85c !default;
+$hightrack-success:             #70C1B3 !default;
 $hightrack-info:                #4A90E2 !default;
 $hightrack-warning:             #f0ad4e !default;
 $hightrack-danger:              #D3234B !default;
@@ -181,7 +181,7 @@ $font-size-lg:   1.25rem !default;
 $font-size-sm:   .8667rem !default;
 $font-size-xs:   .75rem !default;
 
-$line-height-base: 1 !default;
+$line-height-base: 1.5 !default;
 
 $font-size-h1: 2.5rem !default;
 $font-size-h2: 2rem !default;
@@ -284,7 +284,7 @@ $btn-primary-border:             $btn-primary-bg !default;
 
 $btn-secondary-color:            $gray-dark !default;
 $btn-secondary-bg:               $brand-secondary !default;
-$btn-secondary-border:           transparent !default;
+$btn-secondary-border:           $brand-secondary !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
@@ -359,6 +359,18 @@ $form-group-margin-bottom:       $spacer-y !default;
 
 $input-group-addon-bg:           $gray-lighter !default;
 $input-group-addon-border-color: $input-border-color !default;
+
+$input-radio-size: 20px;
+$input-radio-padding-x: -2px;
+$input-radio-padding-y: -4px;
+
+$input-checkbox-size: 16px;
+$input-checkbox-padding-x: -2px;
+$input-checkbox-padding-y: -3px;
+
+$input-checkbox-checked-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='white' stroke-width='1' viewBox='-7.5 0 6 100'%3E%3Cpath transform='rotate(90)' fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") !default;
+$input-checkbox-checked-icon-invert: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='white' stroke-width='1' viewBox='-2 0 7 9'%3E%3Cpath fill='%23000' d='m1.50331 0l3.75827 3.68145l1.61009 -1.5798l1.50331 1.47585l-3.1134 3.0475l-5.26158 -5.15424l1.50331 -1.47075l0 -0.00001z'/%3E%3C/svg%3E") !default;
+$input-checkbox-empty-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2 2'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") !default;
 
 $cursor-disabled:                not-allowed !default;
 
