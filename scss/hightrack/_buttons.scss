@@ -1,14 +1,19 @@
 .btn {
-  min-width: 120px;
-  min-height: 36px;
+  	min-width: 120px;
+  	min-height: 36px;
   
-  &.btn-lg{
-  	min-height: 43.5px;
-  }
+  	&.btn-lg{
+  		min-height: 43.5px;
+  	}
 
-  &.btn-sm{
-  	min-height: 30px;
-  }
+  	&.btn-sm{
+  		min-height: 30px;
+  	}
+
+  	&.btn-flat{
+		color: white;
+		font-size: 1.067rem;
+	}
 }
 
 .btn-group {

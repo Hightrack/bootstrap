@@ -30,7 +30,21 @@
 		}
 	}
 
+	&.ht-icon-add-bg{
+		background: $add-white-icon no-repeat;
+		width: 25px;
+		height: 25px;
+		&.ht-icon-on{
+			background: $add-on-icon no-repeat;
+		}
+	}
 	
+	+ label {
+	position: relative;
+	top: 2px;
+    left: 10px;
+	font-size: 1.067rem;
+}
 }
 
 .ht-icon:active{
