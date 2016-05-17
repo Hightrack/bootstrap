@@ -135,8 +135,8 @@ Quickbar
       <label class="btn btn-flat"><label class="ht-icon ht-icon-add-bg"></label> Add new task</label>
     </div>
     <div class="col-md-5">
-      <div class="ht-focus-title col-md-4"><label class="ht-icon ht-icon-day-11"></label><label class="a">Hoy</label></div>
-      <div class="col-md-8 btn-group ht-focusbar" data-toggle="buttons">
+      <div class="ht-focus-title col-md-7"><label class="ht-icon ht-icon-day-11"></label><label>Hoy</label></div>
+      <div class="btn-group ht-focusbar" data-toggle="buttons">
         <label class="btn btn-primary btn-sm active">
           <input type="radio" name="options" id="option31" autocomplete="off" checked> <label class="ht-icon ht-icon-like"></label>
         </label>
