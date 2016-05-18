@@ -37,29 +37,29 @@
 // Basic
 
 $hightrack-primary:             #559288 !default;
-$hightrack-primary-medium:      #70C1B3 !default;
-$hightrack-primary-light:       #F0F8F7 !default;
+$hightrack-primary-medium:      #70c1b3 !default;
+$hightrack-primary-light:       #f0f8f7 !default;
 
-$hightrack-secondary:			      #E0E0E0 !default;
+$hightrack-secondary:			      #e0e0e0 !default;
 $hightrack-secondary-light:     #f7f7f9 !default;
 
-$hightrack-success:             #70C1B3 !default;
-$hightrack-success-light:       #80E0C1 !default;
+$hightrack-success:             #70c1b3 !default;
+$hightrack-success-light:       #80e0c1 !default;
 
-$hightrack-info:                #4A90E2 !default;
-$hightrack-info-light:          #5AEEF2 !default;
+$hightrack-info:                #4a90e2 !default;
+$hightrack-info-light:          #5aeef2 !default;
 
 $hightrack-warning:             #f0ad4e !default;
 $hightrack-warning-light:       #ffb859 !default;
 
-$hightrack-danger:              #D3234B !default;
-$hightrack-danger-light:        #FF4D80 !default;
+$hightrack-danger:              #d3234b !default;
+$hightrack-danger-light:        #ff4d80 !default;
 
 // Text
-$hightrack-textcolor-dark: 		#000000 !default;
-$hightrack-textcolor-normal:	#222222 !default;
-$hightrack-textcolor-light:		#333333 !default;
-$hightrack-textcolor-white:		#ffffff !default;
+$hightrack-textcolor-dark: 		#000 !default;
+$hightrack-textcolor-normal:	#222 !default;
+$hightrack-textcolor-light:		#333 !default;
+$hightrack-textcolor-white:		#fff !default;
 
 // Quickbar
 $quickbar-height: 60px;
@@ -67,10 +67,10 @@ $quickbar-height: 60px;
 
 // BOOTSTRAP
 // Grayscale and brand colors for use across Bootstrap.
-$gray-dark:                 #333333 !default;
-$gray:                      #555555 !default;
+$gray-dark:                 #333 !default;
+$gray:                      #555 !default;
 $gray-light:                #818181 !default;
-$gray-lighter:              #eeeeee !default;
+$gray-lighter:              #eee !default;
 $gray-lightest:             #f7f7f9 !default;
 
 // Primary
@@ -339,7 +339,7 @@ $btn-danger-border-light:        $brand-danger-light !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
-$btn-padding-x-sm:               0.6rem !default;
+$btn-padding-x-sm:               .6rem !default;
 $btn-padding-y-sm:               .3rem !default;
 
 $btn-padding-x-lg:               1.5rem !default;
@@ -401,7 +401,7 @@ $input-radio-padding-y: -3px;
 
 $input-checkbox-size: 16px;
 $input-checkbox-padding-x: -2px;
-$input-checkbox-padding-y: 0px;
+$input-checkbox-padding-y: 0;
 
 $input-checkbox-checked-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='white' stroke-width='1' viewBox='-7.5 0 6 100'%3E%3Cpath transform='rotate(90)' fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") !default;
 $input-checkbox-checked-icon-invert: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='white' stroke-width='1' viewBox='-2 0 7 9'%3E%3Cpath fill='%23000' d='m1.50331 0l3.75827 3.68145l1.61009 -1.5798l1.50331 1.47585l-3.1134 3.0475l-5.26158 -5.15424l1.50331 -1.47075l0 -0.00001z'/%3E%3C/svg%3E") !default;
@@ -901,9 +901,11 @@ $day-1-white-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www
 
 @for $i from 1 through 31 {
 
-    .ht-icon-day-#{$i} { 
-        $icon-color: #fff;
-        background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='50 20 16 16' %3E
+  .ht-icon-day-#{$i} {
+    $icon-color: #fff;
+    width: 16px;
+    height: 16px;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='50 20 16 16' %3E
                             %3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' transform='translate(50.000000, 20.000000)'%3E
                                 %3Cpath fill='#{$icon-color}' d='M1.3335,0 C0.597,0 0,0.658206897 0,1.47089655 L0,14.5285517 C0,15.3412414 0.597,16 1.3335,16 L14.667,16 C15.4035,16 16,15.3412414 16,14.5285517 L16,1.47089655 C16,0.658206897 15.4035,0 14.667,0 L1.3335,0 Z M14.667,15 L1.3335,15 C1.1495,15 1,14.83256 1,14.62648 L1,1.37296 C1,1.16744 1.1495,1 1.3335,1 L14.667,1 C14.8505,1 15,1.16744 15,1.37296 L15,14.62648 C15,14.83256 14.8505,15 14.667,15 Z M1,3 L15,3 L15,4 L1,4 L1,3 Z'%3E%3C/path%3E
                                 %3Ctext text-anchor='middle'  id='1' font-family='Roboto-Bold, Roboto' font-size='8' font-weight='bold' fill='#{$icon-color}'%3E
@@ -911,11 +913,9 @@ $day-1-white-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www
                                 %3C/text%3E
                             %3C/g%3E
                         %3C/svg%3E");
-        width: 16px;
-        height: 16px;
-        &.ht-icon-on{
-          $icon-color: $brand-primary-medium;
-          background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='50 20 16 16' %3E
+    &.ht-icon-on {
+      $icon-color: $brand-primary-medium;
+      background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='50 20 16 16' %3E
                             %3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' transform='translate(50.000000, 20.000000)'%3E
                                 %3Cpath fill='#{$icon-color}' d='M1.3335,0 C0.597,0 0,0.658206897 0,1.47089655 L0,14.5285517 C0,15.3412414 0.597,16 1.3335,16 L14.667,16 C15.4035,16 16,15.3412414 16,14.5285517 L16,1.47089655 C16,0.658206897 15.4035,0 14.667,0 L1.3335,0 Z M14.667,15 L1.3335,15 C1.1495,15 1,14.83256 1,14.62648 L1,1.37296 C1,1.16744 1.1495,1 1.3335,1 L14.667,1 C14.8505,1 15,1.16744 15,1.37296 L15,14.62648 C15,14.83256 14.8505,15 14.667,15 Z M1,3 L15,3 L15,4 L1,4 L1,3 Z'%3E%3C/path%3E
                                 %3Ctext text-anchor='middle'  id='1' font-family='Roboto-Bold, Roboto' font-size='8' font-weight='bold' fill='#{$icon-color}'%3E
@@ -923,16 +923,18 @@ $day-1-white-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www
                                 %3C/text%3E
                             %3C/g%3E
                         %3C/svg%3E");
-        }
     }
+  }
 }
 
 $months-list: A B C D E F J G H I J K L M N O P Q R S T U V W X Y Z;
-@each $current-month in $months-list{
+@each $current-month in $months-list {
 
-    .ht-icon-month-#{$current-month} { 
-        $icon-color: #fff;
-        background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='50 20 16 16' %3E
+  .ht-icon-month-#{$current-month} {
+    $icon-color: #fff;
+    width: 16px;
+    height: 16px;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='50 20 16 16' %3E
                           %3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' transform='translate(50.000000, 20.000000)'%3E
                               %3Cpath fill='#{$icon-color}' d='M1.3335,0 C0.597,0 0,0.658206897 0,1.47089655 L0,14.5285517 C0,15.3412414 0.597,16 1.3335,16 L14.667,16 C15.4035,16 16,15.3412414 16,14.5285517 L16,1.47089655 C16,0.658206897 15.4035,0 14.667,0 L1.3335,0 Z M14.667,15 L1.3335,15 C1.1495,15 1,14.83256 1,14.62648 L1,1.37296 C1,1.16744 1.1495,1 1.3335,1 L14.667,1 C14.8505,1 15,1.16744 15,1.37296 L15,14.62648 C15,14.83256 14.8505,15 14.667,15 Z M1,3 L15,3 L15,4 L1,4 L1,3 Z'%3E%3C/path%3E
                               %3Ctext text-anchor='middle'  id='1' font-family='Roboto-Bold, Roboto' font-size='10' font-weight='bold' fill='#{$icon-color}'%3E
@@ -940,11 +942,9 @@ $months-list: A B C D E F J G H I J K L M N O P Q R S T U V W X Y Z;
                               %3C/text%3E
                           %3C/g%3E
                       %3C/svg%3E");
-        width: 16px;
-        height: 16px;
-        &.ht-icon-on{
-          $icon-color: $brand-primary-medium;
-          background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='50 20 16 16' %3E
+    &.ht-icon-on {
+      $icon-color: $brand-primary-medium;
+      background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='50 20 16 16' %3E
                           %3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' transform='translate(50.000000, 20.000000)'%3E
                               %3Cpath fill='#{$icon-color}' d='M1.3335,0 C0.597,0 0,0.658206897 0,1.47089655 L0,14.5285517 C0,15.3412414 0.597,16 1.3335,16 L14.667,16 C15.4035,16 16,15.3412414 16,14.5285517 L16,1.47089655 C16,0.658206897 15.4035,0 14.667,0 L1.3335,0 Z M14.667,15 L1.3335,15 C1.1495,15 1,14.83256 1,14.62648 L1,1.37296 C1,1.16744 1.1495,1 1.3335,1 L14.667,1 C14.8505,1 15,1.16744 15,1.37296 L15,14.62648 C15,14.83256 14.8505,15 14.667,15 Z M1,3 L15,3 L15,4 L1,4 L1,3 Z'%3E%3C/path%3E
                               %3Ctext text-anchor='middle' id='1' font-family='Roboto-Bold, Roboto' font-size='10' font-weight='bold' fill='#{$icon-color}'%3E
@@ -952,8 +952,8 @@ $months-list: A B C D E F J G H I J K L M N O P Q R S T U V W X Y Z;
                               %3C/text%3E
                           %3C/g%3E
                       %3C/svg%3E");
-        }
     }
+  }
 }
 
 $add-white-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 -1 26 26'%3E%3Cpolygon id='Shape' stroke='none' fill='#FFFFFF' fill-rule='evenodd' points='25.0242064 11.7187296 13.2937417 11.7187296 13.2937417 -3.15503315e-16 11.7312417 -3.15503315e-16 11.7312417 11.7187296 0 11.7187296 0 13.2812704 11.7312417 13.2812704 11.7312417 25 13.2937417 25 13.2937417 13.2812704 25.0242064 13.2812704'%3E%3C/polygon%3E%3C/svg%3E") !default;

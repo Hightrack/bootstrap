@@ -135,7 +135,7 @@ Quickbar
       <label class="btn btn-flat"><label class="ht-icon ht-icon-add-bg"></label> Add new task</label>
     </div>
     <div class="col-md-5">
-      <div class="ht-focus-title col-md-7"><label class="ht-icon ht-icon-day-11"></label><label>Hoy</label></div>
+      <div class="ht-focus-title col-md-7"><label class="ht-icon ht-icon-day-11"></label><label class="ht-label">Today</label></div>
       <div class="btn-group ht-focusbar" data-toggle="buttons">
         <label class="btn btn-primary btn-sm active">
           <input type="radio" name="options" id="option31" autocomplete="off" checked> <label class="ht-icon ht-icon-like"></label>
@@ -152,3 +152,42 @@ Quickbar
 </div>
 {% endexample %}
 
+## Nav
+
+### Sections (Inline)
+
+{% example html %}
+<ul class="nav nav-inline">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+{% endexample %}
+
+### Tab
+
+{% example html %}
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+{% endexample %}
