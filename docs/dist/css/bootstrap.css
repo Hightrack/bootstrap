@@ -736,6 +736,7 @@ input[type='checkbox']:after {
 
 .ht-quickbar .ht-focusbar {
   margin-top: 15px;
+  margin-left: 3px;
 }
 
 .ht-quickbar .btn-flat {
@@ -800,6 +801,11 @@ input[type='checkbox']:after {
   top: 2px;
   left: 10px;
   font-size: 1.067rem;
+}
+
+.btn-group .btn .ht-icon {
+  top: -1.5px;
+  position: relative;
 }
 
 /*!
