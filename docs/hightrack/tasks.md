@@ -157,20 +157,28 @@ Quickbar
 ### Sections (Inline)
 
 {% example html %}
-<ul class="nav nav-inline">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul>
+<div class="ht-quickbar">
+  <ul class="nav nav-inline">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">
+        <label class="ht-icon ht-icon-task-header ht-icon-on"></label>
+        <label class="ht-label ht-label-sm">Tasks</label>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <label class="ht-icon ht-icon-day-11 ht-icon-bg"></label>
+        <label class="ht-label ht-label-sm">Calendars</label>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <label class="ht-icon ht-icon-track-header"></label>
+        <label class="ht-label ht-label-sm">Tracks</label>
+      </a>
+    </li>
+  </ul>
+</div>
 {% endexample %}
 
 ### Tab
@@ -178,7 +186,8 @@ Quickbar
 {% example html %}
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
+    <a class="nav-link active" href="#">
+    Active</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Link</a>

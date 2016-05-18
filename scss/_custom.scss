@@ -64,6 +64,8 @@ $hightrack-textcolor-white:		#fff !default;
 // Quickbar
 $quickbar-height: 60px;
 
+$icon-color-active: #333;
+$icon-color-default: white;
 
 // BOOTSTRAP
 // Grayscale and brand colors for use across Bootstrap.
@@ -553,7 +555,7 @@ $navbar-light-disabled-color:       rgba(0,0,0,.15) !default;
 // Navs
 
 $nav-item-margin:               .2rem !default;
-$nav-item-inline-spacer:        1rem !default;
+$nav-item-inline-spacer:        -.3333rem !default;
 $nav-link-padding:              .5em 1em !default;
 $nav-link-hover-bg:             $gray-lighter !default;
 $nav-disabled-link-color:       $gray-light !default;
@@ -902,7 +904,7 @@ $day-1-white-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www
 @for $i from 1 through 31 {
 
   .ht-icon-day-#{$i} {
-    $icon-color: #fff;
+    $icon-color: $icon-color-default;
     width: 16px;
     height: 16px;
     background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='50 20 16 16' %3E
@@ -925,13 +927,55 @@ $day-1-white-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www
                         %3C/svg%3E");
     }
   }
+
+  .ht-icon-day-#{$i}.ht-icon-bg {
+    $icon-color: $icon-color-default;
+    width: 25px;
+    height: 25px;
+    background: url("data:image/svg+xml;charset=utf8,
+    %3Csvg viewBox='0 0 25 25' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
+        %3Cdefs%3E
+            %3Cpath d='M0,2.99075223 C0,1.33900538 1.34545681,0 2.99653073,0 L9.59273999,0 C11.2535586,0 13.9371931,0 15.6081949,0 L22.0018776,0 C23.6576949,0 25,1.34410858 25,2.99075223 L25,22.0092478 C25,23.6609946 23.6558914,25 22.0092478,25 L2.99075223,25 C1.33900538,25 0,23.6558914 0,22.0092478 L0,2.99075223 Z' id='path-1'%3E%3C/path%3E
+            %3Cmask id='mask-2' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='25' height='25' fill='#{$icon-color}'%3E
+                %3Cuse xlink:href='#path-1'%3E%3C/use%3E
+            %3C/mask%3E
+        %3C/defs%3E
+        %3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E
+            %3Cuse id='Rectangle-1001' stroke='#FFFFFF' mask='url(#mask-2)' stroke-width='2' xlink:href='#path-1'%3E%3C/use%3E
+            %3Crect id='Path' fill='#{$icon-color}' x='1' y='5' width='23' height='1'%3E%3C/rect%3E
+            %3Ctext text-anchor='middle' font-family='Roboto-Bold, Roboto' font-size='12' font-weight='bold' fill='#{$icon-color}'%3E
+                %3Ctspan x='12.5' y='19.25'%3E#{$i}%3C/tspan%3E
+            %3C/text%3E
+        %3C/g%3E
+    %3C/svg%3E");
+
+    &.ht-icon-on {
+      $icon-color: $brand-primary-medium;
+      background: url("data:image/svg+xml;charset=utf8,
+      %3Csvg viewBox='0 0 25 25' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
+          %3Cdefs%3E
+              %3Cpath d='M0,2.99075223 C0,1.33900538 1.34545681,0 2.99653073,0 L9.59273999,0 C11.2535586,0 13.9371931,0 15.6081949,0 L22.0018776,0 C23.6576949,0 25,1.34410858 25,2.99075223 L25,22.0092478 C25,23.6609946 23.6558914,25 22.0092478,25 L2.99075223,25 C1.33900538,25 0,23.6558914 0,22.0092478 L0,2.99075223 Z' id='path-1'%3E%3C/path%3E
+              %3Cmask id='mask-2' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='25' height='25' fill='#{$icon-color}'%3E
+                  %3Cuse xlink:href='#path-1'%3E%3C/use%3E
+              %3C/mask%3E
+          %3C/defs%3E
+          %3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E
+              %3Cuse id='Rectangle-1001' stroke='#FFFFFF' mask='url(#mask-2)' stroke-width='2' xlink:href='#path-1'%3E%3C/use%3E
+              %3Crect id='Path' fill='#{$icon-color}' x='1' y='5' width='23' height='1'%3E%3C/rect%3E
+              %3Ctext text-anchor='middle' font-family='Roboto-Bold, Roboto' font-size='12' font-weight='bold' fill='#{$icon-color}'%3E
+                  %3Ctspan x='12.5' y='19.25'%3E#{$i}%3C/tspan%3E
+              %3C/text%3E
+          %3C/g%3E
+      %3C/svg%3E");
+    }
+  }
 }
 
 $months-list: A B C D E F J G H I J K L M N O P Q R S T U V W X Y Z;
 @each $current-month in $months-list {
 
   .ht-icon-month-#{$current-month} {
-    $icon-color: #fff;
+    $icon-color: $icon-color-default;
     width: 16px;
     height: 16px;
     background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='50 20 16 16' %3E
@@ -953,11 +997,79 @@ $months-list: A B C D E F J G H I J K L M N O P Q R S T U V W X Y Z;
                           %3C/g%3E
                       %3C/svg%3E");
     }
+
+    &.ht-icon-bg{
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 
 $add-white-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 -1 26 26'%3E%3Cpolygon id='Shape' stroke='none' fill='#FFFFFF' fill-rule='evenodd' points='25.0242064 11.7187296 13.2937417 11.7187296 13.2937417 -3.15503315e-16 11.7312417 -3.15503315e-16 11.7312417 11.7187296 0 11.7187296 0 13.2812704 11.7312417 13.2812704 11.7312417 25 13.2937417 25 13.2937417 13.2812704 25.0242064 13.2812704'%3E%3C/polygon%3E%3C/svg%3E") !default;
 $add-on-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 -1 26 26'%3E%3Cpolygon id='Shape' stroke='none' fill='#FFFF00' fill-rule='evenodd' points='25.0242064 11.7187296 13.2937417 11.7187296 13.2937417 -3.15503315e-16 11.7312417 -3.15503315e-16 11.7312417 11.7187296 0 11.7187296 0 13.2812704 11.7312417 13.2812704 11.7312417 25 13.2937417 25 13.2937417 13.2812704 25.0242064 13.2812704'%3E%3C/polygon%3E%3C/svg%3E") !default;
 
-$other-red-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='11 6 20 16'%3E%3Cpath fill='%23FF1654' d=''/%3E%3C/svg%3E") !default;
+// Icon header
+$nav-task-icon-active: url("data:image/svg+xml;charset=utf8,
+  %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='17 17 25 25'%3E
+      %3Cdefs%3E
+          %3Cpath d='M17,19.9907522 C17,18.3390054 18.3454568,17 19.9965307,17 L26.59274,17 C28.2535586,17 30.9371931,17 32.6081949,17 L39.0018776,17 C40.6576949,17 42,18.3441086 42,19.9907522 L42,39.0092478 C42,40.6609946 40.6558914,42 39.0092478,42 L19.9907522,42 C18.3390054,42 17,40.6558914 17,39.0092478 L17,19.9907522 Z' id='path-1'%3E%3C/path%3E
+          %3Cmask id='mask-2' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' fill='white'%3E
+              %3Cuse xlink:href='#path-1'%3E%3C/use%3E
+          %3C/mask%3E
+      %3C/defs%3E
+      %3Cuse stroke='#3B3B3B' mask='url(#mask-2)' stroke-width='2' fill='none' fill-rule='evenodd' xlink:href='#path-1'%3E%3C/use%3E
+      %3Cpolygon stroke='none' fill='#3B3B3B' fill-rule='evenodd' points='35.7468133 26.3022598 35.1108445 25.59375 28.0718969 31.9063775 23.9278294 27.7018592 23.25 28.3717585 28.0300363 33.2221258'%3E%3C/polygon%3E
+  %3C/svg%3E");
+$nav-task-icon: url("data:image/svg+xml;charset=utf8,
+  %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='17 17 25 25'%3E
+      %3Cdefs%3E
+          %3Cpath d='M17,19.9907522 C17,18.3390054 18.3454568,17 19.9965307,17 L26.59274,17 C28.2535586,17 30.9371931,17 32.6081949,17 L39.0018776,17 C40.6576949,17 42,18.3441086 42,19.9907522 L42,39.0092478 C42,40.6609946 40.6558914,42 39.0092478,42 L19.9907522,42 C18.3390054,42 17,40.6558914 17,39.0092478 L17,19.9907522 Z' id='path-1'%3E%3C/path%3E
+          %3Cmask id='mask-2' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' fill='#{$icon-color-default}'%3E
+              %3Cuse xlink:href='#path-1'%3E%3C/use%3E
+          %3C/mask%3E
+      %3C/defs%3E
+      %3Cuse stroke='#3B3B3B' mask='url(#mask-2)' stroke-width='2' fill='none' fill-rule='evenodd' xlink:href='#path-1'%3E%3C/use%3E
+      %3Cpolygon stroke='none' fill='#{$icon-color-default}' fill-rule='evenodd' points='35.7468133 26.3022598 35.1108445 25.59375 28.0718969 31.9063775 23.9278294 27.7018592 23.25 28.3717585 28.0300363 33.2221258'%3E%3C/polygon%3E
+  %3C/svg%3E");
+
+$nav-track-icon-active: url("data:image/svg+xml;charset=utf8,
+%3Csvg viewBox='0 0 25 25' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
+    %3Cdefs%3E
+        %3Cpath d='M0,2.99075223 C0,1.33900538 1.34545681,0 2.99653073,0 L9.59273999,0 C11.2535586,0 13.9371931,0 15.6081949,0 L22.0018776,0 C23.6576949,0 25,1.34410858 25,2.99075223 L25,22.0092478 C25,23.6609946 23.6558914,25 22.0092478,25 L2.99075223,25 C1.33900538,25 0,23.6558914 0,22.0092478 L0,2.99075223 Z' id='path-1'%3E%3C/path%3E
+        %3Cmask id='mask-2' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='25' height='25' fill='#{$icon-color-active}'%3E
+            %3Cuse xlink:href='#path-1'%3E%3C/use%3E
+        %3C/mask%3E
+        %3Cpolygon id='path-3' points='5.70874183 19.2609757 14.2529003 14.2536635 19.2616422 5.70896572 10.7174837 10.7179956'%3E%3C/polygon%3E
+        %3Cmask id='mask-4' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='13.5529003' height='13.55201' fill='#{$icon-color-active}'%3E
+            %3Cuse xlink:href='#path-3'%3E%3C/use%3E
+        %3C/mask%3E
+        %3Cpolygon id='path-5' points='13.2904412 13.8794646 8.06584967 16.9041364 11.0904412 11.6798706'%3E%3C/polygon%3E
+        %3Cmask id='mask-6' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='5.2245915' height='5.22426575' fill='#{$icon-color-active}'%3E
+            %3Cuse xlink:href='#path-5'%3E%3C/use%3E
+        %3C/mask%3E
+    %3C/defs%3E
+    %3Cuse id='Rectangle-1001' stroke='#{$icon-color-active}' mask='url(#mask-2)' stroke-width='2' fill='none' xlink:href='#path-1'%3E%3C/use%3E
+    %3Cuse id='Path' stroke='#{$icon-color-active}' mask='url(#mask-4)' stroke-width='2' fill='none' xlink:href='#path-3'%3E%3C/use%3E
+    %3Cuse id='Path' stroke='#{$icon-color-active}' mask='url(#mask-6)' stroke-width='2' fill='#{$icon-color-active}' fill-rule='evenodd' xlink:href='#path-5'%3E%3C/use%3E
+%3C/svg%3E");
+$nav-track-icon: url("data:image/svg+xml;charset=utf8,
+%3Csvg viewBox='0 0 25 25' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
+    %3Cdefs%3E
+        %3Cpath d='M0,2.99075223 C0,1.33900538 1.34545681,0 2.99653073,0 L9.59273999,0 C11.2535586,0 13.9371931,0 15.6081949,0 L22.0018776,0 C23.6576949,0 25,1.34410858 25,2.99075223 L25,22.0092478 C25,23.6609946 23.6558914,25 22.0092478,25 L2.99075223,25 C1.33900538,25 0,23.6558914 0,22.0092478 L0,2.99075223 Z' id='path-1'%3E%3C/path%3E
+        %3Cmask id='mask-2' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='25' height='25' fill='#{$icon-color-default}'%3E
+            %3Cuse xlink:href='#path-1'%3E%3C/use%3E
+        %3C/mask%3E
+        %3Cpolygon id='path-3' points='5.70874183 19.2609757 14.2529003 14.2536635 19.2616422 5.70896572 10.7174837 10.7179956'%3E%3C/polygon%3E
+        %3Cmask id='mask-4' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='13.5529003' height='13.55201' fill='#{$icon-color-default}'%3E
+            %3Cuse xlink:href='#path-3'%3E%3C/use%3E
+        %3C/mask%3E
+        %3Cpolygon id='path-5' points='13.2904412 13.8794646 8.06584967 16.9041364 11.0904412 11.6798706'%3E%3C/polygon%3E
+        %3Cmask id='mask-6' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='5.2245915' height='5.22426575' fill='#{$icon-color-default}'%3E
+            %3Cuse xlink:href='#path-5'%3E%3C/use%3E
+        %3C/mask%3E
+    %3C/defs%3E
+    %3Cuse id='Rectangle-1001' stroke='#{$icon-color-default}' mask='url(#mask-2)' stroke-width='2' fill='none' xlink:href='#path-1'%3E%3C/use%3E
+    %3Cuse id='Path' stroke='#{$icon-color-default}' mask='url(#mask-4)' stroke-width='2' fill='none' xlink:href='#path-3'%3E%3C/use%3E
+    %3Cuse id='Path' stroke='#{$icon-color-default}' mask='url(#mask-6)' stroke-width='2' fill='#{$icon-color-default}' fill-rule='evenodd' xlink:href='#path-5'%3E%3C/use%3E
+%3C/svg%3E");
 
