@@ -40,6 +40,7 @@ $hightrack-primary:             #559288 !default;
 $hightrack-primary-medium:      #70c1b3 !default;
 $hightrack-primary-light:       #f0f8f7 !default;
 
+$hightrack-secondary-dark:      #7b8695 !default;
 $hightrack-secondary:			      #e0e0e0 !default;
 $hightrack-secondary-light:     #f7f7f9 !default;
 
@@ -80,6 +81,7 @@ $brand-primary:             $hightrack-primary !default;
 $brand-primary-medium:      $hightrack-primary-medium !default;
 $brand-primary-light:       $hightrack-primary-light !default;
 
+$brand-secondary-dark:      $hightrack-secondary-dark !default;
 $brand-secondary:           $hightrack-secondary !default;
 $brand-secondary-light:     $hightrack-secondary-light !default;
 
@@ -315,7 +317,7 @@ $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
 $btn-primary-border-light:       $brand-primary-light !default;
 
-$btn-secondary-color:            $gray-dark !default;
+$btn-secondary-color:            $brand-secondary-dark !default;
 $btn-secondary-bg:               $brand-secondary !default;
 $btn-secondary-border:           $btn-secondary-bg !default;
 $btn-secondary-border-light:     $brand-secondary-light !default;
@@ -358,7 +360,7 @@ $split-btn-lg-dropdown-toggle-padding-x: 12px !default;
 $btn-border-radius:              $border-radius !default;
 $btn-border-radius-lg:           $border-radius-lg !default;
 $btn-border-radius-sm:           $border-radius-sm !default;
-$btn-border-radius-rd:           50px !default;
+$btn-border-radius-rd:           50% !default;
 
 
 // Forms

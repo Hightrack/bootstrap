@@ -36,7 +36,7 @@
 }
 
 .btn-rd {
-  @include border-radius($btn-border-radius-rd);
-  width: 50px !important;
-  height: 50px !important;
+  width:40px;
+  height: 40px;
+  @include button($btn-line-height, $btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius-rd);
 }
