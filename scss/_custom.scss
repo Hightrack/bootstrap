@@ -65,7 +65,7 @@ $hightrack-textcolor-white:		#fff !default;
 $quickbar-height: 60px;
 
 $icon-color-active: #333;
-$icon-color-default: white;
+$icon-color-default: #fff;
 
 // BOOTSTRAP
 // Grayscale and brand colors for use across Bootstrap.
@@ -1000,7 +1000,7 @@ $months-list: A B C D E F J G H I J K L M N O P Q R S T U V W X Y Z;
                       %3C/svg%3E");
     }
 
-    &.ht-icon-bg{
+    &.ht-icon-bg {
       width: 25px;
       height: 25px;
     }
