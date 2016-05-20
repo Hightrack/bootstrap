@@ -1277,21 +1277,21 @@ input[type='checkbox']:after {
   background-color: transparent;
 }
 
-.nav-item {
+.nav-tabs .nav-item {
   background-color: #D9D9D9;
 }
 
-.nav-item .nav-link {
+.nav-tabs .nav-item .nav-link {
   color: white;
   font-size: .8667rem;
   line-height: 26px;
 }
 
-.nav-item .nav-link.active {
+.nav-tabs .nav-item .nav-link.active {
   color: #333;
 }
 
-.nav-item .nav-link {
+.nav-tabs .nav-item .nav-link {
   color: white;
 }
 
@@ -1313,6 +1313,7 @@ input[type='checkbox']:after {
   color: white;
   font-size: .7333rem;
   line-height: 42px;
+  padding-top: 2px;
 }
 
 /*!
@@ -5391,7 +5392,7 @@ fieldset[disabled] a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
+  font-size: 0.8667rem;
   border-radius: 0.2rem;
 }
 
@@ -6132,7 +6133,7 @@ input[type="button"].btn-block {
 
 .nav-inline .nav-item + .nav-item,
 .nav-inline .nav-link + .nav-link {
-  margin-left: -0.3333rem;
+  margin-left: 0;
 }
 
 .nav-tabs {

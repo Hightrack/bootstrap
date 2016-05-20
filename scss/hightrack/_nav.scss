@@ -6,7 +6,7 @@
 	background-color: transparent;
 }
 
-.nav-item {
+.nav-tabs .nav-item {
   background-color: #D9D9D9;
 
   .nav-link {
@@ -41,6 +41,8 @@
       color: white;
       font-size: .7333rem;
       line-height: 42px;
+      padding-top: 2px;
     }
   }
 }
+
