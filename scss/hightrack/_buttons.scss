@@ -3,7 +3,7 @@
   	min-height: 36px;
   
   	&.btn-lg{
-  		min-height: 43.5px;
+  		min-height: 50px;
   	}
 
   	&.btn-sm{
@@ -33,4 +33,10 @@
 			background-color: transparent !important;
 		}
 	}
+}
+
+.btn-rd {
+  @include border-radius($btn-border-radius-rd);
+  width: 50px !important;
+  height: 50px !important;
 }

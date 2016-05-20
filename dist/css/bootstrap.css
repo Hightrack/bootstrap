@@ -1132,7 +1132,7 @@ input[type='checkbox']:after {
 }
 
 .btn.btn-lg, .btn-group-lg > .btn {
-  min-height: 43.5px;
+  min-height: 50px;
 }
 
 .btn.btn-sm, .btn-group-sm > .btn {
@@ -1156,6 +1156,12 @@ input[type='checkbox']:after {
 
 .btn-group.ht-focusbar .btn:active, .btn-group.ht-focusbar .btn.active {
   background-color: transparent !important;
+}
+
+.btn-rd {
+  border-radius: 50px;
+  width: 50px !important;
+  height: 50px !important;
 }
 
 .ht-quickbar {

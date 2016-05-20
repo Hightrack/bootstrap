@@ -56,7 +56,11 @@
 - title: Hightrack
   pages:  
     - title: Tasks
+    - title: Events
+    - title: Calendars
     - title: Icons
+    - title: Buttons
+    - title: Screen examples
 
 # - title: Extend
 #   pages:
