@@ -278,6 +278,14 @@ module.exports = function (grunt) {
           '**/*'
         ],
         dest: 'docs/dist/'
+      },
+      webapp: {
+        expand: true,
+        cwd: 'dist/',
+        src: [
+          '**/*'
+        ],
+        dest: '../hightrack-webapp/vendor/bootstrap/'
       }
     },
 
@@ -482,4 +490,6 @@ module.exports = function (grunt) {
 
   // Publish to GitHub
   grunt.registerTask('publish', ['buildcontrol:pages']);
+
+  grunt.registerTask('copywebapp', ['copy:webapp']);
 };

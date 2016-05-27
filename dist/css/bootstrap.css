@@ -1032,6 +1032,20 @@ input {
   min-height: 50px;
 }
 
+input label {
+  font-size: 0.7333rem;
+}
+
+input[type='text'], input[type='password'] {
+  font-size: 0.9333rem !important;
+  line-height: 33.5px;
+}
+
+input[type='checkbox']label, input[type='radio']label {
+  top: -2px;
+  position: relative;
+}
+
 input[type='checkbox'] {
   width: 16px;
   height: 16px;
@@ -1066,7 +1080,7 @@ input[type='radio']:checked:after {
 }
 
 .radio label input:only-child, .checkbox label input:only-child {
-  margin-right: 11px;
+  margin-right: 0.7333rem;
 }
 
 input[type='checkbox'] {
@@ -1126,6 +1140,10 @@ input[type='checkbox']:after {
   margin-right: 5px;
 }
 
+.ht-input-alone {
+  margin-bottom: 10px;
+}
+
 .btn {
   min-width: 120px;
   min-height: 36px;
@@ -1142,6 +1160,10 @@ input[type='checkbox']:after {
 .btn.btn-flat {
   color: white;
   font-size: 1.067rem;
+}
+
+.btn.small-text {
+  font-size: .7333rem !important;
 }
 
 .btn-group .btn {
@@ -1229,6 +1251,41 @@ input[type='checkbox']:after {
   /* Fondo: */
   background-image: linear-gradient(-135deg, #247BA0 0%, #F3FFBD 100%);
   background-image: linear-gradient(-180deg, #70C1B3 0%, #B2DBBF 100%);
+}
+
+#ht-login-box {
+  margin-top: 50px;
+}
+
+.ht-title {
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+}
+
+.ht-subtitle {
+  color: #b8c0c9;
+  font-size: 0.8667rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  font-size: .8rem;
+  color: #4a4a4a;
+}
+
+.footer .nav {
+  padding-top: 10px;
+  text-align: right;
+}
+
+.center-block {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .ht-icon {
@@ -2908,27 +2965,27 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
-}
-
-h2, .h2 {
-  font-size: 2rem;
-}
-
-h3, .h3 {
   font-size: 1.75rem;
 }
 
-h4, .h4 {
+h2, .h2 {
+  font-size: 1.6rem;
+}
+
+h3, .h3 {
   font-size: 1.5rem;
 }
 
+h4, .h4 {
+  font-size: 1.2rem;
+}
+
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 0.8667rem;
 }
 
 .lead {
@@ -4424,7 +4481,7 @@ pre code {
 
 .thead-inverse th {
   color: #fff;
-  background-color: #333;
+  background-color: #4a4a4a;
 }
 
 .thead-default th {
@@ -4434,7 +4491,7 @@ pre code {
 
 .table-inverse {
   color: #eee;
-  background-color: #333;
+  background-color: #4a4a4a;
 }
 
 .table-inverse th,
@@ -5432,7 +5489,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.75rem 1.5rem;
+  padding: 0.95rem 1.5rem;
   font-size: 0.8667rem;
   border-radius: 0.2rem;
 }
@@ -8201,7 +8258,7 @@ button.close {
 }
 
 .bg-inverse {
-  background-color: #333;
+  background-color: #4a4a4a;
 }
 
 .bg-faded {

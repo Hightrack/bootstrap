@@ -29,3 +29,38 @@
 	background-image: linear-gradient(-135deg, #247BA0 0%, #F3FFBD 100%);
 	background-image: linear-gradient(-180deg, #70C1B3 0%, #B2DBBF 100%);
 }
+
+#ht-login-box{
+	margin-top:50px;
+}
+
+.ht-title{
+	color: $gray-dark;
+	font-size: $font-size-h4;
+	margin-bottom:0px;
+}
+
+.ht-subtitle{
+	color: $gray-blue;
+	font-size: $font-size-h6;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    font-size: .8rem;
+    color: $gray-dark;
+
+    .nav{
+    	padding-top: 10px;
+    	text-align: right;
+    }
+}
+
+.center-block {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}

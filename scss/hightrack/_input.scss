@@ -1,11 +1,28 @@
 input{
 	min-height: 50px;
+
+    label{
+        font-size: 0.7333rem;
+    }
+}
+
+input[type='text'],input[type='password']{
+    font-size: 0.9333rem !important;
+    line-height: 33.5px;
+}
+
+input[type='checkbox'],input[type='radio']{
+    &label{
+        top: -2px;
+        position: relative;
+    }
 }
 
 input[type='checkbox']{
     width: $input-checkbox-size;
     height: $input-checkbox-size;
 }
+
 input[type='radio']:after {
 	width: $input-radio-size;
 	height: $input-radio-size;
@@ -35,7 +52,7 @@ input[type='radio']:checked:after {
 }
 
 .radio label input:only-child, .checkbox label input:only-child {
-    margin-right: 11px;
+    margin-right: 0.7333rem;
 }
 
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
@@ -95,7 +112,11 @@ input[type='checkbox']:after {
     background: url('/itc/images/layoutelements/checkbox.png') top left no-repeat;
     background-size: 51px 68px;
     margin-right: 5px;
-    }
+}
+
+.ht-input-alone{
+    margin-bottom: 10px;
+}
 
 
     //https://itunesconnect.apple.com/itc/images/layoutelements/checkbox.png
