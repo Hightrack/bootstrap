@@ -6,7 +6,7 @@ input{
     }
 }
 
-input[type='text'],input[type='password']{
+input[type='text'],input[type='password'],input[type='email']{
     font-size: 0.9333rem !important;
     line-height: 33.5px;
 }
@@ -105,20 +105,20 @@ input[type='checkbox']:after {
 }
 
 .custom-control-input {
+  color: $custom-control-checked-indicator-color;
 
   &:checked ~ .custom-control-indicator {
-    color: $custom-control-checked-indicator-color;
 
-    &.custom-control-primary {
+    &.primary-bg {
         background-color: $brand-primary;
     }
 
-    &.custom-control-primary {
-        background-color: $brand-primary;
+    &.success-bg {
+        background-color: $brand-success;
     }
 
-    &.custom-control-primary {
-        background-color: $brand-primary;
+    &.warning-bg {
+        background-color: $brand-warning;
     }
   }
 }
