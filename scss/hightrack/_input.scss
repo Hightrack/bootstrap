@@ -1,0 +1,122 @@
+input{
+	min-height: 50px;
+
+    label{
+        font-size: 0.7333rem;
+    }
+}
+
+input[type='text'],input[type='password']{
+    font-size: 0.9333rem !important;
+    line-height: 33.5px;
+}
+
+input[type='checkbox'],input[type='radio']{
+    &label{
+        top: -2px;
+        position: relative;
+    }
+}
+
+input[type='checkbox']{
+    width: $input-checkbox-size;
+    height: $input-checkbox-size;
+}
+
+input[type='radio']:after {
+	width: $input-radio-size;
+	height: $input-radio-size;
+	border-radius: 15px;
+	top: -4px;
+	left: -2px;
+	position: relative;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+    background-color: #fff;
+    border: 1px solid #A1A1A1;
+}
+
+input[type='radio']:checked:after {
+	width: $input-radio-size;
+	height: $input-radio-size;
+	border-radius: 15px;
+	top: -4px;
+	left: -2px;
+	position: relative;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+    background-color: #EAF6F4;
+    border: 7px solid #70C1B3;
+}
+
+.radio label input:only-child, .checkbox label input:only-child {
+    margin-right: 0.7333rem;
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+input[type='checkbox']{
+    width: $input-checkbox-size;
+    height: $input-checkbox-size;
+}
+
+input[type='checkbox']:checked:after {
+	width: $input-checkbox-size;
+    height: $input-checkbox-size;
+    border-radius: 3px;
+    top: $input-checkbox-padding-y;
+    left: $input-checkbox-padding-x;
+    position: relative;
+	content: $input-checkbox-checked-icon;//url(../img/inputs/check.png);
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #A1A1A1;
+    background-color: white;
+}
+
+input[type='checkbox']:after {
+    width: $input-checkbox-size;
+    height: $input-checkbox-size;
+    border-radius: 3px;
+    top: $input-checkbox-padding-y;
+    left: $input-checkbox-padding-x;
+    position: relative;
+	content: $input-checkbox-empty-icon;
+	display: inline-block;
+    visibility: visible;
+    border: 1px solid #A1A1A1;
+    background-color: white;
+    transform: rotate(-90deg);
+    //transform: translateX( -100% ) rotateY( -180deg );
+}
+
+.checkbox:after{
+	content: $input-checkbox-checked-icon;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+
+.checkboxstyle.checked {
+    background-position: -17px 0;
+    background-size: 51px 68px;
+}
+.checkboxstyle {
+    width: 17px;
+    height: 17px;
+    display: block;
+    float: left;
+    clear: both;
+    background: url('/itc/images/layoutelements/checkbox.png') top left no-repeat;
+    background-size: 51px 68px;
+    margin-right: 5px;
+}
+
+.ht-input-alone{
+    margin-bottom: 10px;
+}
+
+
+    //https://itunesconnect.apple.com/itc/images/layoutelements/checkbox.png

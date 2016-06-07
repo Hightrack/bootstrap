@@ -1,0 +1,46 @@
+.btn {
+  	min-width: 120px;
+  	min-height: 36px;
+  
+  	&.btn-lg{
+  		min-height: 50px;
+  	}
+
+  	&.btn-sm{
+  		min-height: 30px;
+  	}
+
+  	&.btn-flat{
+		color: white;
+		font-size: 1.067rem;
+	}
+
+	&.small-text{
+    	font-size: .7333rem !important;
+	}
+}
+
+.btn-group {
+	.btn {
+		min-width: 40px;
+	}
+
+	&.ht-focusbar {
+
+		.btn{
+			border: 1px solid rgba(255,255,255,0.5) !important;
+			background-color: rgba(245,245,245,0.3) !important;
+			color: white;
+		}
+
+		.btn:active, .btn.active{
+			background-color: transparent !important;
+		}
+	}
+}
+
+.btn-rd {
+  width:40px;
+  height: 40px;
+  @include button($btn-line-height, $btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius-rd);
+}

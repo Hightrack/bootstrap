@@ -1,0 +1,82 @@
+.ht-icon {
+	margin:0px;
+	vertical-align: middle;	
+	cursor: inherit;
+
+	&.ht-icon-like{
+		background: $like-white-icon no-repeat;
+		width: 20px;
+		height: 16px;
+		&.ht-icon-on{
+			background: $like-red-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-matrix{
+		background: $matrix-white-icon no-repeat;
+		width: 18px;
+		height: 16px;
+		&.ht-icon-on{
+			background: $matrix-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-list{
+		background: $list-white-icon no-repeat;
+		width: 18px;
+		height: 16px;
+		&.ht-icon-on{
+			background: $list-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-add-bg{
+		background: $add-white-icon no-repeat;
+		width: 25px;
+		height: 25px;
+		&.ht-icon-on{
+			background: $add-on-icon no-repeat;
+		}
+	}
+	
+	+ .ht-label {
+		position: relative;
+		top: 2px;
+    	margin-left: 5px;
+		font-size: 1.067rem;
+		cursor: inherit;
+
+		&.ht-label-sm{
+		  font-size: .7333rem;
+		}
+	}
+
+	&.ht-icon-task-header{
+		width: 25px;
+		height: 25px;
+		background: $nav-task-icon;
+
+		&.ht-icon-on{
+			background: $nav-task-icon-active no-repeat;
+		}
+	}
+	
+	&.ht-icon-track-header{
+		width: 25px;
+		height: 25px;
+		background: $nav-track-icon;
+
+		&.ht-icon-on{
+			background: $nav-track-icon-active no-repeat;
+		}
+	}
+}
+
+.btn-group{
+	.btn{
+		.ht-icon{
+			top: -1.5px;
+    		position: relative;
+		}
+	}
+}

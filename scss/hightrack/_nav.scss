@@ -1,0 +1,48 @@
+//
+// Tabs
+//
+
+.navbar .nav-item{
+	background-color: transparent;
+}
+
+.nav-tabs .nav-item {
+  background-color: #D9D9D9;
+
+  .nav-link {
+    color: white;
+    font-size: .8667rem;
+    line-height: 26px;
+  }
+
+  .nav-link.active {
+    color: #333;
+  }
+
+  .nav-link {
+  	color: white;
+  }
+}
+
+.ht-quickbar{
+  .nav-item {
+  	min-width: 100px;
+    padding: 5px;
+  	background-color: transparent;
+
+    &.active{
+  	  background-color: white;
+      .nav-link{
+  		color: #333 !important;
+  	  }
+    }
+
+    .nav-link {
+      color: white;
+      font-size: .7333rem;
+      line-height: 42px;
+      padding-top: 2px;
+    }
+  }
+}
+
