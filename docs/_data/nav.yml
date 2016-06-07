@@ -55,12 +55,13 @@
   
 - title: Hightrack
   pages:  
-    - title: Tasks
-    - title: Events
-    - title: Calendars
-    - title: Icons
     - title: Buttons
+    - title: Calendars
+    - title: Events
+    - title: Icons
+    - title: Menus
     - title: Screen examples
+    - title: Tasks
 
 # - title: Extend
 #   pages:

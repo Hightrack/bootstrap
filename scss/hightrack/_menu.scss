@@ -5,3 +5,15 @@
 .hightrack-test {
   color: $brand-primary !important;
 }
+
+.ht-menu {
+	& ul li{
+    	list-style: none;
+    	color: $hightrack-textcolor-medium;
+    	font-size: .7333rem;
+	}
+}
+
+.ht-category {
+	color: $hightrack-textcolor-medium;
+}

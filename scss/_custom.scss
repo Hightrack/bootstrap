@@ -59,18 +59,18 @@ $hightrack-danger-light:        #ff4d80 !default;
 // Text
 $hightrack-textcolor-dark: 		#000 !default;
 $hightrack-textcolor-normal:	#222 !default;
-$hightrack-textcolor-light:		#333 !default;
+$hightrack-textcolor-medium:	#333 !default;
 $hightrack-textcolor-white:		#fff !default;
 
 // Quickbar
 $quickbar-height: 60px;
 
-$icon-color-active: #333;
+$icon-color-active: $hightrack-textcolor-medium;
 $icon-color-default: #fff;
 
 // BOOTSTRAP
 // Grayscale and brand colors for use across Bootstrap.
-$gray-darkest:              #333 !default;
+$gray-darkest:              $hightrack-textcolor-medium !default;
 $gray-dark:                 #4a4a4a !default;
 $gray:                      #555 !default;
 $gray-light:                #818181 !default;
@@ -224,7 +224,7 @@ $font-size-h2: 1.60rem !default;
 $font-size-h3: 1.5rem !default;
 $font-size-h4: 1.2rem !default;
 $font-size-h5: 1rem !default;
-$font-size-h6: 0.8667rem !default;
+$font-size-h6: .8667rem !default;
 
 $display1-size: 6rem !default;
 $display2-size: 5.5rem !default;
@@ -440,7 +440,7 @@ $custom-control-active-indicator-color:      #fff !default;
 $custom-control-active-indicator-bg:         #84c6ff !default;
 $custom-control-active-indicator-box-shadow: none !default;
 
-$custom-checkbox-radius: $border-radius !default;
+$custom-checkbox-radius: .2rem !default;
 $custom-checkbox-checked-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") !default;
 $custom-checkbox-indeterminate-bg: #0074d9 !default;
 $custom-checkbox-indeterminate-icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E") !default;
@@ -1079,3 +1079,11 @@ $nav-track-icon: url("data:image/svg+xml;charset=utf8,
     %3Cuse id='Path' stroke='#{$icon-color-default}' mask='url(#mask-6)' stroke-width='2' fill='#{$icon-color-default}' fill-rule='evenodd' xlink:href='#path-5'%3E%3C/use%3E
 %3C/svg%3E");
 
+$dropdown-white-icon: url("data:image/svg+xml;charset=utf8,
+  %3Csvg viewBox='271 16 17 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
+    %3Cpath d='M282.207891,13.3283855 C282.645526,12.8905382 283.355076,12.8905382 283.792498,13.3283855 C284.229956,13.7658433 284.229956,14.4753578 283.792498,14.9127802 L277.704986,21.0001151 L283.792321,27.0872375 C284.229779,27.5248724 284.229779,28.234316 283.792321,28.6717739 C283.354863,29.1094087 282.645349,29.1094087 282.207714,28.6717739 L275.327969,21.7921354 C275.109241,21.5733003 275,21.2867962 275,21.0001505 C275,20.7133632 275.109453,20.4266466 275.328146,20.2079177 L282.207891,13.3283855 Z' id='Shape-Copy-13' stroke='none' fill='#{$icon-color-default}' fill-rule='evenodd' transform='translate(279.560296, 21.000000) rotate(-90.000000) translate(-279.560296, -21.000000) '%3E%3C/path%3E
+%3C/svg%3E");
+$dropdown-on-icon: url("data:image/svg+xml;charset=utf8,
+  %3Csvg viewBox='271 16 17 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
+    %3Cpath d='M282.207891,13.3283855 C282.645526,12.8905382 283.355076,12.8905382 283.792498,13.3283855 C284.229956,13.7658433 284.229956,14.4753578 283.792498,14.9127802 L277.704986,21.0001151 L283.792321,27.0872375 C284.229779,27.5248724 284.229779,28.234316 283.792321,28.6717739 C283.354863,29.1094087 282.645349,29.1094087 282.207714,28.6717739 L275.327969,21.7921354 C275.109241,21.5733003 275,21.2867962 275,21.0001505 C275,20.7133632 275.109453,20.4266466 275.328146,20.2079177 L282.207891,13.3283855 Z' id='Shape-Copy-13' stroke='none' fill='#{$icon-color-active}' fill-rule='evenodd' transform='translate(279.560296, 21.000000) rotate(-90.000000) translate(-279.560296, -21.000000) '%3E%3C/path%3E
+%3C/svg%3E");

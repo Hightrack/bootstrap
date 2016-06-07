@@ -38,6 +38,15 @@
 			background: $add-on-icon no-repeat;
 		}
 	}
+
+	&.ht-icon-dropdown{
+		background: $dropdown-white-icon no-repeat;
+		width: 17px;
+		height: 10px;
+		&.ht-icon-on{
+			background: $dropdown-on-icon no-repeat;
+		}
+	}
 	
 	+ .ht-label {
 		position: relative;
