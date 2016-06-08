@@ -64,3 +64,24 @@ The same happend with months, applied `ht-icon-month-*` followed by a capital le
 {% endfor %}
 {% endexample %}
 
+#### Social
+{% example html %}
+
+<label class="ht-icon ht-icon-facebook ht-icon-on"></label>
+<label class="ht-icon ht-icon-twitter ht-icon-on"></label>
+<label class="ht-icon ht-icon-googleplus ht-icon-on"></label>
+<label class="ht-icon ht-icon-linkedin ht-icon-on"></label>
+
+{% endexample %}
+
+#### Other
+{% example html %}
+
+<label class="ht-icon ht-icon-smile ht-icon-on"></label>
+<label class="ht-icon ht-icon-accomplish ht-icon-on"></label>
+<label class="ht-icon ht-icon-cloud ht-icon-on"></label>
+<label class="ht-icon ht-icon-people ht-icon-on"></label>
+
+{% endexample %}
+
+
