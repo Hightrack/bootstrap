@@ -27,6 +27,7 @@ var Modal = (function ($) {
   var JQUERY_NO_CONFLICT = $.fn[NAME];
   var TRANSITION_DURATION = 300;
   var BACKDROP_TRANSITION_DURATION = 150;
+  var ESCAPE_KEYCODE = 27; // KeyboardEvent.which value for Escape (Esc) key
 
   var Default = {
     backdrop: true,
@@ -271,7 +272,7 @@ var Modal = (function ($) {
 
         if (this._isShown && this._config.keyboard) {
           $(this._element).on(Event.KEYDOWN_DISMISS, function (event) {
-            if (event.which === 27) {
+            if (event.which === ESCAPE_KEYCODE) {
               _this4.hide();
             }
           });
@@ -400,7 +401,7 @@ var Modal = (function ($) {
         }
 
         if (this._isBodyOverflowing && !isModalOverflowing) {
-          this._element.style.paddingRight = this._scrollbarWidth + 'px~';
+          this._element.style.paddingRight = this._scrollbarWidth + 'px';
         }
       }
     }, {
