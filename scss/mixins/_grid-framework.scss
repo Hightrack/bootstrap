@@ -65,6 +65,14 @@
           }
         }
       }
+
+      @for $i from 0 through ($columns - 1) {
+        @if $breakpoint-counter != 1 {
+          .offset-#{$breakpoint}-#{$i}-5 {
+            @include make-col-modifier(offset, $i, $columns)
+          }
+        }
+      }
     }
   }
 }
