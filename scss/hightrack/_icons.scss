@@ -47,6 +47,42 @@
 			background: $dropdown-on-icon no-repeat;
 		}
 	}
+
+	&.ht-icon-smile{
+		background: $smile-white-icon no-repeat;
+		width: 65px;
+		height: 65px;
+		&.ht-icon-on{
+			background: $smile-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-accomplish{
+		background: $accomplish-white-icon no-repeat;
+		width: 35px;
+		height: 35px;
+		&.ht-icon-on{
+			background: $accomplish-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-cloud{
+		background: $cloud-white-icon no-repeat;
+		width: 54px;
+		height: 35px;
+		&.ht-icon-on{
+			background: $cloud-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-people{
+		background: $people-white-icon no-repeat;
+		width: 44px;
+		height: 35px;
+		&.ht-icon-on{
+			background: $people-on-icon no-repeat;
+		}
+	}
 	
 	+ .ht-label {
 		position: relative;
