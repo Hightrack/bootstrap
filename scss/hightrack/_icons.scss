@@ -47,6 +47,78 @@
 			background: $dropdown-on-icon no-repeat;
 		}
 	}
+
+	&.ht-icon-smile{
+		background: $smile-white-icon no-repeat;
+		width: 65px;
+		height: 65px;
+		&.ht-icon-on{
+			background: $smile-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-accomplish{
+		background: $accomplish-white-icon no-repeat;
+		width: 35px;
+		height: 35px;
+		&.ht-icon-on{
+			background: $accomplish-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-cloud{
+		background: $cloud-white-icon no-repeat;
+		width: 54px;
+		height: 35px;
+		&.ht-icon-on{
+			background: $cloud-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-people{
+		background: $people-white-icon no-repeat;
+		width: 44px;
+		height: 35px;
+		&.ht-icon-on{
+			background: $people-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-facebook{
+		background: $people-white-icon no-repeat;
+		width: 8px;
+		height: 15px;
+		&.ht-icon-on{
+			background: $facebook-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-twitter{
+		background: $twitter-white-icon no-repeat;
+		width: 19px;
+		height: 15px;
+		&.ht-icon-on{
+			background: $twitter-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-googleplus{
+		background: $googleplus-white-icon no-repeat;
+		width: 22px;
+		height: 14px;
+		&.ht-icon-on{
+			background: $googleplus-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-linkedin{
+		background: $linkedin-white-icon no-repeat;
+		width: 16px;
+		height: 16px;
+		&.ht-icon-on{
+			background: $linkedin-on-icon no-repeat;
+		}
+	}
 	
 	+ .ht-label {
 		position: relative;
