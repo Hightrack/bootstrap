@@ -1,5 +1,5 @@
 .btn {
-  	min-width: 120px;
+  	//min-width: 120px;
   	min-height: 36px;
   
   	&.btn-lg{
@@ -43,4 +43,29 @@
   width:40px;
   height: 40px;
   @include button($btn-line-height, $btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius-rd);
+}
+
+.btn-facebook {
+  @include button-variant($hightrack-textcolor-white, $btn-facebook-bg, $btn-facebook-border);
+}
+.btn-twitter {
+  @include button-variant($hightrack-textcolor-white, $btn-twitter-bg, $btn-twitter-border);
+}
+.btn-googleplus {
+  @include button-variant($hightrack-textcolor-white, $btn-googleplus-bg, $btn-googleplus-border);
+}
+.btn-linkedin {
+  @include button-variant($hightrack-textcolor-white, $btn-linkedin-bg, $btn-linkedin-border);
+}
+.btn-outline-facebook {
+  @include button-outline-variant($btn-facebook-bg);
+}
+.btn-outline-twitter {
+  @include button-outline-variant($btn-twitter-bg);
+}
+.btn-outline-googleplus {
+  @include button-outline-variant($btn-googleplus-bg);
+}
+.btn-outline-linkedin {
+  @include button-outline-variant($btn-linkedin-bg);
 }
