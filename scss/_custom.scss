@@ -36,9 +36,9 @@
 // Colors
 // Basic
 
-$hightrack-primary:             #559288 !default;
-$hightrack-primary-medium:      #70c1b3 !default;
-$hightrack-primary-light:       #f0f8f7 !default;
+$hightrack-primary:             #4d96d3 !default; //#559288 !default;
+$hightrack-primary-medium:      #58abee !default; //#70c1b3 !default;
+$hightrack-primary-light:       #9bcdf5 !default; //#f0f8f7 !default;
 
 $hightrack-secondary-dark:      #7b8695 !default;
 $hightrack-secondary:			      #e0e0e0 !default;
@@ -315,7 +315,7 @@ $btn-font-weight:                normal !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba(0,0,0,.125) !default;
 
-$btn-primary-color:              #fff !default;
+$btn-primary-color:              $hightrack-textcolor-white !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
 $btn-primary-border-light:       $brand-primary-light !default;
@@ -325,25 +325,49 @@ $btn-secondary-bg:               $brand-secondary !default;
 $btn-secondary-border:           $btn-secondary-bg !default;
 $btn-secondary-border-light:     $brand-secondary-light !default;
 
-$btn-info-color:                 #fff !default;
+$btn-info-color:                 $hightrack-textcolor-white !default;
 $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                $btn-info-bg !default;
 $btn-info-border-light:          $brand-info-light !default;
 
-$btn-success-color:              #fff !default;
+$btn-success-color:              $hightrack-textcolor-white !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             $btn-success-bg !default;
 $btn-success-border-light:       $brand-success-light !default;
 
-$btn-warning-color:              #fff !default;
+$btn-warning-color:              $hightrack-textcolor-white !default;
 $btn-warning-bg:                 $brand-warning !default;
 $btn-warning-border:             $btn-warning-bg !default;
 $btn-warning-border-light:       $brand-warning-light !default;
 
-$btn-danger-color:               #fff !default;
+$btn-danger-color:               $hightrack-textcolor-white !default;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:              $btn-danger-bg !default;
 $btn-danger-border-light:        $brand-danger-light !default;
+
+$facebook-color:                 #3a5795 !default;
+$btn-facebook-color:             $hightrack-textcolor-white !default;
+$btn-facebook-bg:                $facebook-color !default;
+$btn-facebook-border:            $facebook-color !default;
+$btn-facebook-border-light:      $facebook-color !default;
+
+$twitter-color:                  #3b88c3 !default;
+$btn-twitter-color:              $hightrack-textcolor-white !default;
+$btn-twitter-bg:                 $twitter-color !default;
+$btn-twitter-border:             $twitter-color !default;
+$btn-twitter-border-light:       $twitter-color !default;
+
+$googleplus-color:               #dd4b39 !default;
+$btn-googleplus-color:           $hightrack-textcolor-white !default;
+$btn-googleplus-bg:              $googleplus-color !default;
+$btn-googleplus-border:          $googleplus-color !default;
+$btn-googleplus-border-light:    $googleplus-color !default;
+
+$linkedin-color:                 #1b5480 !default;
+$btn-linkedin-color:             $hightrack-textcolor-white !default;
+$btn-linkedin-bg:                $linkedin-color !default;
+$btn-linkedin-border:            $linkedin-color !default;
+$btn-linkedin-border-light:      $linkedin-color !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
@@ -1129,7 +1153,7 @@ $facebook-white-icon: url("data:image/svg+xml;charset=utf8,
 %3C/svg%3E");
 $facebook-on-icon: url("data:image/svg+xml;charset=utf8,
 %3Csvg viewBox='24 13 8 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
-    %3Cpath id='FacebookIcon' stroke='none' fill='#3A5795' fill-rule='evenodd' d='M25.5130361,15.9050224 L25.5130361,17.9702287 L24,17.9702287 L24,20.4955709 L25.5130361,20.4955709 L25.5130361,28 L28.6211336,28 L28.6211336,20.4957802 L30.7068112,20.4957802 C30.7068112,20.4957802 30.9021441,19.2848979 30.9968287,17.9609172 L28.6328863,17.9609172 L28.6328863,16.234239 C28.6328863,15.9761667 28.9717632,15.6290245 29.3066992,15.6290245 L31.0001069,15.6290245 L31.0001069,13 L28.6976485,13 C25.4362073,12.9998256 25.5130361,15.5276788 25.5130361,15.9050224 L25.5130361,15.9050224 Z' %3E%3C/path%3E
+    %3Cpath id='FacebookIcon' stroke='none' fill='#{$facebook-color}' fill-rule='evenodd' d='M25.5130361,15.9050224 L25.5130361,17.9702287 L24,17.9702287 L24,20.4955709 L25.5130361,20.4955709 L25.5130361,28 L28.6211336,28 L28.6211336,20.4957802 L30.7068112,20.4957802 C30.7068112,20.4957802 30.9021441,19.2848979 30.9968287,17.9609172 L28.6328863,17.9609172 L28.6328863,16.234239 C28.6328863,15.9761667 28.9717632,15.6290245 29.3066992,15.6290245 L31.0001069,15.6290245 L31.0001069,13 L28.6976485,13 C25.4362073,12.9998256 25.5130361,15.5276788 25.5130361,15.9050224 L25.5130361,15.9050224 Z' %3E%3C/path%3E
 %3C/svg%3E");
 
 $twitter-white-icon: url("data:image/svg+xml;charset=utf8,
@@ -1138,7 +1162,7 @@ $twitter-white-icon: url("data:image/svg+xml;charset=utf8,
 %3C/svg%3E");
 $twitter-on-icon: url("data:image/svg+xml;charset=utf8,
 %3Csvg viewBox='18 13 19 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
-    %3Cpath d='M36.4663732,14.774736 C35.786707,15.0759013 35.0574349,15.2801482 34.2911999,15.3713336 C35.073578,14.9028241 35.6724688,14.1597022 35.9563143,13.2769357 C35.2224256,13.7108057 34.4123479,14.025851 33.5491945,14.196635 C32.8580018,13.4592764 31.8748469,13 30.7843635,13 C28.692289,13 26.996005,14.696284 26.996005,16.7872119 C26.996005,17.0837606 27.0294678,17.3733995 27.0941002,17.6503654 C23.9461819,17.4922544 21.1548281,15.9840742 19.2866135,13.6923393 C18.9600418,14.2508574 18.7742613,14.9016473 18.7742613,15.5963401 C18.7742613,16.9106834 19.4435477,18.0703856 20.4590189,18.748875 C19.8381917,18.7281154 19.2542973,18.5573313 18.7431219,18.2734557 L18.7431219,18.3207683 C18.7431219,20.1555201 20.0493785,21.6867832 21.7814185,22.0352913 C21.46408,22.1206834 21.1294519,22.167996 20.7832672,22.167996 C20.5386477,22.167996 20.3020846,22.1437664 20.0701381,22.0976004 C20.5524673,23.6034873 21.951056,24.6985571 23.608114,24.7285801 C22.3122371,25.7440512 20.6782621,26.3475586 18.9035261,26.3475586 C18.5977442,26.3475586 18.2965487,26.3290922 18,26.2956294 C19.676671,27.372263 21.6672105,28 23.8065976,28 C30.7751906,28 34.584339,22.2280118 34.584339,17.2222587 L34.5716358,16.7318429 C35.3159042,16.2009941 35.9597843,15.5340311 36.4663732,14.774736 L36.4663732,14.774736 Z' id='Shape' stroke='none' fill='#3B88C3' fill-rule='evenodd'%3E%3C/path%3E
+    %3Cpath id='Shape' stroke='none' fill='#{$twitter-color}' fill-rule='evenodd' d='M36.4663732,14.774736 C35.786707,15.0759013 35.0574349,15.2801482 34.2911999,15.3713336 C35.073578,14.9028241 35.6724688,14.1597022 35.9563143,13.2769357 C35.2224256,13.7108057 34.4123479,14.025851 33.5491945,14.196635 C32.8580018,13.4592764 31.8748469,13 30.7843635,13 C28.692289,13 26.996005,14.696284 26.996005,16.7872119 C26.996005,17.0837606 27.0294678,17.3733995 27.0941002,17.6503654 C23.9461819,17.4922544 21.1548281,15.9840742 19.2866135,13.6923393 C18.9600418,14.2508574 18.7742613,14.9016473 18.7742613,15.5963401 C18.7742613,16.9106834 19.4435477,18.0703856 20.4590189,18.748875 C19.8381917,18.7281154 19.2542973,18.5573313 18.7431219,18.2734557 L18.7431219,18.3207683 C18.7431219,20.1555201 20.0493785,21.6867832 21.7814185,22.0352913 C21.46408,22.1206834 21.1294519,22.167996 20.7832672,22.167996 C20.5386477,22.167996 20.3020846,22.1437664 20.0701381,22.0976004 C20.5524673,23.6034873 21.951056,24.6985571 23.608114,24.7285801 C22.3122371,25.7440512 20.6782621,26.3475586 18.9035261,26.3475586 C18.5977442,26.3475586 18.2965487,26.3290922 18,26.2956294 C19.676671,27.372263 21.6672105,28 23.8065976,28 C30.7751906,28 34.584339,22.2280118 34.584339,17.2222587 L34.5716358,16.7318429 C35.3159042,16.2009941 35.9597843,15.5340311 36.4663732,14.774736 L36.4663732,14.774736 Z'%3E%3C/path%3E
 %3C/svg%3E");
 
 $googleplus-white-icon: url("data:image/svg+xml;charset=utf8,
@@ -1151,10 +1175,10 @@ $googleplus-white-icon: url("data:image/svg+xml;charset=utf8,
 %3C/svg%3E");
 $googleplus-on-icon: url("data:image/svg+xml;charset=utf8,
 %3Csvg viewBox='5 9 22 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
-    %3Cpath id='Shape' stroke='none' fill='#dd4b39' fill-rule='evenodd' d='M12,15 L12,17.4 L15.97,17.4 C15.81,18.43 14.77,20.42 12,20.42 C9.61,20.42 7.66,18.44 7.66,16 C7.66,13.56 9.61,11.58 12,11.58 C13.36,11.58 14.27,12.16 14.79,12.66 L16.69,10.83 C15.47,9.69 13.89,9 12,9 C8.13,9 5,12.13 5,16 C5,19.87 8.13,23 12,23 C16.04,23 18.72,20.16 18.72,16.16 C18.72,15.7 18.67,15.35 18.61,15 L12,15 L12,15 Z'%3E%3C/path%3E
-    %3Cpath id='Shape' stroke='none' fill='#dd4b39' fill-rule='evenodd' opacity='0.4' d='M12,15.12 L18.61,15.12 C18.68,15.45 18.72,15.8 18.72,16.22 L18.72,16.15 C18.72,15.69 18.67,15.34 18.61,14.99 L12,14.99 L12,15.12 L12,15.12 Z M12,9.12 C13.85,9.12 15.41,9.79 16.61,10.89 L16.68,10.82 C15.47,9.69 13.89,9 12,9 C8.13,9 5,12.13 5,16 L5,16.06 C5.04,12.23 8.16,9.12 12,9.12 L12,9.12 Z M12,20.54 C14.77,20.54 15.81,18.56 15.97,17.52 L15.94,17.52 C15.72,18.58 14.67,20.41 12,20.41 C9.63,20.41 7.7,18.46 7.67,16.06 C7.67,16.08 7.66,16.1 7.66,16.12 C7.66,18.56 9.61,20.54 12,20.54 L12,20.54 Z'%3E%3C/path%3E
-    %3Cpolyline id='Shape' stroke='none' fill='#dd4b39' fill-rule='evenodd' points='27 15 25 15 25 13 23 13 23 15 21 15 21 17 23 17 23 19 25 19 25 17 27 17'%3E%3C/polyline%3E
-    %3Cpath id='Shape' stroke='none' fill='#dd4b39' fill-rule='evenodd' opacity='0.4' d='M25,15 L27,15 L27,15.12 L25,15.12 L25,15 Z M23,13 L25,13 L25,13.12 L23,13.12 L23,13 Z M21,15 L23,15 L23,15.12 L21,15.12 L21,15 Z'%3E%3C/path%3E
+    %3Cpath id='Shape' stroke='none' fill='#{$googleplus-color}' fill-rule='evenodd' d='M12,15 L12,17.4 L15.97,17.4 C15.81,18.43 14.77,20.42 12,20.42 C9.61,20.42 7.66,18.44 7.66,16 C7.66,13.56 9.61,11.58 12,11.58 C13.36,11.58 14.27,12.16 14.79,12.66 L16.69,10.83 C15.47,9.69 13.89,9 12,9 C8.13,9 5,12.13 5,16 C5,19.87 8.13,23 12,23 C16.04,23 18.72,20.16 18.72,16.16 C18.72,15.7 18.67,15.35 18.61,15 L12,15 L12,15 Z'%3E%3C/path%3E
+    %3Cpath id='Shape' stroke='none' fill='#{$googleplus-color}' fill-rule='evenodd' opacity='0.4' d='M12,15.12 L18.61,15.12 C18.68,15.45 18.72,15.8 18.72,16.22 L18.72,16.15 C18.72,15.69 18.67,15.34 18.61,14.99 L12,14.99 L12,15.12 L12,15.12 Z M12,9.12 C13.85,9.12 15.41,9.79 16.61,10.89 L16.68,10.82 C15.47,9.69 13.89,9 12,9 C8.13,9 5,12.13 5,16 L5,16.06 C5.04,12.23 8.16,9.12 12,9.12 L12,9.12 Z M12,20.54 C14.77,20.54 15.81,18.56 15.97,17.52 L15.94,17.52 C15.72,18.58 14.67,20.41 12,20.41 C9.63,20.41 7.7,18.46 7.67,16.06 C7.67,16.08 7.66,16.1 7.66,16.12 C7.66,18.56 9.61,20.54 12,20.54 L12,20.54 Z'%3E%3C/path%3E
+    %3Cpolyline id='Shape' stroke='none' fill='#{$googleplus-color}' fill-rule='evenodd' points='27 15 25 15 25 13 23 13 23 15 21 15 21 17 23 17 23 19 25 19 25 17 27 17'%3E%3C/polyline%3E
+    %3Cpath id='Shape' stroke='none' fill='#{$googleplus-color}' fill-rule='evenodd' opacity='0.4' d='M25,15 L27,15 L27,15.12 L25,15.12 L25,15 Z M23,13 L25,13 L25,13.12 L23,13.12 L23,13 Z M21,15 L23,15 L23,15.12 L21,15.12 L21,15 Z'%3E%3C/path%3E
     %3Cpath id='Shape' stroke='none' fill='#3E2723' fill-rule='evenodd' opacity='0.1' d='M21,17 L23,17 L23,17.12 L21,17.12 L21,17 Z M25,17 L27,17 L27,17.12 L25,17.12 L25,17 Z M23,19 L25,19 L25,19.12 L23,19.12 L23,19 Z'%3E%3C/path%3E
 %3C/svg%3E");
 
@@ -1162,7 +1186,7 @@ $linkedin-white-icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='20 13
     %3Cpath id='LinkedIn' stroke='none' fill='#{$icon-color-default}' fill-rule='evenodd' d='M35.6976243,22.1964881 L35.6976243,28 L32.3331152,28 L32.3331152,22.5851723 C32.3331152,21.2249235 31.8464752,20.2966068 30.6286344,20.2966068 C29.6989674,20.2966068 29.1457219,20.9222242 28.9023289,21.5274038 C28.8135703,21.7437531 28.7907236,22.044883 28.7907236,22.3477282 L28.7907236,28 L25.4250831,28 C25.4250831,28 25.4704113,18.8290592 25.4250831,17.8788814 L28.7903952,17.8788814 L28.7903952,19.3135094 C28.7835704,19.3242393 28.7747018,19.3358086 28.7682785,19.34621 L28.7903952,19.34621 L28.7903952,19.3135094 C29.2375098,18.6248631 30.0360096,17.6411088 31.8233001,17.6411088 C34.0376324,17.6410723 35.6976243,19.0876711 35.6976243,22.1964881 L35.6976243,22.1964881 Z M21.9044798,13 C20.7530985,13 20,13.7552153 20,14.7483492 C20,15.7198408 20.7313103,16.4979757 21.8598085,16.4979757 L21.8822901,16.4979757 C23.0559705,16.4979757 23.785894,15.7199868 23.785894,14.7483492 C23.7637773,13.7552153 23.0559705,13 21.9044798,13 L21.9044798,13 Z M20.1998895,28 L23.5642527,28 L23.5642527,17.8788814 L20.1998895,17.8788814 L20.1998895,28 L20.1998895,28 Z'%3E%3C/path%3E
 %3C/svg%3E");
 $linkedin-on-icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='20 13 16 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
-    %3Cpath id='LinkedIn' stroke='none' fill='#1B5480' fill-rule='evenodd' d='M35.6976243,22.1964881 L35.6976243,28 L32.3331152,28 L32.3331152,22.5851723 C32.3331152,21.2249235 31.8464752,20.2966068 30.6286344,20.2966068 C29.6989674,20.2966068 29.1457219,20.9222242 28.9023289,21.5274038 C28.8135703,21.7437531 28.7907236,22.044883 28.7907236,22.3477282 L28.7907236,28 L25.4250831,28 C25.4250831,28 25.4704113,18.8290592 25.4250831,17.8788814 L28.7903952,17.8788814 L28.7903952,19.3135094 C28.7835704,19.3242393 28.7747018,19.3358086 28.7682785,19.34621 L28.7903952,19.34621 L28.7903952,19.3135094 C29.2375098,18.6248631 30.0360096,17.6411088 31.8233001,17.6411088 C34.0376324,17.6410723 35.6976243,19.0876711 35.6976243,22.1964881 L35.6976243,22.1964881 Z M21.9044798,13 C20.7530985,13 20,13.7552153 20,14.7483492 C20,15.7198408 20.7313103,16.4979757 21.8598085,16.4979757 L21.8822901,16.4979757 C23.0559705,16.4979757 23.785894,15.7199868 23.785894,14.7483492 C23.7637773,13.7552153 23.0559705,13 21.9044798,13 L21.9044798,13 Z M20.1998895,28 L23.5642527,28 L23.5642527,17.8788814 L20.1998895,17.8788814 L20.1998895,28 L20.1998895,28 Z'%3E%3C/path%3E
+    %3Cpath id='LinkedIn' stroke='none' fill='#{$linkedin-color}' fill-rule='evenodd' d='M35.6976243,22.1964881 L35.6976243,28 L32.3331152,28 L32.3331152,22.5851723 C32.3331152,21.2249235 31.8464752,20.2966068 30.6286344,20.2966068 C29.6989674,20.2966068 29.1457219,20.9222242 28.9023289,21.5274038 C28.8135703,21.7437531 28.7907236,22.044883 28.7907236,22.3477282 L28.7907236,28 L25.4250831,28 C25.4250831,28 25.4704113,18.8290592 25.4250831,17.8788814 L28.7903952,17.8788814 L28.7903952,19.3135094 C28.7835704,19.3242393 28.7747018,19.3358086 28.7682785,19.34621 L28.7903952,19.34621 L28.7903952,19.3135094 C29.2375098,18.6248631 30.0360096,17.6411088 31.8233001,17.6411088 C34.0376324,17.6410723 35.6976243,19.0876711 35.6976243,22.1964881 L35.6976243,22.1964881 Z M21.9044798,13 C20.7530985,13 20,13.7552153 20,14.7483492 C20,15.7198408 20.7313103,16.4979757 21.8598085,16.4979757 L21.8822901,16.4979757 C23.0559705,16.4979757 23.785894,15.7199868 23.785894,14.7483492 C23.7637773,13.7552153 23.0559705,13 21.9044798,13 L21.9044798,13 Z M20.1998895,28 L23.5642527,28 L23.5642527,17.8788814 L20.1998895,17.8788814 L20.1998895,28 L20.1998895,28 Z'%3E%3C/path%3E
 %3C/svg%3E");
 
 

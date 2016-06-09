@@ -85,7 +85,7 @@
 	}
 
 	&.ht-icon-facebook{
-		background: $people-white-icon no-repeat;
+		background: $facebook-white-icon no-repeat;
 		width: 8px;
 		height: 15px;
 		&.ht-icon-on{
@@ -153,11 +153,11 @@
 	}
 }
 
-.btn-group{
+//.btn-group{
 	.btn{
-		.ht-icon{
+		& .ht-icon{
 			top: -1.5px;
     		position: relative;
 		}
 	}
-}
+//}
