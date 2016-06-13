@@ -21,28 +21,82 @@ Note that colored icons require you to manually add the `.ht-icon-on` class to t
 
 {% example html %}
 <div class="ht-menu col-md-4">
-	<div class="row ht-header">
-	  <div class="ht-category">Calendar</div>
-	  <div class="ht-icon ht-icon-dropdown ht-icon-on"></div>
+	<div class="row ht-header ht-menu-element">
+	  <div class="ht-category col-xs-10">Calendar</div>
+	  <div class="col-xs-2">
+	  	<label class="ht-icon ht-icon-dropdown ht-icon-on"></label>
+	  </div>
 	</div>
 	<ul>
-		<li><div class="form-group has-success">
-		  <label class="custom-control custom-checkbox">
-		    <input type="checkbox" class="custom-control-input">
-		    <span class="custom-control-indicator"></span>
-		    <span class="custom-control-description">Todos los calendarios</span>
-		  </label>
-		</div>
+		<li>
+			<div class="row">
+				<div class="ht-category col-xs-10">
+					<div class="form-group">
+					  <label class="custom-control custom-checkbox">
+					    <input type="checkbox" class="custom-control-input">
+					    <span class="custom-control-indicator"></span>
+					    <span class="custom-control-description">Todos los calendarios</span>
+					  </label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<label class="ht-icon ht-icon-options ht-icon-on"></label>
+				</div>
+			</div>
 		</li>
-		<li>Calendario del curro</li>
+		<li>
+			<div class="row">
+				<div class="ht-category col-xs-10">
+					<div class="form-group">
+					  <label class="custom-control custom-checkbox">
+					    <input type="checkbox" class="custom-control-input">
+					    <span class="custom-control-indicator"></span>
+					    <span class="custom-control-description">Todos los calendarios</span>
+					  </label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<label class="ht-icon ht-icon-options ht-icon-on"></label>
+				</div>
+			</div>
+		</li>
 	</ul>
-	<div class="row ht-header">
-	  <div class="ht-category col-md-11">Calendar</div>
-	  <div class="ht-icon ht-icon-dropdown ht-icon-on"></div>
+	<div class="row ht-header ht-menu-element">
+	  <div class="ht-folder col-xs-12"><label class="ht-icon ht-icon-folder ht-icon-on"></label> Google (enriquemebaina@gmail.com)</div>
 	</div>
 	<ul>
-		<li>Todos los calendarios</li>
-		<li>Calendario del curro</li>
+		<li>
+			<div class="row">
+				<div class="ht-category col-xs-10">
+					<div class="form-group">
+					  <label class="custom-control custom-checkbox">
+					    <input type="checkbox" class="custom-control-input">
+					    <span class="custom-control-indicator"></span>
+					    <span class="custom-control-description">Todos los calendarios</span>
+					  </label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<label class="ht-icon ht-icon-options ht-icon-on"></label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="row">
+				<div class="ht-category col-xs-10">
+					<div class="form-group">
+					  <label class="custom-control custom-checkbox">
+					    <input type="checkbox" class="custom-control-input">
+					    <span class="custom-control-indicator"></span>
+					    <span class="custom-control-description">Todos los calendarios</span>
+					  </label>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<label class="ht-icon ht-icon-options ht-icon-on"></label>
+				</div>
+			</div>
+		</li>
 	</ul>
 </div>
 {% endexample %}

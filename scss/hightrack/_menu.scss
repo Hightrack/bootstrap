@@ -2,18 +2,43 @@
 // My comment
 //
 
-.hightrack-test {
-  color: $brand-primary !important;
-}
+$ht-menu-row-line-height: 15px;
+$ht-menu-row-margin-top: 10px;
 
 .ht-menu {
-	& ul li{
-    	list-style: none;
-    	color: $hightrack-textcolor-medium;
-    	font-size: .7333rem;
+	& ul {
+
+		margin-left: -40px;
+
+		li{
+	    	list-style: none;
+	    	color: $hightrack-textcolor-medium;
+	    	font-size: .7333rem;
+
+	    	line-height: $ht-menu-row-line-height;
+    		margin-top: $ht-menu-row-margin-top;
+	    }
 	}
+
+}
+
+.ht-menu-element{
+	line-height: $ht-menu-row-line-height;
+	margin-top: $ht-menu-row-margin-top;
 }
 
 .ht-category {
 	color: $hightrack-textcolor-medium;
 }
+
+.ht-folder {
+	color: $hightrack-textcolor-medium;
+    font-size: .7333rem;
+    font-weight: 800;
+
+	& ul {
+		margin-left: -20px;
+	}
+
+}
+

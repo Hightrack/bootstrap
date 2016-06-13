@@ -151,6 +151,26 @@
 			background: $nav-track-icon-active no-repeat;
 		}
 	}
+
+	&.ht-icon-folder{
+		width: 19px;
+		height: 20px; //15px original size
+		background: $folder-white-icon;
+
+		&.ht-icon-on{
+			background: $folder-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-options{
+		width: 14px;
+		height: 5px;
+		background: $options-white-icon;
+
+		&.ht-icon-on{
+			background: $options-on-icon no-repeat;
+		}
+	}
 }
 
 //.btn-group{
