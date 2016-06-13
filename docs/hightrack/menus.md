@@ -30,72 +30,129 @@ Note that colored icons require you to manually add the `.ht-icon-on` class to t
 	<ul>
 		<li>
 			<div class="row">
-				<div class="ht-category col-xs-10">
+				<div class="ht-menu-item col-xs-10">
 					<div class="form-group">
 					  <label class="custom-control custom-checkbox">
 					    <input type="checkbox" class="custom-control-input">
-					    <span class="custom-control-indicator"></span>
+					    <span class="custom-control-indicator ht-checkbox-calendar bg-color-ff0055"></span>
 					    <span class="custom-control-description">Todos los calendarios</span>
 					  </label>
 					</div>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-xs-2 ht-options">
 					<label class="ht-icon ht-icon-options ht-icon-on"></label>
 				</div>
 			</div>
 		</li>
 		<li>
 			<div class="row">
-				<div class="ht-category col-xs-10">
+				<div class="ht-menu-item col-xs-10">
 					<div class="form-group">
 					  <label class="custom-control custom-checkbox">
 					    <input type="checkbox" class="custom-control-input">
-					    <span class="custom-control-indicator"></span>
-					    <span class="custom-control-description">Todos los calendarios</span>
+					    <span class="custom-control-indicator ht-checkbox-calendar bg-color-66b1e3"></span>
+					    <span class="custom-control-description">Calendario del curro</span>
 					  </label>
 					</div>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-xs-2 ht-options">
 					<label class="ht-icon ht-icon-options ht-icon-on"></label>
 				</div>
 			</div>
 		</li>
-	</ul>
-	<div class="row ht-header ht-menu-element">
-	  <div class="ht-folder col-xs-12"><label class="ht-icon ht-icon-folder ht-icon-on"></label> Google (enriquemebaina@gmail.com)</div>
-	</div>
-	<ul>
-		<li>
-			<div class="row">
-				<div class="ht-category col-xs-10">
-					<div class="form-group">
-					  <label class="custom-control custom-checkbox">
-					    <input type="checkbox" class="custom-control-input">
-					    <span class="custom-control-indicator"></span>
-					    <span class="custom-control-description">Todos los calendarios</span>
-					  </label>
-					</div>
-				</div>
-				<div class="col-xs-2">
-					<label class="ht-icon ht-icon-options ht-icon-on"></label>
-				</div>
+		<li class="ht-folder">
+			<div class="row ht-header ht-menu-element">
+			  <div class="col-xs-12"><label class="ht-icon ht-icon-folder ht-icon-on"></label> Google (enriqu...baina@gmail.com)</div>
 			</div>
-		</li>
-		<li>
-			<div class="row">
-				<div class="ht-category col-xs-10">
-					<div class="form-group">
-					  <label class="custom-control custom-checkbox">
-					    <input type="checkbox" class="custom-control-input">
-					    <span class="custom-control-indicator"></span>
-					    <span class="custom-control-description">Todos los calendarios</span>
-					  </label>
+			<ul>
+				<li>
+					<div class="row">
+						<div class="ht-menu-item col-xs-10">
+							<div class="form-group">
+							  <label class="custom-control custom-checkbox">
+							    <input type="checkbox" class="custom-control-input">
+							    <span class="custom-control-indicator ht-checkbox-calendar bg-color-66b1e3"></span>
+							    <span class="custom-control-description">Personal</span>
+							  </label>
+							</div>
+						</div>
+						<div class="col-xs-2 ht-options">
+							<label class="ht-icon ht-icon-options ht-icon-on"></label>
+						</div>
 					</div>
-				</div>
-				<div class="col-xs-2">
-					<label class="ht-icon ht-icon-options ht-icon-on"></label>
-				</div>
-			</div>
+				</li>
+				<li>
+					<div class="row">
+						<div class="ht-menu-item col-xs-10">
+							<div class="form-group">
+							  <label class="custom-control custom-checkbox">
+							    <input type="checkbox" class="custom-control-input">
+							    <span class="custom-control-indicator ht-checkbox-calendar bg-color-f6a501"></span>
+							    <span class="custom-control-description">Trabajo</span>
+							  </label>
+							</div>
+						</div>
+						<div class="col-xs-2 ht-options">
+							<label class="ht-icon ht-icon-options ht-icon-on"></label>
+						</div>
+					</div>
+				</li>
+				<li class="ht-folder">
+					<div class="row ht-header ht-menu-element">
+					  <div class="col-xs-12"><label class="ht-icon ht-icon-folder ht-icon-on"></label> Equipo de fútbol</div>
+					</div>
+					<ul>
+						<li>
+							<div class="row">
+								<div class="ht-menu-item col-xs-10">
+									<div class="form-group">
+									  <label class="custom-control custom-checkbox">
+									    <input type="checkbox" class="custom-control-input">
+									    <span class="custom-control-indicator ht-checkbox-calendar bg-color-ff0055"></span>
+									    <span class="custom-control-description">Entrenamientos</span>
+									  </label>
+									</div>
+								</div>
+								<div class="col-xs-2 ht-options">
+									<label class="ht-icon ht-icon-options ht-icon-on"></label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="row">
+								<div class="ht-menu-item col-xs-10">
+									<div class="form-group">
+									  <label class="custom-control custom-checkbox">
+									    <input type="checkbox" class="custom-control-input">
+									    <span class="custom-control-indicator ht-checkbox-calendar bg-color-f6a501"></span>
+									    <span class="custom-control-description">Liga</span>
+									  </label>
+									</div>
+								</div>
+								<div class="col-xs-2 ht-options">
+									<label class="ht-icon ht-icon-options ht-icon-on"></label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="row">
+								<div class="ht-menu-item col-xs-10">
+									<div class="form-group">
+									  <label class="custom-control custom-checkbox">
+									    <input type="checkbox" class="custom-control-input">
+									    <span class="custom-control-indicator ht-checkbox-calendar bg-color-ff0055"></span>
+									    <span class="custom-control-description">Viajes</span>
+									  </label>
+									</div>
+								</div>
+								<div class="col-xs-2 ht-options">
+									<label class="ht-icon ht-icon-options ht-icon-on"></label>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>

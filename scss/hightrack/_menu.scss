@@ -32,13 +32,22 @@ $ht-menu-row-margin-top: 10px;
 }
 
 .ht-folder {
-	color: $hightrack-textcolor-medium;
-    font-size: .7333rem;
-    font-weight: 800;
-
-	& ul {
-		margin-left: -20px;
+	& .ht-header{
+		color: $hightrack-textcolor-medium;
+	    font-size: .7333rem;
+	    font-weight: 800;
 	}
 
-}
+	& ul li .ht-menu-item{
+		//padding-left: 35px !important;
 
+		+ .ht-options{
+			position: absolute;
+			right: 0px;
+		}
+	}
+
+	& ul li {
+		 padding-left: 20px;
+	}
+}
