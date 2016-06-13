@@ -1,8 +1,13 @@
+.ht-navbar{
+  background-color: $brand-primary-medium;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 .ht-quickbar{
 	height: 60px;
-	background: rgba(33,116,147,0.50);
+	background-color: $brand-primary; //background: rgba(33,116,147,0.50);
 	border: 0px solid transparent;
-	margin-bottom: 10px;
 
 	.ht-quickbar-action{
 		margin-top: 9px;
