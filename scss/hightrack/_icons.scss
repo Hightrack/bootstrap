@@ -3,7 +3,7 @@
 	vertical-align: middle;	
 	cursor: inherit;
 
-	&.ht-icon-like{
+	&.ht-icon-like,.ui-icon-like{
 		background: $like-white-icon no-repeat;
 		width: 20px;
 		height: 16px;

@@ -1,0 +1,7 @@
+.button-group{
+    @extend .btn-group !optional;
+}
+
+.fc-button{
+    @extend .btn !optional;
+}
