@@ -10420,6 +10420,7 @@ function Header(calendar, options) {
 							if (typeof defaultText === 'undefined'){
 								defaultText = customButtonProps.text;
 							}
+							console.log("custom");
 						}
 						else if ((viewSpec = calendar.getViewSpec(buttonName))) {
 							buttonClick = function() {
@@ -10449,6 +10450,11 @@ function Header(calendar, options) {
 									customButtonProps.icon :
 									options.buttonIcons[buttonName];
 
+							customIcon = 
+								customButtonProps ? 
+									customButtonProps.customIcon :
+									null;
+
 							if (overrideText) {
 								innerHtml = htmlEscape(overrideText);
 							}
@@ -10457,10 +10463,15 @@ function Header(calendar, options) {
 							}
 							else if (normalIcon && !options.theme) {
 								innerHtml = "<div class='fc-icon fc-icon-" + normalIcon + "'></div>";
+							} 
+							else if (customIcon) {
+								innerHtml = "<div class='" + customIcon + "'></div>";
 							}
 							else {
 								innerHtml = htmlEscape(defaultText);
 							}
+
+							console.log(innerHtml);
 
 							classes = [
 								'fc-'+buttonName+'-button',
@@ -10555,6 +10566,7 @@ function Header(calendar, options) {
 	
 	
 	function activateButton(buttonName) {
+		console.log("activateButton: " + buttonName)
 		el.find('.' + 'fc-' + buttonName + '-button')
 			.addClass(calendar.getCSSClass()['buttonStateActive']);
 	}

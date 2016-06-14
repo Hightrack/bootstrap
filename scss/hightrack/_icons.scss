@@ -171,11 +171,41 @@
 			background: $options-on-icon no-repeat;
 		}
 	}
+
+	&.ht-icon-agendamonth{
+		width: 18px;
+		height: 16px;
+		background: $agendamonth-white-icon;
+
+		&.ht-icon-on{
+			background: $agendamonth-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-agendaweek{
+		width: 18px;
+		height: 16px;
+		background: $agendaweek-white-icon;
+
+		&.ht-icon-on{
+			background: $agendaweek-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-agendaday{
+		width: 18px;
+		height: 16px;
+		background: $agendaday-white-icon;
+
+		&.ht-icon-on{
+			background: $agendaday-on-icon no-repeat;
+		}
+	}
 }
 
 //.btn-group{
 	.btn{
-		& .ht-icon{
+		& label.ht-icon{
 			top: -1.5px;
     		position: relative;
 		}

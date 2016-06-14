@@ -22,11 +22,32 @@ $(function() {
 				    $('.calendar').fullCalendar('today');
 				}
 	        },
+	        customMonth: {
+	        	customIcon: 'ht-icon ht-icon-agendamonth',
+	        	classes: ['fc-month-button'],
+	            click: function() {
+				    $('.calendar').fullCalendar( 'changeView', 'month' );
+				}
+	        },
+	        customWeek: {
+	        	customIcon: 'ht-icon ht-icon-agendaweek',
+	        	classes: ['fc-agendaWeek-button'],
+	            click: function() {
+				    $('.calendar').fullCalendar( 'changeView', 'agendaWeek' );
+				}
+	        },
+	        customDay: {
+	        	customIcon: 'ht-icon ht-icon-agendaday',
+	        	classes: ['fc-agendaDay-button'],
+	            click: function() {
+				    $('.calendar').fullCalendar( 'changeView', 'agendaDay' );
+				}
+	        }
 	    },
 		header: {
 			left: 'title',
 			center: '',
-			right: 'customPrev,today,customNext month,agendaWeek,agendaDay'
+			right: 'customPrev,today,customNext customDay,customWeek,customMonth'
 		},
 		nowIndicator: true,
 		firstDay: 1,
@@ -42,14 +63,12 @@ $(function() {
 				title: 'Long Event',
 				start: '2016-05-07',
 				end: '2016-05-10'
-			}
-		],
-		eventColor: '#12f253',
-		events: [
+			},
 			{
 				id: 999,
 				title: 'Repeating Event',
-				start: '2016-05-09T16:00:00'
+				start: '2016-05-09T16:00:00',
+				eventColor: '#12f253'
 			},
 			{
 				id: 999,
@@ -59,7 +78,8 @@ $(function() {
 			{
 				title: 'Conference',
 				start: '2016-05-11',
-				end: '2016-05-13'
+				end: '2016-05-13',
+				eventColor: '#378006'
 			},
 			{
 				title: 'Meeting',
@@ -80,7 +100,8 @@ $(function() {
 			},
 			{
 				title: 'Dinner',
-				start: '2016-05-12T20:00:00'
+				start: '2016-05-12T20:00:00',
+				eventColor: '#ff0034'
 			},
 			{
 				title: 'Birthday Party',
@@ -92,8 +113,18 @@ $(function() {
 				start: '2016-05-28'
 			}
 		],
-		eventColor: '#f21353',
 		timeFormat: 'H:mm',
-		themeType: 'bootstrap'
+		themeType: 'bootstrap',
+			cssClasses: {
+			buttonGroup: 'btn-group',
+			button: 'btn btn-sm',
+			buttonStateDefault: 'btn-primary',
+			buttonStateActive: 'active',
+			buttonStateDisabled: 'disabled',
+			buttonStateHover: '',
+			buttonStateDown: '',
+			buttonCornerLeft: '',
+			buttonCornerRight: ''
+		}
 	});
 });
