@@ -201,6 +201,76 @@
 			background: $agendaday-on-icon no-repeat;
 		}
 	}
+
+	&.ht-icon-left-arrow{
+		width: 11px;
+		height: 13px;
+		background: $left-arrow-white-icon;
+
+		&.ht-icon-on{
+			background: $left-arrow-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-right-arrow{
+		width: 11px;
+		height: 12px;
+		background: $right-arrow-white-icon;
+
+		&.ht-icon-on{
+			background: $right-arrow-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-menu-controller{
+		width: 15px;
+		height: 32px;
+		background: $menu-controller-white-icon;
+
+		&.ht-icon-on{
+			background: $menu-controller-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-add-task{
+		width: 16px;
+		height: 16px;
+		background: $add-task-white-icon;
+
+		&.ht-icon-on{
+			background: $add-task-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-search{
+		width: 17px;
+		height: 16px;
+		background: $search-white-icon;
+
+		&.ht-icon-on{
+			background: $search-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-invite-people{
+		width: 18px;
+		height: 18px;
+		background: $invite-people-white-icon;
+
+		&.ht-icon-on{
+			background: $invite-people-on-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-place{
+		width: 14px;
+		height: 20px;
+		background: $place-white-icon;
+
+		&.ht-icon-on{
+			background: $place-on-icon no-repeat;
+		}
+	}
 }
 
 //.btn-group{
