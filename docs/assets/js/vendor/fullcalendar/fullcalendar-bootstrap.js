@@ -9144,14 +9144,12 @@ var Calendar = FC.Calendar = Class.extend({
 
 	getCSSClass: function(){
 		var tm = 'fc';
-		if (this.options.theme){
-			if (this.options.themeType == 'bootstrap'){
-				if (this.options.cssClasses){
-					return this.options.cssClasses;
-				}
-			} else {
-				tm = 'ui';
+		if (this.options.themeType == 'bootstrap'){
+			if (this.options.cssClasses){
+				return this.options.cssClasses;
 			}
+		} else if (this.options.themeType == 'ui'){
+			tm = 'ui';
 		}
 
 		return {
@@ -10062,7 +10060,7 @@ Calendar.defaults = {
 	
 	// jquery-ui theming
 	theme: false,
-	themeType: 'ui',
+	themeType: '',
 	themeButtonIcons: {
 		prev: 'circle-triangle-w',
 		next: 'circle-triangle-e',
@@ -10408,14 +10406,20 @@ function Header(calendar, options) {
 						isOnlyButtons = false;
 					}
 					else {
+						buttonClasses = [];
 						if ((customButtonProps = (calendar.options.customButtons || {})[buttonName])) {
 							buttonClick = function(ev) {
 								if (customButtonProps.click) {
 									customButtonProps.click.call(button[0], ev);
 								}
 							};
+							buttonClasses = customButtonProps.classes;
 							overrideText = ''; // icons will override text
-							defaultText = customButtonProps.text;
+							defaultText = options.buttonText[buttonName];
+							
+							if (typeof defaultText === 'undefined'){
+								defaultText = customButtonProps.text;
+							}
 						}
 						else if ((viewSpec = calendar.getViewSpec(buttonName))) {
 							buttonClick = function() {
@@ -10449,10 +10453,10 @@ function Header(calendar, options) {
 								innerHtml = htmlEscape(overrideText);
 							}
 							else if (themeIcon && options.theme) {
-								innerHtml = "<span class='ui-icon ui-icon-" + themeIcon + "'></span>";
+								innerHtml = "<div class='ui-icon ui-icon-" + themeIcon + "'></div>";
 							}
 							else if (normalIcon && !options.theme) {
-								innerHtml = "<span class='fc-icon fc-icon-" + normalIcon + "'></span>";
+								innerHtml = "<div class='fc-icon fc-icon-" + normalIcon + "'></div>";
 							}
 							else {
 								innerHtml = htmlEscape(defaultText);
@@ -10463,6 +10467,8 @@ function Header(calendar, options) {
 								calendar.getCSSClass()['button'],
 								calendar.getCSSClass()['buttonStateDefault']	
 							];
+
+							classes = classes.concat(buttonClasses);
 
 							button = $( // type="button" so that it doesn't submit a form
 								'<button type="button" class="' + classes.join(' ') + '">' +
@@ -10504,7 +10510,7 @@ function Header(calendar, options) {
 										button
 											.not('.' + calendar.getCSSClass()['buttonStateActive'])
 											.not('.' + calendar.getCSSClass()['buttonStateDisabled'])
-											.addClass(tm + calendar.getCSSClass()['buttonStateHover']);
+											.addClass(calendar.getCSSClass()['buttonStateHover']);
 									},
 									function() {
 										// undo the *hover* effect
@@ -10549,26 +10555,26 @@ function Header(calendar, options) {
 	
 	
 	function activateButton(buttonName) {
-		el.find('.' + calendar.getCSSClass()['buttonName'])
+		el.find('.' + 'fc-' + buttonName + '-button')
 			.addClass(calendar.getCSSClass()['buttonStateActive']);
 	}
 	
 	
 	function deactivateButton(buttonName) {
-		el.find('.' + calendar.getCSSClass()['buttonName'])
+		el.find('.' + 'fc-' + buttonName + '-button')
 			.removeClass(calendar.getCSSClass()['buttonStateActive']);
 	}
 	
 	
 	function disableButton(buttonName) {
-		el.find('.' + calendar.getCSSClass()['buttonName'])
+		el.find('.' + 'fc-' + buttonName + '-button')
 			.attr('disabled', 'disabled')
 			.addClass(calendar.getCSSClass()['buttonStateDisabled']);
 	}
 	
 	
 	function enableButton(buttonName) {
-		el.find('.' + calendar.getCSSClass()['buttonName'])
+		el.find('.' + 'fc-' + buttonName + '-button')
 			.removeAttr('disabled')
 			.removeClass(calendar.getCSSClass()['buttonStateDisabled']);
 	}

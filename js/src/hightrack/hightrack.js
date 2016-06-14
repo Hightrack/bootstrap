@@ -1,9 +1,32 @@
 $(function() {
 	$('.calendar').fullCalendar({
+		customButtons: {
+	        customPrev: {
+	            icon: 'left-single-arrow',
+	            classes: ['btn-link'],
+	            click: function() {
+				    $('.calendar').fullCalendar('prev');
+				}
+	        },
+	        customNext: {
+	            icon: 'right-single-arrow',
+	            classes: ['btn-link'],
+	            click: function() {
+				    $('.calendar').fullCalendar('next');
+				}
+	        },
+	        today: {
+	        	text: 'today',
+	            classes: ['btn-link'],
+	            click: function() {
+				    $('.calendar').fullCalendar('today');
+				}
+	        },
+	    },
 		header: {
 			left: 'title',
 			center: '',
-			right: 'prev,today,next month,agendaWeek,agendaDay'
+			right: 'customPrev,today,customNext month,agendaWeek,agendaDay'
 		},
 		nowIndicator: true,
 		firstDay: 1,
@@ -19,7 +42,10 @@ $(function() {
 				title: 'Long Event',
 				start: '2016-05-07',
 				end: '2016-05-10'
-			},
+			}
+		],
+		eventColor: '#12f253',
+		events: [
 			{
 				id: 999,
 				title: 'Repeating Event',
@@ -67,6 +93,7 @@ $(function() {
 			}
 		],
 		eventColor: '#f21353',
-		timeFormat: 'H:mm'
+		timeFormat: 'H:mm',
+		themeType: 'bootstrap'
 	});
 });
