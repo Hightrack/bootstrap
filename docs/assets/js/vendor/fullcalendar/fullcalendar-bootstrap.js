@@ -7496,19 +7496,20 @@ TimeGrid.mixin({
 				''
 				) +
 			'>' +
+				'<div class="ht-event-indicator"></div>'+
 				'<div class="fc-content">' +
+					(event.title ?
+						'<div class="fc-title">' +
+							htmlEscape(event.title) +
+						'</div>' :
+						''
+						) +
 					(timeText ?
 						'<div class="fc-time"' +
 						' data-start="' + htmlEscape(startTimeText) + '"' +
 						' data-full="' + htmlEscape(fullTimeText) + '"' +
 						'>' +
 							'<span>' + htmlEscape(timeText) + '</span>' +
-						'</div>' :
-						''
-						) +
-					(event.title ?
-						'<div class="fc-title">' +
-							htmlEscape(event.title) +
 						'</div>' :
 						''
 						) +
@@ -12672,7 +12673,7 @@ var agendaDayGridMethods = {
 		return '' +
 			'<td class="fc-axis ' + view.widgetContentClass + '" ' + view.axisStyleAttr() + '>' +
 				'<span>' + // needed for matchCellWidths
-					(view.opt('allDayHtml') || htmlEscape(view.opt('allDayText'))) +
+					//(view.opt('allDayHtml') || htmlEscape(view.opt('allDayText'))) + // Hightrack design has not "Todo el día" text
 				'</span>' +
 			'</td>';
 	},

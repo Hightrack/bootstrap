@@ -10,3 +10,26 @@
 	font-size: 0.7333rem;
 	line-height: 24px;
 }
+
+.fc-title {
+	font-size: 0.7333rem;
+}
+
+.ht-event-indicator{
+	width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-color: #1b5480;
+    border-radius: 3px;
+}
+
+.fc-v-event {
+
+	padding-left: 9px;
+
+	.fc-time{
+		font-weight: 700;
+	}
+}
