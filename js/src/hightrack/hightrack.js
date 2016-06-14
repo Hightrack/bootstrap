@@ -2,14 +2,14 @@ $(function() {
 	$('.calendar').fullCalendar({
 		customButtons: {
 	        customPrev: {
-	            icon: 'left-single-arrow',
+	            customIcon: 'ht-icon-left-arrow ht-icon-on',
 	            classes: ['btn-link'],
 	            click: function() {
 				    $('.calendar').fullCalendar('prev');
 				}
 	        },
 	        customNext: {
-	            icon: 'right-single-arrow',
+	            customIcon: 'ht-icon-right-arrow ht-icon-on',
 	            classes: ['btn-link'],
 	            click: function() {
 				    $('.calendar').fullCalendar('next');
@@ -23,22 +23,22 @@ $(function() {
 				}
 	        },
 	        customMonth: {
-	        	customIcon: 'ht-icon ht-icon-agendamonth',
-	        	classes: ['fc-month-button'],
+	        	customIcon: 'ht-icon ht-icon-agendamonth ht-icon-on',
+	        	classes: ['fc-month-button btn-complementary'],
 	            click: function() {
 				    $('.calendar').fullCalendar( 'changeView', 'month' );
 				}
 	        },
 	        customWeek: {
-	        	customIcon: 'ht-icon ht-icon-agendaweek',
-	        	classes: ['fc-agendaWeek-button'],
+	        	customIcon: 'ht-icon ht-icon-agendaweek ht-icon-on',
+	        	classes: ['fc-agendaWeek-button btn-complementary'],
 	            click: function() {
 				    $('.calendar').fullCalendar( 'changeView', 'agendaWeek' );
 				}
 	        },
 	        customDay: {
-	        	customIcon: 'ht-icon ht-icon-agendaday',
-	        	classes: ['fc-agendaDay-button'],
+	        	customIcon: 'ht-icon ht-icon-agendaday ht-icon-on',
+	        	classes: ['fc-agendaDay-button btn-complementary'],
 	            click: function() {
 				    $('.calendar').fullCalendar( 'changeView', 'agendaDay' );
 				}
@@ -115,10 +115,10 @@ $(function() {
 		],
 		timeFormat: 'H:mm',
 		themeType: 'bootstrap',
-			cssClasses: {
+		cssClasses: {
 			buttonGroup: 'btn-group',
 			button: 'btn btn-sm',
-			buttonStateDefault: 'btn-primary',
+			buttonStateDefault: '',
 			buttonStateActive: 'active',
 			buttonStateDisabled: 'disabled',
 			buttonStateHover: '',
