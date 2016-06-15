@@ -38,6 +38,52 @@ Note that colored icons require you to manually add the `.ht-icon-on` class to t
 	<label class="ht-icon ht-icon-list ht-icon-on"></label>
 	<label class="ht-icon ht-icon-day-13 ht-icon-on"></label>
 	<label class="ht-icon ht-icon-month-E ht-icon-on"></label>
+	<label class="ht-icon ht-icon-add-bg ht-icon-on"></label>
+	<label class="ht-icon ht-icon-dropdown ht-icon-on"></label>
+	<label class="ht-icon ht-icon-folder ht-icon-on"></label>
+	<label class="ht-icon ht-icon-options ht-icon-on"></label>
+	<label class="ht-icon ht-icon-agendaday ht-icon-on"></label>
+	<label class="ht-icon ht-icon-agendaweek ht-icon-on"></label>
+	<label class="ht-icon ht-icon-agendamonth ht-icon-on"></label>
+	<label class="ht-icon ht-icon-agendaweek ht-icon-on"></label>
+	<label class="ht-icon ht-icon-left-arrow ht-icon-on"></label>
+	<label class="ht-icon ht-icon-right-arrow ht-icon-on"></label>
+	<label class="ht-icon ht-icon-menu-controller ht-icon-on"></label>
+	<label class="ht-icon ht-icon-add-task ht-icon-on"></label>
+	<label class="ht-icon ht-icon-invite-people ht-icon-on"></label>
+	<label class="ht-icon ht-icon-place ht-icon-on"></label>
+	<label class="ht-icon ht-icon-inbox ht-icon-on"></label>
+	<label class="ht-icon ht-icon-todo ht-icon-on"></label>
+</div>
+{% endexample %}
+
+##### Theme color
+
+Note that theme colored icons require you to manually add the `.ht-icon-theme` class to the input's `<label>`.
+
+{% example html %}
+<div class="example-body">
+  	<label class="ht-icon ht-icon-like ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-matrix ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-list ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-day-13 ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-month-E ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-add-bg ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-dropdown ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-folder ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-options ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-agendaday ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-agendaweek ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-agendamonth ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-agendaweek ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-left-arrow ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-right-arrow ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-menu-controller ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-add-task ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-invite-people ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-place ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-inbox ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-todo ht-icon-theme"></label>
 </div>
 {% endexample %}
 

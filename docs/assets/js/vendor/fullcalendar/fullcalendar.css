@@ -508,7 +508,7 @@ temporary rendered events).
 	font-size: .85em;
 	line-height: 20px;
 	border-radius: 3px;
-	border: 1px solid #3a87ad; /* default BORDER color */
+	/*border: 1px solid #3a87ad;*/ /* default BORDER color */
 	background-color: #3a87ad; /* default BACKGROUND color */
 	font-weight: normal; /* undo jqui's ui-widget-header bold */
 }
@@ -685,7 +685,7 @@ be a descendant of the grid when it is being dragged.
 */
 
 .fc-day-grid-event {
-	margin: 1px 2px 0; /* spacing between events and edges */
+	margin: 2px 2px 0; /* spacing between events and edges */
 	padding: 0 6px;
 }
 

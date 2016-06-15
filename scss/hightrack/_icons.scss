@@ -10,14 +10,22 @@
 		&.ht-icon-on{
 			background: $like-red-icon no-repeat;
 		}
+		&.ht-icon-theme{
+			background: $like-theme-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-matrix{
 		background: $matrix-white-icon no-repeat;
 		width: 18px;
 		height: 16px;
+
 		&.ht-icon-on{
 			background: $matrix-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $matrix-theme-icon no-repeat;
 		}
 	}
 
@@ -25,8 +33,13 @@
 		background: $list-white-icon no-repeat;
 		width: 18px;
 		height: 16px;
+
 		&.ht-icon-on{
 			background: $list-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $list-theme-icon no-repeat;
 		}
 	}
 
@@ -37,6 +50,9 @@
 		&.ht-icon-on{
 			background: $add-on-icon no-repeat;
 		}
+		&.ht-icon-theme{
+			background: $add-theme-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-dropdown{
@@ -45,6 +61,9 @@
 		height: 10px;
 		&.ht-icon-on{
 			background: $dropdown-on-icon no-repeat;
+		}
+		&.ht-icon-theme{
+			background: $dropdown-theme-icon no-repeat;
 		}
 	}
 
@@ -160,6 +179,9 @@
 		&.ht-icon-on{
 			background: $folder-on-icon no-repeat;
 		}
+		&.ht-icon-theme{
+			background: $folder-theme-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-options{
@@ -169,6 +191,9 @@
 
 		&.ht-icon-on{
 			background: $options-on-icon no-repeat;
+		}
+		&.ht-icon-theme{
+			background: $options-theme-icon no-repeat;
 		}
 	}
 
@@ -180,6 +205,9 @@
 		&.ht-icon-on{
 			background: $agendamonth-on-icon no-repeat;
 		}
+		&.ht-icon-theme{
+			background: $agendamonth-theme-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-agendaweek{
@@ -189,6 +217,9 @@
 
 		&.ht-icon-on{
 			background: $agendaweek-on-icon no-repeat;
+		}
+		&.ht-icon-theme{
+			background: $agendaweek-theme-icon no-repeat;
 		}
 	}
 
@@ -200,6 +231,9 @@
 		&.ht-icon-on{
 			background: $agendaday-on-icon no-repeat;
 		}
+		&.ht-icon-theme{
+			background: $agendaday-theme-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-left-arrow{
@@ -209,6 +243,9 @@
 
 		&.ht-icon-on{
 			background: $left-arrow-on-icon no-repeat;
+		}
+		&.ht-icon-theme{
+			background: $left-arrow-theme-icon no-repeat;
 		}
 	}
 
@@ -220,15 +257,21 @@
 		&.ht-icon-on{
 			background: $right-arrow-on-icon no-repeat;
 		}
+		&.ht-icon-theme{
+			background: $right-arrow-theme-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-menu-controller{
-		width: 15px;
-		height: 32px;
+		width: 13px;
+		height: 30px;
 		background: $menu-controller-white-icon;
 
 		&.ht-icon-on{
 			background: $menu-controller-on-icon no-repeat;
+		}
+		&.ht-icon-theme{
+			background: $menu-controller-theme-icon no-repeat;
 		}
 	}
 
@@ -240,6 +283,9 @@
 		&.ht-icon-on{
 			background: $add-task-on-icon no-repeat;
 		}
+		&.ht-icon-theme{
+			background: $add-task-theme-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-search{
@@ -249,6 +295,9 @@
 
 		&.ht-icon-on{
 			background: $search-on-icon no-repeat;
+		}
+		&.ht-icon-theme{
+			background: $search-theme-icon no-repeat;
 		}
 	}
 
@@ -260,6 +309,9 @@
 		&.ht-icon-on{
 			background: $invite-people-on-icon no-repeat;
 		}
+		&.ht-icon-theme{
+			background: $invite-people-theme-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-place{
@@ -269,6 +321,36 @@
 
 		&.ht-icon-on{
 			background: $place-on-icon no-repeat;
+		}
+		&.ht-icon-theme{
+			background: $place-theme-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-inbox{
+		width: 16px;
+		height: 16px;
+		background: $inbox-white-icon;
+
+		&.ht-icon-on{
+			background: $inbox-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $inbox-theme-icon no-repeat;
+		}
+	}
+	&.ht-icon-todo{
+		width: 22px;
+		height: 22px;
+		background: $todo-white-icon;
+
+		&.ht-icon-on{
+			background: $todo-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $todo-theme-icon no-repeat;
 		}
 	}
 }

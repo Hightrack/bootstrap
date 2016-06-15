@@ -4868,6 +4868,10 @@ Grid.mixin({
 			classes.push('fc-selected');
 		}
 
+		if (event.allDay){
+			classes.push('ht-allday-event');
+		}
+
 		return classes;
 	},
 
@@ -6104,20 +6108,23 @@ DayGrid.mixin({
 		var timeText;
 		var titleHtml;
 
+// ENRI
 		classes.unshift('fc-day-grid-event', 'fc-h-event');
 
 		// Only display a timed events time if it is the starting segment
+		titleHtmlWithStyle = '';
 		if (seg.isStart) {
 			timeText = this.getEventTimeText(event);
 			if (timeText) {
 				timeHtml = '<span class="fc-time">' + htmlEscape(timeText) + '</span>';
+				titleHtmlWithStyle = 'style="width: 69%"';
 			}
 		}
 
 		titleHtml =
-			'<span class="fc-title">' +
+			'<label class="fc-title" '+ titleHtmlWithStyle +'>' +
 				(htmlEscape(event.title || '') || '&nbsp;') + // we always want one line of height
-			'</span>';
+			'</label>';
 		
 		return '<a class="' + classes.join(' ') + '"' +
 				(event.url ?
@@ -6129,8 +6136,9 @@ DayGrid.mixin({
 					''
 					) +
 			'>' +
+				'<div class="ht-event-indicator"></div>'+
 				'<div class="fc-content">' +
-					(this.isRTL ?
+					(!this.isRTL ?
 						titleHtml + ' ' + timeHtml : // put a natural space in between
 						timeHtml + ' ' + titleHtml   //
 						) +
