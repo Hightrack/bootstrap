@@ -2,22 +2,22 @@ $(function() {
 	$('.calendar').fullCalendar({
 		customButtons: {
 	        customPrev: {
-	            customIcon: 'ht-icon-left-arrow ht-icon-on',
-	            classes: ['btn-link'],
+	            customIcon: 'ht-icon ht-icon-left-arrow ht-icon-on',
+	            classes: ['btn-link-gray'],
 	            click: function() {
 				    $('.calendar').fullCalendar('prev');
 				}
 	        },
 	        customNext: {
-	            customIcon: 'ht-icon-right-arrow ht-icon-on',
-	            classes: ['btn-link'],
+	            customIcon: 'ht-icon ht-icon-right-arrow ht-icon-on',
+	            classes: ['btn-link-gray'],
 	            click: function() {
 				    $('.calendar').fullCalendar('next');
 				}
 	        },
 	        today: {
 	        	text: 'today',
-	            classes: ['btn-link'],
+	            classes: ['btn-link-gray'],
 	            click: function() {
 				    $('.calendar').fullCalendar('today');
 				}
@@ -51,23 +51,22 @@ $(function() {
 		},
 		nowIndicator: true,
 		firstDay: 1,
-		defaultDate: '2016-05-12',
 		editable: true,
 		eventLimit: true, // allow "more" link when too many events
 		events: [
 			{
 				title: 'All Day Event',
-				start: '2016-05-01'
+				start: '2016-06-14'
 			},
 			{
 				title: 'Long Event',
 				start: '2016-05-07',
-				end: '2016-05-10'
+				end: '2016-06-13'
 			},
 			{
 				id: 999,
 				title: 'Repeating Event',
-				start: '2016-05-09T16:00:00',
+				start: '2016-06-14T16:00:00',
 				eventColor: '#12f253'
 			},
 			{
@@ -77,7 +76,7 @@ $(function() {
 			},
 			{
 				title: 'Conference',
-				start: '2016-05-11',
+				start: '2016-06-16',
 				end: '2016-05-13',
 				eventColor: '#378006'
 			},
