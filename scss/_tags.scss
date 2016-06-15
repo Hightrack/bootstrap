@@ -43,8 +43,7 @@ a.tag {
 // Make them extra rounded with a modifier to replace v3's badges.
 
 .tag-pill {
-  padding-right: $tag-pill-padding-x;
-  padding-left: $tag-pill-padding-x;
+  padding: $tag-pill-padding-x;
   @include border-radius($tag-pill-border-radius);
 }
 
