@@ -10,3 +10,54 @@
 	font-size: 0.7333rem;
 	line-height: 24px;
 }
+
+.fc-title {
+	font-size: 0.7333rem;
+}
+
+.fc-start {
+	.ht-event-indicator{
+		width: 4px;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0px;
+	    background-color: #1b5480;
+	    border-radius: 3px;
+	}
+}
+
+.fc-not-start {
+	.fc-content {
+		padding-left: 5px;
+	}
+}
+
+.fc-v-event {
+
+	padding-left: 9px;
+
+	.fc-time{
+		font-weight: 700;
+	}
+}
+
+.fc-day-grid-event{
+
+	.fc-time{
+		position: absolute;
+	    right: 0px;
+	    font-size: 0.733rem;
+	    line-height: 21px;
+	}
+
+	.fc-title {
+		overflow: hidden;
+	    margin-bottom: -4px;
+	    margin-top: 1px;
+	}
+
+	&:not(.ht-allday-event){
+		background-color: transparent;
+	}
+}
