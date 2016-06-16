@@ -76,8 +76,7 @@ module.exports = function (grunt) {
           'js/dist/scrollspy.js' : 'js/src/scrollspy.js',
           'js/dist/tab.js'       : 'js/src/tab.js',
           'js/dist/tooltip.js'   : 'js/src/tooltip.js',
-          'js/dist/popover.js'   : 'js/src/popover.js',
-          'js/dist/hightrack.js' : 'js/src/hightrack/hightrack.js'
+          'js/dist/popover.js'   : 'js/src/popover.js'
         }
       },
       dist: {
@@ -103,8 +102,7 @@ module.exports = function (grunt) {
           'dist/js/umd/scrollspy.js' : 'js/src/scrollspy.js',
           'dist/js/umd/tab.js'       : 'js/src/tab.js',
           'dist/js/umd/tooltip.js'   : 'js/src/tooltip.js',
-          'dist/js/umd/popover.js'   : 'js/src/popover.js',
-          'dist/js/umd/hightrack.js' : 'js/src/hightrack/hightrack.js'
+          'dist/js/umd/popover.js'   : 'js/src/popover.js'
         }
       }
     },
@@ -141,10 +139,22 @@ module.exports = function (grunt) {
           'js/src/scrollspy.js',
           'js/src/tab.js',
           'js/src/tooltip.js',
-          'js/src/popover.js',
-          'js/src/hightrack/hightrack.js'
+          'js/src/popover.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
+      },
+      hightrack: {
+        src: [
+          'js/vendor/hightrack/calendar.js',
+          'js/vendor/hightrack/common.js'
+        ],
+        dest: 'dist/js/vendor/hightrack.js'
+      },
+      fullcalendar: {
+        src: [
+          'js/vendor/fullcalendar/fullcalendar.js'
+        ],
+        dest: 'dist/js/vendor/fullcalendar/fullcalendar.js'
       }
     },
 
@@ -163,6 +173,14 @@ module.exports = function (grunt) {
       docsJs: {
         src: configBridge.paths.docsJs,
         dest: 'docs/assets/js/docs.min.js'
+      },
+      hightrack: {
+        src: '<%= concat.hightrack.dest %>',
+        dest: 'dist/js/vendor/hightrack.min.js'
+      },
+      fullcalendar: {
+        src: '<%= concat.fullcalendar.dest %>',
+        dest: 'dist/js/vendor/fullcalendar/fullcalendar.min.js'
       }
     },
 
@@ -248,6 +266,15 @@ module.exports = function (grunt) {
     },
 
     copy: {
+      fullcalendarLang: {
+        expand: true,
+        cwd: 'js/vendor/fullcalendar',
+        src: [
+          'lang/*',
+          'lang-all.js'
+        ],
+        dest: 'dist/js/vendor/fullcalendar'
+      },
       docs: {
         expand: true,
         cwd: 'dist/',
@@ -463,5 +490,9 @@ module.exports = function (grunt) {
   // Publish to GitHub
   grunt.registerTask('publish', ['buildcontrol:pages']);
 
+  // Hightrack
   grunt.registerTask('copywebapp', ['copy:webapp']);
+  grunt.registerTask('uglify-vendors', ['uglify:hightrack', 'uglify:fullcalendar']);
+  grunt.registerTask('dist-hightrack', ['concat', 'sass:hightrack', 'uglify-vendors', 'copywebapp']);
+  grunt.registerTask('dist-full', ['dist-hightrack', 'copy'])
 };

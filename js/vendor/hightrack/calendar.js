@@ -1,5 +1,6 @@
 $(function() {
 	$('.calendar').fullCalendar({
+		lang: 'es',
 		customButtons: {
 	        customPrev: {
 	            customIcon: 'ht-icon ht-icon-left-arrow ht-icon-on',
@@ -70,9 +71,25 @@ $(function() {
 				eventColor: '#12f253'
 			},
 			{
-				id: 999,
-				title: 'Repeating Event',
-				start: '2016-05-16T16:00:00'
+				id: 9990,
+				title: 'Trip',
+				start: '2016-06-14T19:00:00',
+				eventColor: '#12f253'
+			},
+			{
+				id: 9991,
+				title: 'School',
+				start: '2016-06-14T16:40:00',
+				eventColor: '#12f253'
+			},
+			{
+				id: 9992,
+				title: 'Sport',
+				start: '2016-05-16T16:10:00'
+			},
+			{
+				title: 'Lunch',
+				start: '2016-06-16T12:00:00'
 			},
 			{
 				title: 'Conference',
