@@ -275,6 +275,14 @@ module.exports = function (grunt) {
         ],
         dest: 'dist/js/vendor/fullcalendar'
       },
+      fonts:{
+        expand: true,
+        cwd: 'fonts',
+        src: [
+          '**/*'
+        ],
+        dest: 'dist/fonts/'
+      },
       docs: {
         expand: true,
         cwd: 'dist/',
