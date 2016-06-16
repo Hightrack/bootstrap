@@ -6785,6 +6785,9 @@ var TimeGrid = FC.TimeGrid = Grid.extend(DayTableMixin, {
 			axisHtml =
 				'<td class="fc-axis fc-time ' + view.widgetContentClass + '" ' + view.axisStyleAttr() + '>' +
 					(isLabeled ?
+						'<div>'+
+							htmlEscape(slotDate.format(this.labelFormat)) +
+						'</div>'+
 						'<span>' + // for matchCellWidths
 							htmlEscape(slotDate.format(this.labelFormat)) +
 						'</span>' :
@@ -7162,7 +7165,7 @@ var TimeGrid = FC.TimeGrid = Grid.extend(DayTableMixin, {
 
 		// render an arrow over the axis
 		if (segs.length > 0) { // is the current time in view?
-			nodes.push($('<div class="fc-now-indicator fc-now-indicator-arrow"></div>')
+			nodes.push($('<div class="fc-now-indicator fc-now-indicator-arrow">'+htmlEscape(date.format(this.labelFormat))+'</div>')
 				.css('top', top)
 				.appendTo(this.el.find('.fc-content-skeleton'))[0]);
 		}
@@ -12300,7 +12303,7 @@ var AgendaView = FC.AgendaView = View.extend({
 	// The day-grid and time-grid components will render inside containers defined by this HTML.
 	renderSkeletonHtml: function() {
 		return '' +
-			'<table>' +
+			'<table class="ht-table-agenda">' +
 				'<thead class="fc-head">' +
 					'<tr>' +
 						'<td class="fc-head-container ' + this.widgetHeaderClass + '"></td>' +

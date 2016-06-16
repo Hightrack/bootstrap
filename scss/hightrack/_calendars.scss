@@ -10,6 +10,10 @@ $event-title-size: 0.7333rem;
 	}
 }
 
+.ht-table-agenda{
+	border-style: hidden;
+}
+
 .fc-today .ht-today-calendar-background{
 	width: 100%;
     height: 100%;
@@ -150,7 +154,7 @@ body .fc { /* extra precedence to overcome jqui */
 }
 
 .fc-unthemed .fc-today {
-	background-color: #f5f7f9;
+	background-color: $brand-color-background;
 	border: 1px solid #58abee;
 }
 
@@ -875,7 +879,8 @@ a.fc-more:hover {
 
 .fc-now-indicator {
 	position: absolute;
-	border: 0 solid red;
+	border: 1px solid $brand-primary;
+	background-color: $brand-primary;
 }
 
 
@@ -1070,9 +1075,14 @@ a.fc-more:hover {
 	padding: 0 4px;
 	white-space: nowrap;
 
-	span {
+	div {
 		color: #989798;
 		font-size: 0.9333rem;
+		margin-top: -20px;
+		text-align: right;
+	}
+	span {
+		display: none;
 	}
 
 	border: 0px;
@@ -1350,7 +1360,9 @@ be a descendant of the grid when it is being dragged.
 --------------------------------------------------------------------------------------------------*/
 
 .fc-time-grid .fc-now-indicator-line {
-	border-top-width: 1px;
+	/*border-top-width: 1px;*/
+	border: 1px solid white;
+	height: 1px;
 	left: 0;
 	right: 0;
 }
@@ -1358,21 +1370,26 @@ be a descendant of the grid when it is being dragged.
 /* arrow on axis */
 
 .fc-time-grid .fc-now-indicator-arrow {
-	margin-top: -5px; /* vertically center on top coordinate */
+	margin-top: -10px; /* vertically center on top coordinate */
+	width: 40px;
+	height: 20px;
+	background-color: $brand-color-background !important;
+	border-radius: 3px;
+	font-size: 0.6667rem;
+	color: $brand-primary;
+    text-align: center;
+    padding-top: 2px;
+    margin-left: 4px;
 }
 
 .fc-ltr .fc-time-grid .fc-now-indicator-arrow {
 	left: 0;
 	/* triangle pointing right... */
-	border-width: 5px 0 5px 6px;
-	border-top-color: transparent;
-	border-bottom-color: transparent;
+	border-width: 1px 1px 1px 1px;
 }
 
 .fc-rtl .fc-time-grid .fc-now-indicator-arrow {
 	right: 0;
 	/* triangle pointing left... */
-	border-width: 5px 6px 5px 0;
-	border-top-color: transparent;
-	border-bottom-color: transparent;
+	border-width: 1px 1px 1px 1px;
 }
