@@ -1,6 +1,8 @@
 $(function() {
 	$('.calendar').fullCalendar({
 		lang: 'es',
+		slotLabelFormat: 'H:mm',
+		timeFormat: 'H:mm',
 		customButtons: {
 	        customPrev: {
 	            customIcon: 'ht-icon ht-icon-left-arrow ht-icon-on',
@@ -129,7 +131,6 @@ $(function() {
 				start: '2016-05-28'
 			}
 		],
-		timeFormat: 'H:mm',
 		themeType: 'bootstrap',
 		cssClasses: {
 			buttonGroup: 'btn-group',

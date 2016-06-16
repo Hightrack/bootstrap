@@ -1,4 +1,14 @@
 $event-title-size: 0.7333rem;
+.fc {
+	.ht-main-table-head {
+	    border-style: hidden;
+	}
+}
+.ht-head-table{
+	td, th {
+   		border-style: none !important;
+	}
+}
 
 .fc-today .ht-today-calendar-background{
 	width: 100%;
@@ -7,9 +17,9 @@ $event-title-size: 0.7333rem;
 }
 
 .fc-day-header.fc-widget-header{
-	background-color: #ddd;
+	background-color: #eee;
 	font-weight: 300;
-	font-size: 0.7333rem;
+	font-size: $event-title-size;
 	line-height: 24px;
 	text-transform: UPPERCASE;
 }
@@ -23,7 +33,7 @@ $event-title-size: 0.7333rem;
     left: 2px;
     top: 2px;
     font-size: $event-title-size;
-    
+
     .ht-more-container {
     	 padding-top: 4px !important;
     	 padding-left: 4px !important;
@@ -491,6 +501,10 @@ hr.fc-divider {
 	/* no visible border by default. but make available if need be (scrollbar width compensation) */
 	border-style: solid;
 	border-width: 0;
+}
+
+.fc-row{
+	border-bottom: 1px solid #ddd;
 }
 
 .fc-row table {
@@ -1055,6 +1069,13 @@ a.fc-more:hover {
 	vertical-align: middle;
 	padding: 0 4px;
 	white-space: nowrap;
+
+	span {
+		color: #989798;
+		font-size: 0.9333rem;
+	}
+
+	border: 0px;
 }
 
 .fc-ltr .fc-axis {

@@ -5437,7 +5437,7 @@ var DayTableMixin = FC.DayTableMixin = {
 
 		return '' +
 			'<div class="fc-row ' + view.widgetHeaderClass + '">' +
-				'<table>' +
+				'<table class="ht-head-table">' +
 					'<thead>' +
 						this.renderHeadTrHtml() +
 					'</thead>' +
@@ -9975,9 +9975,7 @@ function Calendar_constructor(element, overrides) {
 	
 	function changeLang(langCode) {
 		console.log("Change lang to: " + langCode);
-		console.log(options);
 		getMomentLocaleData(langCode);
-		console.log(options);
 		renderView();
 	}
 
@@ -10441,7 +10439,6 @@ function Header(calendar, options) {
 							if (typeof defaultText === 'undefined'){
 								defaultText = customButtonProps.text;
 							}
-							console.log("custom");
 						}
 						else if ((viewSpec = calendar.getViewSpec(buttonName))) {
 							buttonClick = function() {
@@ -10491,8 +10488,6 @@ function Header(calendar, options) {
 							else {
 								innerHtml = htmlEscape(defaultText);
 							}
-
-							console.log(innerHtml);
 
 							classes = [
 								'fc-'+buttonName+'-button',
@@ -10587,7 +10582,6 @@ function Header(calendar, options) {
 	
 	
 	function activateButton(buttonName) {
-		console.log("activateButton: " + buttonName)
 		el.find('.' + 'fc-' + buttonName + '-button')
 			.addClass(calendar.getCSSClass()['buttonStateActive']);
 	}
@@ -11826,7 +11820,7 @@ var BasicView = FC.BasicView = View.extend({
 	// The day-grid component will render inside of a container defined by this HTML.
 	renderSkeletonHtml: function() {
 		return '' +
-			'<table>' +
+			'<table class="ht-main-table-head">' +
 				'<thead class="fc-head">' +
 					'<tr>' +
 						'<td class="fc-head-container ' + this.widgetHeaderClass + '"></td>' +
