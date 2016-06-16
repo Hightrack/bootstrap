@@ -7161,6 +7161,9 @@ var TimeGrid = FC.TimeGrid = Grid.extend(DayTableMixin, {
 			nodes.push($('<div class="fc-now-indicator fc-now-indicator-line"></div>')
 				.css('top', top)
 				.appendTo(this.colContainerEls.eq(segs[i].col))[0]);
+			nodes.push($('<div class="fc-now-indicator fc-now-indicator-line-dot"></div>')
+				.css('top', top)
+				.appendTo(this.colContainerEls.eq(segs[i].col))[0]);
 		}
 
 		// render an arrow over the axis

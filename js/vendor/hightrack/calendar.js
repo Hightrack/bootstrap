@@ -131,6 +131,7 @@ $(function() {
 				start: '2016-05-28'
 			}
 		],
+		eventColors:'#B8E986',
 		themeType: 'bootstrap',
 		cssClasses: {
 			buttonGroup: 'btn-group',

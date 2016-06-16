@@ -24,7 +24,8 @@ $event-title-size: 0.7333rem;
 	background-color: #eee;
 	font-weight: 300;
 	font-size: $event-title-size;
-	line-height: 24px;
+	/*line-height: 24px;*/
+	padding: 5px;
 	text-transform: UPPERCASE;
 }
 
@@ -1359,27 +1360,39 @@ be a descendant of the grid when it is being dragged.
 /* Now Indicator
 --------------------------------------------------------------------------------------------------*/
 
-.fc-time-grid .fc-now-indicator-line {
-	/*border-top-width: 1px;*/
-	border: 1px solid white;
-	height: 1px;
-	left: 0;
-	right: 0;
-}
+.fc-time-grid {
 
-/* arrow on axis */
+	.fc-now-indicator-line {
+		/*border-top-width: 1px;*/
+		border: 1px solid white;
+		height: 1px;
+		left: 0;
+		right: 0;
+	}
 
-.fc-time-grid .fc-now-indicator-arrow {
-	margin-top: -10px; /* vertically center on top coordinate */
-	width: 40px;
-	height: 20px;
-	background-color: $brand-color-background !important;
-	border-radius: 3px;
-	font-size: 0.6667rem;
-	color: $brand-primary;
-    text-align: center;
-    padding-top: 2px;
-    margin-left: 4px;
+	.fc-now-indicator-line-dot{
+		width: 5px;
+	    height: 5px;
+	    border-radius: 5px;
+	    border: 2px solid white;
+	    left: -5px;
+	    z-index: 5;
+	    margin-top: -3px;
+	}
+
+	/* arrow on axis */
+	.fc-now-indicator-arrow {
+		margin-top: -10px; /* vertically center on top coordinate */
+		width: 38px;
+		height: 16px;
+		background-color: $brand-color-background !important;
+		border-radius: 3px;
+		font-size: 0.6667rem;
+		color: $brand-primary;
+	    text-align: center;
+	    padding-top: 2px;
+	    margin-left: 4px;
+	}
 }
 
 .fc-ltr .fc-time-grid .fc-now-indicator-arrow {
