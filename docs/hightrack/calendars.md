@@ -11,14 +11,26 @@ Group a series of buttons together on a single line with the button group. Add o
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Calendar
+## Full Calendar
 
 Use fullcalendar.
 
 {% highlight js %}
-    $('#calendar').fullCalendar({
+    $('.calendar').fullCalendar({
         // put your options and callbacks here
     });
 {% endhighlight %}
 
 <div class='calendar'></div>
+
+## Small Calendar
+
+{% highlight js %}
+    $('.calendar-sm').fullCalendar({
+        // put your options and callbacks here
+    });
+{% endhighlight %}
+
+<div style="width: 269px; height: 251px;">
+	<div class='calendar-sm'></div>
+</div>

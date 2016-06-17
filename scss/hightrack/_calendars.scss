@@ -1,4 +1,29 @@
 $event-title-size: 0.7333rem;
+.calendar-sm{
+	h2 {
+		font-size: 0.8rem !important;
+		line-height: 3px;
+	}
+
+	.fc-day-number{
+		font-size: 0.9333rem;
+		text-align: center !important;
+		padding-top: 9px !important;
+	}
+
+	.fc-basic-view .fc-body .fc-row {
+		min-height: 2.667rem; 
+	}
+
+	table {
+	    border-style: hidden !important;
+
+	    tbody {
+			border-color: transparent !important;
+		}
+	}
+}
+
 .fc {
 	.ht-main-table-head {
 	    border-style: hidden;
@@ -156,7 +181,7 @@ body .fc { /* extra precedence to overcome jqui */
 
 .fc-unthemed .fc-today {
 	background-color: $brand-color-background;
-	border: 1px solid #58abee;
+	border: 4px solid #58abee;
 }
 
 .fc-highlight { /* when user is selecting cells */

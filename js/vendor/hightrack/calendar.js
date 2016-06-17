@@ -145,4 +145,50 @@ $(function() {
 			buttonCornerRight: ''
 		}
 	});
+
+	$('.calendar-sm').fullCalendar({
+		lang: 'es',
+		slotLabelFormat: 'H:mm',
+		timeFormat: 'H:mm',
+		customButtons: {
+	        customPrev: {
+	            customIcon: 'ht-icon ht-icon-left-arrow ht-icon-on',
+	            classes: ['btn-link-gray'],
+	            click: function() {
+				    $('.calendar-sm').fullCalendar('prev');
+				}
+	        },
+	        customNext: {
+	            customIcon: 'ht-icon ht-icon-right-arrow ht-icon-on',
+	            classes: ['btn-link-gray'],
+	            click: function() {
+				    $('.calendar-sm').fullCalendar('next');
+				}
+	        }
+	    },
+		header: {
+			left: 'customPrev',
+			center: 'title',
+			right: 'customNext'
+		},
+		nowIndicator: true,
+		firstDay: 1,
+		eventLimit: true, 
+		events: [
+
+		],
+		eventColors:'#B8E986',
+		themeType: 'bootstrap',
+		cssClasses: {
+			buttonGroup: 'btn-group',
+			button: 'btn btn-sm',
+			buttonStateDefault: '',
+			buttonStateActive: 'active',
+			buttonStateDisabled: 'disabled',
+			buttonStateHover: '',
+			buttonStateDown: '',
+			buttonCornerLeft: '',
+			buttonCornerRight: ''
+		}
+	});
 });
