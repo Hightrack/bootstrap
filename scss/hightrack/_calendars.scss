@@ -39,10 +39,56 @@ $event-title-size: 0.7333rem;
 	border-style: hidden;
 }
 
-.fc-today .ht-today-calendar-background{
-	width: 100%;
-    height: 100%;
-    border-bottom: 1px solid #58abee;
+.calendar-sm {
+	& .fc-today 
+	{
+		& .ht-today-calendar-background{
+		    width: 101%;
+		    height: 104%;
+		    margin-top: 0px;
+		    margin-left: -1px;
+		    border-top: 1px solid #58abee;
+		    border-left: 1px solid #58abee;
+		    position: relative;
+		}
+		& .ht-today-calendar-background-bottom-right{
+		    width: 101%;
+		    height: 104%;
+			margin-bottom: 4px;
+		    margin-right: -1px;
+		    border-bottom: 1px solid #58abee;
+		    border-right: 1px solid #58abee;
+		    position: absolute;
+		    bottom: 0;
+		    right: 0;
+		}
+	}
+}
+
+.calendar {
+	& .fc-today 
+	{
+		& .ht-today-calendar-background{
+		    width: 101%;
+		    height: 104%;
+		    margin-top: -1px;
+		    margin-left: -1px;
+		    border-top: 1px solid #58abee;
+		    border-left: 1px solid #58abee;
+		    position: relative;
+		}
+		& .ht-today-calendar-background-bottom-right{
+		    width: 100%;
+		    height: 104%;
+		    margin-bottom: 0px;
+		    margin-right: -1px;
+		    border-bottom: 1px solid #58abee;
+		    border-right: 1px solid #58abee;
+		    position: absolute;
+		    bottom: 0;
+		    right: 0;
+		}
+	}
 }
 
 .fc-day-header.fc-widget-header{
@@ -181,7 +227,7 @@ body .fc { /* extra precedence to overcome jqui */
 
 .fc-unthemed .fc-today {
 	background-color: $brand-color-background;
-	border: 4px solid #58abee;
+	/*border: 1px solid #58abee;*/
 }
 
 .fc-highlight { /* when user is selecting cells */
@@ -520,7 +566,7 @@ hr.fc-divider {
 }
 
 .fc td.fc-today {
-	border-style: double; /* overcome neighboring borders */
+	border-style: solid; /* overcome neighboring borders */
 }
 
 
@@ -928,7 +974,8 @@ a.fc-more:hover {
 
 .fc-toolbar {
 	text-align: center;
-	margin-bottom: 1em;
+	/*margin-bottom: 1em;*/
+	padding: 12px;
 }
 
 .fc-toolbar .fc-left {
@@ -1381,6 +1428,9 @@ be a descendant of the grid when it is being dragged.
 	bottom: -5px;
 }
 
+.fc-state-highlight{
+	position:relative;
+}
 
 /* Now Indicator
 --------------------------------------------------------------------------------------------------*/

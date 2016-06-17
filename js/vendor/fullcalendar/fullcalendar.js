@@ -5532,9 +5532,6 @@ var DayTableMixin = FC.DayTableMixin = {
 		var view = this.view;
 		var classes = this.getDayClasses(date);
 
-		console.log(date);
-		console.log(classes);
-
 		classes.unshift('fc-day', view.widgetContentClass);
 
 		return '<td class="' + classes.join(' ') + '"' +
@@ -5542,7 +5539,8 @@ var DayTableMixin = FC.DayTableMixin = {
 			(otherAttrs ?
 				' ' + otherAttrs :
 				'') +
-			'><div class="ht-today-calendar-background"><br /></div></td>';
+			'><div class="ht-today-calendar-background"><br /></div>'+
+			'<div class="ht-today-calendar-background-bottom-right"><br /></div></td>';
 	},
 
 
