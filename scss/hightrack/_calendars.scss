@@ -43,12 +43,11 @@ $event-title-size: 0.7333rem;
 	& .fc-today 
 	{
 		& .ht-today-calendar-background{
-		    width: 101%;
-		    height: 104%;
+		    width: 100%;
+		    height: 101%;
 		    margin-top: 0px;
 		    margin-left: -1px;
-		    border-top: 1px solid #58abee;
-		    border-left: 1px solid #58abee;
+		    border: 1px solid #58abee;
 		    position: relative;
 		}
 		& .ht-today-calendar-background-bottom-right{
@@ -63,18 +62,29 @@ $event-title-size: 0.7333rem;
 		    right: 0;
 		}
 	}
+
+	.ht-table-body-border tbody tr td{
+		border-width: 0px;
+	}
+
+	.fc-day-header.fc-widget-header{
+		background-color: none;
+	}
+
+	.ht-main-table-head tbody{
+		border-style: hidden;
+	}
 }
 
 .calendar {
 	& .fc-today 
 	{
 		& .ht-today-calendar-background{
-		    width: 101%;
-		    height: 104%;
+		    width: 100%;
+		    height: 101%;
 		    margin-top: -1px;
 		    margin-left: -1px;
-		    border-top: 1px solid #58abee;
-		    border-left: 1px solid #58abee;
+		    border: 1px solid #58abee;
 		    position: relative;
 		}
 		& .ht-today-calendar-background-bottom-right{
@@ -89,10 +99,14 @@ $event-title-size: 0.7333rem;
 		    right: 0;
 		}
 	}
+
+	.fc-day-header.fc-widget-header{
+		background-color: #eee;
+	}
 }
 
 .fc-day-header.fc-widget-header{
-	background-color: #eee;
+	background-color: none;
 	font-weight: 300;
 	font-size: $event-title-size;
 	/*line-height: 24px;*/
@@ -1114,12 +1128,11 @@ a.fc-more:hover {
 	text-align: right;
 }
 
+.fc-day.fc-other-month {
+	background-color: #f5f5f5;
+}
 .fc-day-number.fc-other-month {
-	opacity: 0.3;
-	filter: alpha(opacity=30); /* for IE */
-	/* opacity with small font can sometimes look too faded
-	   might want to set the 'color' property instead
-	   making day-numbers bold also fixes the problem */
+	color: #c0c0c0;
 }
 
 /* AgendaView all-day area

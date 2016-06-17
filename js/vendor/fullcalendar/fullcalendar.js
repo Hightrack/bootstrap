@@ -5539,8 +5539,7 @@ var DayTableMixin = FC.DayTableMixin = {
 			(otherAttrs ?
 				' ' + otherAttrs :
 				'') +
-			'><div class="ht-today-calendar-background"><br /></div>'+
-			'<div class="ht-today-calendar-background-bottom-right"><br /></div></td>';
+			'><div class="ht-today-calendar-background"><br /></div></td>';
 	},
 
 
@@ -5665,7 +5664,7 @@ var DayGrid = FC.DayGrid = Grid.extend(DayTableMixin, {
 		return '' +
 			'<div class="' + classes.join(' ') + '">' +
 				'<div class="fc-bg">' +
-					'<table>' +
+					'<table class="ht-table-body-border">' +
 						this.renderBgTrHtml(row) +
 					'</table>' +
 				'</div>' +
