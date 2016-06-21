@@ -1,0 +1,19 @@
+/*@function decToHex($dec) {
+    $hex: "0123456789abcdef";
+    $first: (($dec - $dec % 16)/16)+1;
+    $second: ($dec % 16)+1;
+    @return str-slice($hex, $first, $first) + str-slice($hex, $second, $second)
+}
+
+@for $r from 0 through 255 {
+	@for $g from 0 through 255 {
+		@for $b from 0 through 255 {
+			.ht-color-#{decToHex($r)}#{decToHex($g)}#{decToHex($b)} {
+				color: #{decToHex($r)}#{decToHex($g)}#{decToHex($b)};
+			}
+			.ht-color-#{decToHex($r)}#{decToHex($g)}#{decToHex($b)}-bg {
+				background-color: #{decToHex($r)}#{decToHex($g)}#{decToHex($b)};
+			}
+		}
+	}
+}*/

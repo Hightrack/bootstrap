@@ -1,0 +1,59 @@
+//
+// My comment
+//
+
+$ht-menu-row-line-height: 15px;
+$ht-menu-row-margin-top: 5px;
+
+.ht-menu {
+	& ul {
+
+		margin-left: -40px;
+		margin-bottom: 0px;
+
+		li{
+	    	list-style: none;
+	    	color: $hightrack-textcolor-medium;
+	    	font-size: .7333rem;
+
+	    	line-height: $ht-menu-row-line-height;
+    		margin-top: $ht-menu-row-margin-top;
+	    }
+	}
+
+}
+
+.ht-menu-element{
+	line-height: $ht-menu-row-line-height;
+	margin-top: $ht-menu-row-margin-top;
+
+	&.ht-header{
+		line-height: 40px;
+	}
+}
+
+.ht-category {
+	color: $hightrack-textcolor-medium;
+}
+
+.ht-folder {
+	& .ht-header{
+		color: $hightrack-textcolor-medium;
+	    font-size: .7333rem;
+	    font-weight: 800;
+	    line-height: 0px;
+	}
+
+	& ul li .ht-menu-item{
+		//padding-left: 35px !important;
+
+		+ .ht-options{
+			position: absolute;
+			right: 0px;
+		}
+	}
+
+	& ul li {
+		 padding-left: 20px;
+	}
+}

@@ -1,7 +1,12 @@
 # Ignore docs files
 _gh_pages
 _site
+
+# Ignore ruby files
 .ruby-version
+.bundle
+vendor/cache
+vendor/bundle
 
 # Numerous always-ignore extensions
 *.diff
@@ -33,9 +38,22 @@ Thumbs.db
 .komodotools
 *.komodoproject
 
+# grunt-html-validation
+validation-report.json
+validation-status.json
+
+# SCSS-Lint
+scss-lint-report.xml
+
+# grunt-contrib-sass cache
+.sass-cache
+
 # Jekyll metadata
 docs/.jekyll-metadata
 
 # Folders to ignore
 bower_components
 node_modules
+dist
+docs/dist
+

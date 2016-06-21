@@ -1,0 +1,112 @@
+.btn {
+  	//min-width: 120px;
+  	min-height: 36px;
+  
+  	&.btn-lg{
+  		min-height: 50px;
+  	}
+
+  	&.btn-sm{
+  		min-height: 30px;
+  	}
+
+  	&.btn-flat{
+		color: white;
+		font-size: 1.067rem;
+	}
+
+	&.small-text{
+    	font-size: .7333rem !important;
+	}
+}
+
+.btn-group {
+	.btn {
+		/*min-width: 40px;*/
+	}
+
+	&.ht-focusbar {
+
+		.btn{
+			border: 1px solid rgba(255,255,255,0.5) !important;
+			background-color: rgba(245,245,245,0.3) !important;
+			color: white;
+		}
+
+		.btn:active, .btn.active{
+			background-color: transparent !important;
+		}
+	}
+}
+
+.btn-rd {
+  width:40px;
+  height: 40px;
+  @include button($btn-line-height, $btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius-rd);
+}
+
+.btn-facebook {
+  @include button-variant($hightrack-textcolor-white, $btn-facebook-bg, $btn-facebook-border);
+}
+.btn-twitter {
+  @include button-variant($hightrack-textcolor-white, $btn-twitter-bg, $btn-twitter-border);
+}
+.btn-googleplus {
+  @include button-variant($hightrack-textcolor-white, $btn-googleplus-bg, $btn-googleplus-border);
+}
+.btn-linkedin {
+  @include button-variant($hightrack-textcolor-white, $btn-linkedin-bg, $btn-linkedin-border);
+}
+.btn-outline-facebook {
+  @include button-outline-variant($btn-facebook-bg);
+}
+.btn-outline-twitter {
+  @include button-outline-variant($btn-twitter-bg);
+}
+.btn-outline-googleplus {
+  @include button-outline-variant($btn-googleplus-bg);
+}
+.btn-outline-linkedin {
+  @include button-outline-variant($btn-linkedin-bg);
+}
+
+$border-color-complementary: #e2e2e2;
+$color-complementary: #f5f5f5;
+$font-color-complementary: #9d9d9d;
+.btn-complementary {
+  @include button-variant-transparent($font-color-complementary, $color-complementary, $border-color-complementary);
+}
+
+.btn-link-gray {
+  font-weight: normal;
+  color: $font-color-complementary;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &.active,
+  &:disabled {
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+  &,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  @include hover {
+    border-color: transparent;
+  }
+  @include hover-focus {
+    color: darken($font-color-complementary, 12%);
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+  &:disabled {
+    @include hover-focus {
+      color: $font-color-complementary;
+      text-decoration: none;
+    }
+  }
+}
+
