@@ -175,6 +175,21 @@ $(function() {
 		firstDay: 1,
 		eventLimit: true, 
 		events: [
+			{
+				title: 'Swimming',
+				start: '2016-06-14T10:30:00',
+				end: '2016-06-17T12:30:00'
+			},
+			{
+				title: 'Cooking',
+				start: '2016-06-17T14:30:00',
+				end: '2016-06-17T18:30:00'
+			},
+			{
+				title: 'Meeting',
+				start: '2016-06-17T10:30:00',
+				end: '2016-06-17T12:30:00'
+			},
 
 		],
 		eventColors:'#B8E986',
@@ -189,6 +204,7 @@ $(function() {
 			buttonStateDown: '',
 			buttonCornerLeft: '',
 			buttonCornerRight: ''
-		}
+		},
+		contentHeight: 'auto'
 	});
 });

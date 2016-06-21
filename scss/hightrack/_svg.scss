@@ -199,21 +199,21 @@ $nav-track-icon-active: url("data:image/svg+xml;charset=utf8,
 %3Csvg viewBox='0 0 25 25' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
     %3Cdefs%3E
         %3Cpath d='M0,2.99075223 C0,1.33900538 1.34545681,0 2.99653073,0 L9.59273999,0 C11.2535586,0 13.9371931,0 15.6081949,0 L22.0018776,0 C23.6576949,0 25,1.34410858 25,2.99075223 L25,22.0092478 C25,23.6609946 23.6558914,25 22.0092478,25 L2.99075223,25 C1.33900538,25 0,23.6558914 0,22.0092478 L0,2.99075223 Z' id='path-1'%3E%3C/path%3E
-        %3Cmask id='mask-2' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='25' height='25' fill='#3B3B3B'%3E
+        %3Cmask id='mask-2' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='25' height='25' fill='#fff'%3E
             %3Cuse xlink:href='#path-1'%3E%3C/use%3E
         %3C/mask%3E
         %3Cpolygon id='path-3' points='5.70874183 19.2609757 14.2529003 14.2536635 19.2616422 5.70896572 10.7174837 10.7179956'%3E%3C/polygon%3E
-        %3Cmask id='mask-4' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='13.5529003' height='13.55201' fill='#3B3B3B'%3E
+        %3Cmask id='mask-4' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='13.5529003' height='13.55201' fill='#fff'%3E
             %3Cuse xlink:href='#path-3'%3E%3C/use%3E
         %3C/mask%3E
         %3Cpolygon id='path-5' points='13.2904412 13.8794646 8.06584967 16.9041364 11.0904412 11.6798706'%3E%3C/polygon%3E
-        %3Cmask id='mask-6' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='5.2245915' height='5.22426575' fill='#3B3B3B'%3E
+        %3Cmask id='mask-6' maskContentUnits='userSpaceOnUse' maskUnits='objectBoundingBox' x='0' y='0' width='5.2245915' height='5.22426575' fill='#fff'%3E
             %3Cuse xlink:href='#path-5'%3E%3C/use%3E
         %3C/mask%3E
     %3C/defs%3E
     %3Cuse id='Rectangle-1001' stroke='#{$icon-color-active}' mask='url(#mask-2)' stroke-width='2' fill='none' xlink:href='#path-1'%3E%3C/use%3E
-    %3Cuse id='Path' stroke='#3B3B3B' mask='url(#mask-4)' stroke-width='2' fill='none' xlink:href='#path-3'%3E%3C/use%3E
-    %3Cuse id='Path' stroke='#3B3B3B' mask='url(#mask-6)' stroke-width='2' fill='#{$icon-color-active}' fill-rule='evenodd' xlink:href='#path-5'%3E%3C/use%3E
+    %3Cuse id='Path' stroke='#000' mask='url(#mask-4)' stroke-width='2' fill='none' xlink:href='#path-3'%3E%3C/use%3E
+    %3Cuse id='Path' stroke='#000' mask='url(#mask-6)' stroke-width='2' fill='#fff' fill-rule='evenodd' xlink:href='#path-5'%3E%3C/use%3E
 %3C/svg%3E");
 $nav-track-icon: url("data:image/svg+xml;charset=utf8,
 %3Csvg viewBox='0 0 25 25' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
@@ -283,14 +283,8 @@ $people-on-icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='327 345 44
 %3C/svg%3E");
 
 // SOCIAL ICONS
-$facebook-white-icon: url("data:image/svg+xml;charset=utf8,
-%3Csvg viewBox='24 13 8 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
-    %3Cpath id='FacebookIcon' stroke='none' fill='#{$icon-color-default}' fill-rule='evenodd' d='M25.5130361,15.9050224 L25.5130361,17.9702287 L24,17.9702287 L24,20.4955709 L25.5130361,20.4955709 L25.5130361,28 L28.6211336,28 L28.6211336,20.4957802 L30.7068112,20.4957802 C30.7068112,20.4957802 30.9021441,19.2848979 30.9968287,17.9609172 L28.6328863,17.9609172 L28.6328863,16.234239 C28.6328863,15.9761667 28.9717632,15.6290245 29.3066992,15.6290245 L31.0001069,15.6290245 L31.0001069,13 L28.6976485,13 C25.4362073,12.9998256 25.5130361,15.5276788 25.5130361,15.9050224 L25.5130361,15.9050224 Z' %3E%3C/path%3E
-%3C/svg%3E");
-$facebook-on-icon: url("data:image/svg+xml;charset=utf8,
-%3Csvg viewBox='24 13 8 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E
-    %3Cpath id='FacebookIcon' stroke='none' fill='#{$facebook-color}' fill-rule='evenodd' d='M25.5130361,15.9050224 L25.5130361,17.9702287 L24,17.9702287 L24,20.4955709 L25.5130361,20.4955709 L25.5130361,28 L28.6211336,28 L28.6211336,20.4957802 L30.7068112,20.4957802 C30.7068112,20.4957802 30.9021441,19.2848979 30.9968287,17.9609172 L28.6328863,17.9609172 L28.6328863,16.234239 C28.6328863,15.9761667 28.9717632,15.6290245 29.3066992,15.6290245 L31.0001069,15.6290245 L31.0001069,13 L28.6976485,13 C25.4362073,12.9998256 25.5130361,15.5276788 25.5130361,15.9050224 L25.5130361,15.9050224 Z' %3E%3C/path%3E
-%3C/svg%3E");
+$facebook-white-icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='24 13 8 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='FacebookIcon' stroke='none' fill='#{$icon-color-default}' fill-rule='evenodd' d='M25.5130361,15.9050224 L25.5130361,17.9702287 L24,17.9702287 L24,20.4955709 L25.5130361,20.4955709 L25.5130361,28 L28.6211336,28 L28.6211336,20.4957802 L30.7068112,20.4957802 C30.7068112,20.4957802 30.9021441,19.2848979 30.9968287,17.9609172 L28.6328863,17.9609172 L28.6328863,16.234239 C28.6328863,15.9761667 28.9717632,15.6290245 29.3066992,15.6290245 L31.0001069,15.6290245 L31.0001069,13 L28.6976485,13 C25.4362073,12.9998256 25.5130361,15.5276788 25.5130361,15.9050224 L25.5130361,15.9050224 Z' %3E%3C/path%3E%3C/svg%3E");
+$facebook-on-icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='24 13 8 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='FacebookIcon' stroke='none' fill='#{$facebook-color}' fill-rule='evenodd' d='M25.5130361,15.9050224 L25.5130361,17.9702287 L24,17.9702287 L24,20.4955709 L25.5130361,20.4955709 L25.5130361,28 L28.6211336,28 L28.6211336,20.4957802 L30.7068112,20.4957802 C30.7068112,20.4957802 30.9021441,19.2848979 30.9968287,17.9609172 L28.6328863,17.9609172 L28.6328863,16.234239 C28.6328863,15.9761667 28.9717632,15.6290245 29.3066992,15.6290245 L31.0001069,15.6290245 L31.0001069,13 L28.6976485,13 C25.4362073,12.9998256 25.5130361,15.5276788 25.5130361,15.9050224 L25.5130361,15.9050224 Z' %3E%3C/path%3E%3C/svg%3E");
 
 $twitter-white-icon: url("data:image/svg+xml;charset=utf8,
 %3Csvg viewBox='18 13 19 15' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E

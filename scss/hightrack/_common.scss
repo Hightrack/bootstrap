@@ -37,7 +37,7 @@
 
 #ht-login-box{
 	margin-top:50px;
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 }
 
 .ht-title{
@@ -100,4 +100,10 @@
 .ht-right{
 	float: right;
     display: inline-block;
+}
+
+.ht-popover {
+	position: absolute;
+	box-shadow: 0 2px 6px rgba(0,0,0,.15);
+	border: 1px solid #b6b6b6;
 }

@@ -12,7 +12,7 @@ $event-title-size: 0.7333rem;
 	}
 
 	.fc-basic-view .fc-body .fc-row {
-		min-height: 2.667rem; 
+		min-height: 2.467rem;  // For lateral calendar
 	}
 
 	table {
@@ -73,6 +73,21 @@ $event-title-size: 0.7333rem;
 
 	.ht-main-table-head tbody{
 		border-style: hidden;
+	}
+
+	.fc-day-grid-event{
+		display: none;
+	}
+	.ht-thereis-event.ht-today{
+		background-color: $brand-primary;
+	}
+	.ht-thereis-event{
+		width: 4px;
+		height: 4px;
+		border-radius: 4px;
+		background-color: #a1a1a1;
+		margin: auto;
+		margin-top: -2px;
 	}
 }
 
@@ -141,7 +156,7 @@ $event-title-size: 0.7333rem;
 	    top: 0;
 	    left: 0px;
 	    background-color: #1b5480;
-	    border-radius: 3px;
+	    border-radius: 2px;
 	}
 }
 
@@ -704,7 +719,7 @@ temporary rendered events).
 	display: block; /* make the <a> tag block */
 	font-size: .85em;
 	line-height: 20px;
-	border-radius: 3px;
+	border-radius: 2px;
 	/*border: 1px solid #3a87ad;*/ /* default BORDER color */
 	background-color: #3a87ad; /* default BACKGROUND color */
 	font-weight: normal; /* undo jqui's ui-widget-header bold */
@@ -850,7 +865,7 @@ temporary rendered events).
 
 .fc-h-event.fc-selected .fc-resizer {
 	/* 8x8 little dot */
-	border-radius: 4px;
+	border-radius: 2px;
 	border-width: 1px;
 	width: 6px;
 	height: 6px;
@@ -1427,7 +1442,7 @@ be a descendant of the grid when it is being dragged.
 
 .fc-time-grid-event.fc-selected .fc-resizer {
 	/* 10x10 dot */
-	border-radius: 5px;
+	border-radius: 2px;
 	border-width: 1px;
 	width: 8px;
 	height: 8px;

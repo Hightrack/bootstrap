@@ -6209,6 +6209,8 @@ DayGrid.mixin({
 
 					// create a container that occupies or more columns. append the event element.
 					td = $('<td class="fc-event-container"/>').append(seg.el);
+					console.log(seg.el)
+					td.append('<div class="ht-thereis-event"></>');
 					if (seg.leftCol != seg.rightCol) {
 						td.attr('colspan', seg.rightCol - seg.leftCol + 1);
 					}
@@ -9032,7 +9034,7 @@ var Scroller = FC.Scroller = Class.extend({
 
 
 	setHeight: function(height) {
-		this.scrollEl.height(height);
+		this.scrollEl.height(height); // Uncomment if you want scroll in your view
 	},
 
 

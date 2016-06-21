@@ -31,6 +31,6 @@ Use fullcalendar.
     });
 {% endhighlight %}
 
-<div style="width: 269px; height: 251px;">
+<div style="width: 269px;">
 	<div class='calendar-sm'></div>
 </div>
