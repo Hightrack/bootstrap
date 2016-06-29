@@ -21,7 +21,7 @@ Use fullcalendar.
     });
 {% endhighlight %}
 
-<div class='calendar'></div>
+<div class='calendar' style="height: 869px; background-color:#eee"></div>
 
 ## Small Calendar
 

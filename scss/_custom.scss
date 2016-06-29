@@ -278,9 +278,9 @@ $list-inline-padding: 5px !default;
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
 
-$border-radius:          .0.1333rem !default;
-$border-radius-lg:       .0.1333rem !default;
-$border-radius-sm:       .0.1333rem !default;
+$border-radius:          .1333rem !default;
+$border-radius-lg:       .1333rem !default;
+$border-radius-sm:       .1333rem !default;
 
 $component-active-color: #fff !default;
 $component-active-bg:    $brand-primary !default;
@@ -424,7 +424,7 @@ $input-height:                   (($font-size-base * $line-height-base) + ($inpu
 $input-height-lg:                (($font-size-lg * $line-height-lg) + ($input-padding-y-lg * 2)) !default;
 $input-height-sm:                (($font-size-sm * $line-height-sm) + ($input-padding-y-sm * 2)) !default;
 
-$form-group-margin-bottom:       $spacer-y !default;
+$form-group-margin-bottom:       .5rem !default;//$spacer-y !default;
 
 $input-group-addon-bg:           $gray-lighter !default;
 $input-group-addon-border-color: $input-border-color !default;

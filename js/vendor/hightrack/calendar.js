@@ -1,5 +1,6 @@
 $(function() {
 	$('.calendar').fullCalendar({
+		aspectRatio: 1,
 		lang: 'es',
 		slotLabelFormat: 'H:mm',
 		timeFormat: 'H:mm',
