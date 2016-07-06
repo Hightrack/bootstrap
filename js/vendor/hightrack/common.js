@@ -1,3 +1,3 @@
 $(function() {
-	console.log("Loaded Hightrack common.js");
+	//console.log("Loaded Hightrack common.js");
 });

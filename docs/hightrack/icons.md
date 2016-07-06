@@ -54,6 +54,7 @@ Note that colored icons require you to manually add the `.ht-icon-on` class to t
 	<label class="ht-icon ht-icon-place ht-icon-on"></label>
 	<label class="ht-icon ht-icon-inbox ht-icon-on"></label>
 	<label class="ht-icon ht-icon-todo ht-icon-on"></label>
+	<label class="ht-icon ht-icon-delete ht-icon-on"></label>
 </div>
 {% endexample %}
 
@@ -84,6 +85,7 @@ Note that theme colored icons require you to manually add the `.ht-icon-theme` c
 	<label class="ht-icon ht-icon-place ht-icon-theme"></label>
 	<label class="ht-icon ht-icon-inbox ht-icon-theme"></label>
 	<label class="ht-icon ht-icon-todo ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-delete ht-icon-theme"></label>
 </div>
 {% endexample %}
 

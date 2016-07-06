@@ -8391,8 +8391,6 @@ var View = FC.View = Class.extend(EmitterMixin, ListenerMixin, {
 			calendar.getSuggestedViewHeight(),
 			calendar.isHeightAuto()
 		);
-
-		console.log(calendar.getSuggestedViewHeight());
 	},
 
 

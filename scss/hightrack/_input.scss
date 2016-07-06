@@ -136,23 +136,5 @@ input[type='checkbox']:after {
 }
 
 .custom-control-input:checked ~ .custom-control-indicator{
-    &.bg-color-1267f1{
-        background-color: #1267f1;
-        border: 0px;
-    }
-
-    &.bg-color-ff0055{
-        background-color: #ff0055;
-        border: 0px;
-    }
-
-    &.bg-color-f6a501{
-        background-color: #f6a501;
-        border: 0px;
-    }
-
-    &.bg-color-66b1e3{
-        background-color: #66b1e3;
-        border: 0px;
-    }
+    border: 0px;
 }

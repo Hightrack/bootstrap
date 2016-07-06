@@ -353,6 +353,19 @@
 			background: $todo-theme-icon no-repeat;
 		}
 	}
+	&.ht-icon-delete{
+		width: 13px;
+		height: 16px;
+		background: $delete-white-icon;
+
+		&.ht-icon-on{
+			background: $delete-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $delete-theme-icon no-repeat;
+		}
+	}
 }
 
 //.btn-group{
