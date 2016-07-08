@@ -19,37 +19,73 @@
 }*/
 .bg-color-{
 	background-color: #0096ff;
+    &.bg-light{
+        background-color: lighten(#0096ff, 20%);
+    }
 }
 .bg-color-1267f1{
     background-color: #1267f1;
+    &.bg-light{
+        background-color: lighten(#1267f1, 20%);
+    }
 }
 .bg-color-ff0055{
     background-color: #ff0055;
+    &.bg-light{
+        background-color: lighten(#ff0055, 20%);
+    }
 }
 .bg-color-f6a501{
     background-color: #f6a501;
+    &.bg-light{
+        background-color: lighten(#f6a501, 20%);
+    }
 }
 .bg-color-66b1e3{
     background-color: #66b1e3;
+    &.bg-light{
+        background-color: lighten(#66b1e3, 20%);
+    }
 }
 .bg-color-e91e63,.bg-pink{
     background-color: #e91e63;
+    &.bg-light{
+        background-color: lighten(#e91e63, 20%);
+    }
 }
 .bg-color-9c27b0,.bg-purple{
     background-color: #9c27b0;
+    &.bg-light{
+        background-color: lighten(#9c27b0, 20%);
+    }
 }
 .bg-color-3f51b5,.bg-indigo{
     background-color: #3f51b5;
+    &.bg-light{
+        background-color: lighten(#3f51b5, 20%);
+    }
 }
 .bg-color-2196f3,.bg-blue{
     background-color: #2196f3;
+    &.bg-light{
+        background-color: lighten(#2196f3, 20%);
+    }
 }
 .bg-color-4caf50,.bg-green{
     background-color: #4caf50;
+    &.bg-light{
+        background-color: lighten(#4caf50, 20%);
+    }
 }
 .bg-color-ff5722,.bg-deeporange{
     background-color: #ff5722;
+    &.bg-light{
+        background-color: lighten(#ff5722, 20%);
+    }
 }
 .bg-color-607d8b,.bg-bluegrey{
     background-color: #607d8b;
+    &.bg-light{
+        background-color: lighten(#607d8b, 20%);
+    }
 }

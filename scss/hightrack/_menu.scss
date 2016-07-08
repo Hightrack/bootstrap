@@ -3,7 +3,7 @@
 //
 
 $ht-menu-row-line-height: 15px;
-$ht-menu-row-margin-top: 5px;
+$ht-menu-row-margin-top: 0px;
 
 .ht-menu {
 	& ul {
@@ -18,6 +18,12 @@ $ht-menu-row-margin-top: 5px;
 
 	    	line-height: $ht-menu-row-line-height;
     		margin-top: $ht-menu-row-margin-top;
+
+    		.row{
+    			padding-top: 7px;
+    			border-bottom: 1px solid transparent;
+    			border-top: 1px solid transparent;
+    		}
 	    }
 	}
 
@@ -53,7 +59,26 @@ $ht-menu-row-margin-top: 5px;
 		}
 	}
 
-	& ul li {
-		 padding-left: 20px;
+	/*& ul li {
+		 padding-left: 20px; // Uncomment to make support for several folders
+	}*/
+
+	& ul {
+		padding-left: 40px;
 	}
+
+	& li {
+		 & .row{
+		 	padding-left: 20px;  // Comment to make support for several folders
+		}
+	}
+}
+
+.ht-option-menu-dialog li:hover  {
+	background-color: lighten($brand-primary-light, 20%) !important;
+	border: inherit;
+	border-bottom: 1px solid $brand-primary-light !important;
+	border-top: 1px solid $brand-primary-light !important;
+	margin-top: -1px !important;
+  	outline: 0;
 }

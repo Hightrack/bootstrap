@@ -65,6 +65,12 @@ var complexOptions = [ // names of options that are objects whose properties sho
 ];
 
 
+// Light and dark HEX colors
+function shadeColor(color, percent) {   
+    var f=parseInt(color.slice(1),16),t=percent<0?0:255,p=percent<0?percent*-1:percent,R=f>>16,G=f>>8&0x00FF,B=f&0x0000FF;
+    return "#"+(0x1000000+(Math.round((t-R)*p)+R)*0x10000+(Math.round((t-G)*p)+G)*0x100+(Math.round((t-B)*p)+B)).toString(16).slice(1);
+}
+
 // Merges an array of option objects into a single object
 function mergeOptions(optionObjs) {
 	return mergeProps(optionObjs, complexOptions);
@@ -4907,6 +4913,41 @@ Grid.mixin({
 		};
 	},
 
+	getSegSkinCssLight: function(seg, colorPercent) {
+		var event = seg.event;
+		var view = this.view;
+		var source = event.source || {};
+		var eventColor = event.color;
+		var sourceColor = source.color;
+		var optionColor = view.opt('eventColor');
+
+		var backgroundColor = shadeColor(
+				event.backgroundColor ||
+				eventColor ||
+				source.backgroundColor ||
+				sourceColor ||
+				view.opt('eventBackgroundColor') ||
+				optionColor, 
+				colorPercent);
+
+		var borderColor = shadeColor(
+				event.borderColor ||
+				eventColor ||
+				source.borderColor ||
+				sourceColor ||
+				view.opt('eventBorderColor') ||
+				optionColor,
+				colorPercent);
+		return {
+			'background-color': backgroundColor,
+			'border-color': borderColor,
+			color:
+				event.textColor ||
+				source.textColor ||
+				view.opt('eventTextColor')
+		};
+	},
+
 
 	/* Converting events -> eventRange -> eventSpan -> eventSegs
 	------------------------------------------------------------------------------------------------------------------*/
@@ -6101,6 +6142,8 @@ DayGrid.mixin({
 			seg.isEnd && view.isEventResizableFromEnd(event);
 		var classes = this.getSegClasses(seg, isDraggable, isResizableFromStart || isResizableFromEnd);
 		var skinCss = cssToStr(this.getSegSkinCss(seg));
+		var skinCssLight = cssToStr(this.getSegSkinCssLight(seg, 0.75));
+
 		var timeHtml = '';
 		var timeText;
 		var titleHtml;
@@ -6128,12 +6171,16 @@ DayGrid.mixin({
 					' href="' + htmlEscape(event.url) + '"' :
 					''
 					) +
-				(skinCss ?
-					' style="' + skinCss + '"' :
+				(skinCssLight ?
+					' style="' + skinCssLight + '"' :
 					''
 					) +
 			'>' +
-				'<div class="ht-event-indicator"></div>'+
+				'<div class="ht-event-indicator"'+
+				(skinCss ?
+					' style="' + skinCss + '"' :
+					''
+					) +'></div>'+
 				'<div class="fc-content">' +
 					(!this.isRTL ?
 						titleHtml + ' ' + timeHtml : // put a natural space in between
