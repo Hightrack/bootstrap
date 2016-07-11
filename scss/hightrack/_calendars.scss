@@ -1075,6 +1075,13 @@ a.fc-more:hover {
 	        box-sizing: content-box;
 }
 
+.fc-view-container {
+	margin-left: 11px;
+    margin-right: 11px;
+    margin-bottom: 11px;
+    border: 1px solid #ddd;
+}
+
 .fc-view, /* scope positioning and z-index's for everything within the view */
 .fc-view > table { /* so dragged elements can be above the view's main element */
 	position: relative;
@@ -1510,3 +1517,7 @@ be a descendant of the grid when it is being dragged.
 	/* triangle pointing left... */
 	border-width: 1px 1px 1px 1px;
 }
+
+.fc-content .fc-title{
+	cursor: inherit;
+} 
