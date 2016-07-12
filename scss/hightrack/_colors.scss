@@ -1,91 +1,147 @@
-/*@function decToHex($dec) {
-    $hex: "0123456789abcdef";
-    $first: (($dec - $dec % 16)/16)+1;
-    $second: ($dec % 16)+1;
-    @return str-slice($hex, $first, $first) + str-slice($hex, $second, $second)
-}
 
-@for $r from 0 through 255 {
-	@for $g from 0 through 255 {
-		@for $b from 0 through 255 {
-			.ht-color-#{decToHex($r)}#{decToHex($g)}#{decToHex($b)} {
-				color: #{decToHex($r)}#{decToHex($g)}#{decToHex($b)};
-			}
-			.ht-color-#{decToHex($r)}#{decToHex($g)}#{decToHex($b)}-bg {
-				background-color: #{decToHex($r)}#{decToHex($g)}#{decToHex($b)};
-			}
-		}
-	}
-}*/
-.bg-color-{
-	background-color: #0096ff;
-    &.bg-light{
-        background-color: lighten(#0096ff, 20%);
+.custom-checkbox .custom-control-input:checked ~,
+.custom-checkbox.ht-custom-control-background .custom-control-input ~,
+.custom-radio .custom-control-input:checked ~,
+.custom-radio.ht-custom-control-background .custom-control-input ~  {
+    .bg-color-{
+    	background-color: #0096ff;
+        &.bg-light{
+            background-color: lighten(#0096ff, 20%);
+        }
     }
-}
-.bg-color-1267f1{
-    background-color: #1267f1;
-    &.bg-light{
-        background-color: lighten(#1267f1, 20%);
+    .bg-color-1267f1{
+        background-color: #1267f1;
+        &.bg-light{
+            background-color: lighten(#1267f1, 20%);
+        }
     }
-}
-.bg-color-ff0055{
-    background-color: #ff0055;
-    &.bg-light{
-        background-color: lighten(#ff0055, 20%);
+    .bg-color-ff0055{
+        background-color: #ff0055;
+        &.bg-light{
+            background-color: lighten(#ff0055, 20%);
+        }
     }
-}
-.bg-color-f6a501{
-    background-color: #f6a501;
-    &.bg-light{
-        background-color: lighten(#f6a501, 20%);
+    .bg-color-f6a501{
+        background-color: #f6a501;
+        &.bg-light{
+            background-color: lighten(#f6a501, 20%);
+        }
     }
-}
-.bg-color-66b1e3{
-    background-color: #66b1e3;
-    &.bg-light{
-        background-color: lighten(#66b1e3, 20%);
+    .bg-color-66b1e3{
+        background-color: #66b1e3;
+        &.bg-light{
+            background-color: lighten(#66b1e3, 20%);
+        }
     }
-}
-.bg-color-e91e63,.bg-pink{
-    background-color: #e91e63;
-    &.bg-light{
-        background-color: lighten(#e91e63, 20%);
+    .bg-color-e91e63,.bg-pink{
+        background-color: #e91e63;
+        &.bg-light{
+            background-color: lighten(#e91e63, 20%);
+        }
     }
-}
-.bg-color-9c27b0,.bg-purple{
-    background-color: #9c27b0;
-    &.bg-light{
-        background-color: lighten(#9c27b0, 20%);
+    .bg-color-9c27b0,.bg-purple{
+        background-color: #9c27b0;
+        &.bg-light{
+            background-color: lighten(#9c27b0, 20%);
+        }
     }
-}
-.bg-color-3f51b5,.bg-indigo{
-    background-color: #3f51b5;
-    &.bg-light{
-        background-color: lighten(#3f51b5, 20%);
+    .bg-color-3f51b5,.bg-indigo{
+        background-color: #3f51b5;
+        &.bg-light{
+            background-color: lighten(#3f51b5, 20%);
+        }
     }
-}
-.bg-color-2196f3,.bg-blue{
-    background-color: #2196f3;
-    &.bg-light{
-        background-color: lighten(#2196f3, 20%);
+    .bg-color-2196f3,.bg-blue{
+        background-color: #2196f3;
+        &.bg-light{
+            background-color: lighten(#2196f3, 20%);
+        }
     }
-}
-.bg-color-4caf50,.bg-green{
-    background-color: #4caf50;
-    &.bg-light{
-        background-color: lighten(#4caf50, 20%);
+    .bg-color-4caf50,.bg-green{
+        background-color: #4caf50;
+        &.bg-light{
+            background-color: lighten(#4caf50, 20%);
+        }
     }
-}
-.bg-color-ff5722,.bg-deeporange{
-    background-color: #ff5722;
-    &.bg-light{
-        background-color: lighten(#ff5722, 20%);
+    .bg-color-ff5722,.bg-deeporange{
+        background-color: #ff5722;
+        &.bg-light{
+            background-color: lighten(#ff5722, 20%);
+        }
     }
-}
-.bg-color-607d8b,.bg-bluegrey{
-    background-color: #607d8b;
-    &.bg-light{
-        background-color: lighten(#607d8b, 20%);
+    .bg-color-607d8b,.bg-bluegrey{
+        background-color: #607d8b;
+        &.bg-light{
+            background-color: lighten(#607d8b, 20%);
+        }
     }
+
+    //GCAL
+    .bg-color-5484ed,.bg-gcal-blue{
+        background-color: #5484ed;
+        &.bg-light{
+            background-color: lighten(#5484ed, 20%);
+        }
+    }
+    .bg-color-a4bdfc,.bg-gcal-electricblue{
+        background-color: #a4bdfc;
+        &.bg-light{
+            background-color: lighten(#a4bdfc, 20%);
+        }
+    }
+    .bg-color-46d6db,.bg-gcal-indianpeafowl{
+        background-color: #46d6db;
+        &.bg-light{
+            background-color: lighten(#46d6db, 20%);
+        }
+    }
+    .bg-color-7ae7bf,.bg-gcal-green{
+        background-color: #7ae7bf;
+        &.bg-light{
+            background-color: lighten(#7ae7bf, 20%);
+        }
+    }
+    .bg-color-51b749,.bg-gcal-electricgreen{
+        background-color: #51b749;
+        &.bg-light{
+            background-color: lighten(#51b749, 20%);
+        }
+    }
+    .bg-color-fbd75b,.bg-gcal-yellow{
+        background-color: #fbd75b;
+        &.bg-light{
+            background-color: lighten(#fbd75b, 20%);
+        }
+    }
+    .bg-color-ffb878,.bg-gcal-orange{
+        background-color: #ffb878;
+        &.bg-light{
+            background-color: lighten(#ffb878, 20%);
+        }
+    }
+    .bg-color-ff887c,.bg-gcal-red{
+        background-color: #ff887c;
+        &.bg-light{
+            background-color: lighten(#ff887c, 20%);
+        }
+    }
+    .bg-color-dc2127,.bg-gcal-electricred{
+        background-color: #dc2127;
+        &.bg-light{
+            background-color: lighten(#dc2127, 20%);
+        }
+    }
+    .bg-color-dbadff,.bg-gcal-purple{
+        background-color: #dbadff;
+        &.bg-light{
+            background-color: lighten(#dbadff, 20%);
+        }
+    }
+    .bg-color-e1e1e1,.bg-gcal-grey{
+        background-color: #e1e1e1;
+        &.bg-light{
+            background-color: lighten(#e1e1e1, 20%);
+        }
+    }
+
 }

@@ -4929,7 +4929,6 @@ Grid.mixin({
 				view.opt('eventBackgroundColor') ||
 				optionColor, 
 				colorPercent);
-
 		var borderColor = shadeColor(
 				event.borderColor ||
 				eventColor ||
@@ -4938,6 +4937,15 @@ Grid.mixin({
 				view.opt('eventBorderColor') ||
 				optionColor,
 				colorPercent);
+
+		var aux = event.start;
+		aux = aux.add(1, 'd');
+
+		if (!event.allDay && !aux.isBefore(event.end)){
+			backgroundColor = "transparent";
+			borderColor = "transparent";
+		}
+
 		return {
 			'background-color': backgroundColor,
 			'border-color': borderColor,
