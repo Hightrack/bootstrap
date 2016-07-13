@@ -4938,7 +4938,7 @@ Grid.mixin({
 				optionColor,
 				colorPercent);
 
-		var aux = event.start;
+		var aux = moment(event.start);
 		aux = aux.add(1, 'd');
 
 		if (!event.allDay && !aux.isBefore(event.end)){
