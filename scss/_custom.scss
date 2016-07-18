@@ -364,11 +364,17 @@ $btn-googleplus-bg:              $googleplus-color !default;
 $btn-googleplus-border:          $googleplus-color !default;
 $btn-googleplus-border-light:    $googleplus-color !default;
 
-$linkedin-color:                 #1b5480 !default;
+$linkedin-color:                 #123279 !default;
 $btn-linkedin-color:             $hightrack-textcolor-white !default;
 $btn-linkedin-bg:                $linkedin-color !default;
 $btn-linkedin-border:            $linkedin-color !default;
 $btn-linkedin-border-light:      $linkedin-color !default;
+
+$outlook-color:                 #1b5480 !default;
+$btn-outlook-color:             $hightrack-textcolor-white !default;
+$btn-outlook-bg:                $outlook-color !default;
+$btn-outlook-border:            $outlook-color !default;
+$btn-outlook-border-light:      $outlook-color !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
@@ -830,7 +836,12 @@ $list-group-link-heading-color: #333 !default;
 
 $list-group-item-padding-x:             1.25rem !default;
 $list-group-item-padding-y:             .75rem !default;
+$list-group-item-padding-top:           .5rem !default;
+$list-group-item-padding-bottom:        .25rem !default;
+$list-group-item-padding-left:          1rem !default;
+$list-group-item-padding-right:         1rem !default;
 $list-group-item-heading-margin-bottom: 5px !default;
+$list-group-item-height: 40px;
 
 
 // Image thumbnails

@@ -57,6 +57,10 @@
 .btn-linkedin {
   @include button-variant($hightrack-textcolor-white, $btn-linkedin-bg, $btn-linkedin-border);
 }
+.btn-outlook {
+  @include button-variant($hightrack-textcolor-white, $btn-outlook-bg, $btn-outlook-border);
+}
+
 .btn-outline-facebook {
   @include button-outline-variant($btn-facebook-bg);
 }
@@ -68,6 +72,9 @@
 }
 .btn-outline-linkedin {
   @include button-outline-variant($btn-linkedin-bg);
+}
+.btn-outline-outlook {
+  @include button-outline-variant($btn-outlook-bg);
 }
 
 $border-color-complementary: #e2e2e2;
