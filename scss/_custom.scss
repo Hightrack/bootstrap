@@ -39,6 +39,7 @@
 $hightrack-primary:             #4b96d3 !default; //#559288 !default;
 $hightrack-primary-medium:      #58abee !default; //#70c1b3 !default;
 $hightrack-primary-light:       #9bcdf5 !default; //#f0f8f7 !default;
+$hightrack-primary-bg:          #f1f1f1 !default;
 
 $hightrack-secondary-dark:      #7b8695 !default;
 $hightrack-secondary:			      #e0e0e0 !default;
@@ -82,6 +83,7 @@ $gray-lightest:             #f7f7f9 !default;
 $brand-primary:             $hightrack-primary !default;
 $brand-primary-medium:      $hightrack-primary-medium !default;
 $brand-primary-light:       $hightrack-primary-light !default;
+$brand-primary-bg:          $hightrack-primary-bg !default;
 
 $brand-secondary-dark:      $hightrack-secondary-dark !default;
 $brand-secondary:           $hightrack-secondary !default;

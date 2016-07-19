@@ -2,6 +2,9 @@
 	margin:0px;
 	vertical-align: middle;	
 	cursor: inherit;
+	&.ht-icon-btn{
+		cursor: pointer;
+	}
 
 	&.ht-icon-like,.ui-icon-like{
 		background: $like-white-icon no-repeat;
@@ -364,6 +367,19 @@
 
 		&.ht-icon-theme{
 			background: $delete-theme-icon no-repeat;
+		}
+	}
+	&.ht-icon-note{
+		width: 14px;
+		height: 16px;
+		background: $note-white-icon;
+
+		&.ht-icon-on{
+			background: $note-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $note-theme-icon no-repeat;
 		}
 	}
 }
