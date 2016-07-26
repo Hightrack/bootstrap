@@ -154,7 +154,7 @@ $event-title-size: 0.7333rem;
     font-size: $event-title-size;
 
     .ht-more-container {
-    	 padding-top: 4px !important;
+    	 padding-top: 0px !important; /*4px*/
     	 padding-left: 4px !important;
     }
     .ht-event-indicator{
@@ -195,13 +195,14 @@ $event-title-size: 0.7333rem;
 		position: absolute;
 	    right: 0px;
 	    font-size: 0.733rem;
-	    line-height: 21px;
+	    line-height: 16px;
 	}
 
 	.fc-title {
 		overflow: hidden;
-	    margin-bottom: -4px;
-	    margin-top: 1px;
+	    margin-bottom: -3px;
+    	margin-top: 0px;
+    	line-height: 16px;
 	}
 
 	&:not(.ht-allday-event){
@@ -732,7 +733,7 @@ temporary rendered events).
 	position: relative; /* for resize handle and other inner positioning */
 	display: block; /* make the <a> tag block */
 	font-size: .85em;
-	line-height: 20px;
+	line-height: 16px;
 	border-radius: 2px;
 	/*border: 1px solid #3a87ad;*/ /* default BORDER color */
 	/*background-color: #3a87ad;*/ /* default BACKGROUND color */
@@ -911,8 +912,8 @@ be a descendant of the grid when it is being dragged.
 */
 
 .fc-day-grid-event {
-	margin: 2px 0px 0px 2px;/* 2px 2px 0*/ /* spacing between events and edges */
-	padding: 0 6px;
+	margin: 2px 2px 0;/* 2px 2px 0*/ /* spacing between events and edges */
+	padding: 0 2px 0px 6px
 }
 
 .fc-day-grid-event.fc-selected:after {
