@@ -118,7 +118,7 @@ $event-title-size: 0.7333rem;
 
 	.fc-day-header.fc-widget-header{
 		background-color: #eee;
-		text-align: left;
+		text-align: right;
 		padding-left: 2px;
 	}
 
@@ -911,7 +911,7 @@ be a descendant of the grid when it is being dragged.
 */
 
 .fc-day-grid-event {
-	margin: 2px 2px 0; /* spacing between events and edges */
+	margin: 2px 0px 0px 2px;/* 2px 2px 0*/ /* spacing between events and edges */
 	padding: 0 6px;
 }
 
@@ -1150,7 +1150,8 @@ a.fc-more:hover {
 }
 
 .fc-ltr .fc-basic-view .fc-day-number {
-	text-align: left;
+	text-align: right;
+    padding-right: 5px;
 }
 
 .fc-rtl .fc-basic-view .fc-day-number {
