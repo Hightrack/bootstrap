@@ -736,8 +736,8 @@ $tag-danger-bg:             $brand-danger !default;
 
 $tag-color:                 #fff !default;
 $tag-link-hover-color:      #fff !default;
-$tag-font-size:             75% !default;
-$tag-font-weight:           bold !default;
+$tag-font-size:             .6667rem !default;
+$tag-font-weight:           normal !default;
 $tag-padding-x:             .4em !default;
 $tag-padding-y:             .25em !default;
 
@@ -745,6 +745,12 @@ $tag-pill-padding-x:        .2rem !default;
 // Use a higher than normal value to ensure completely rounded edges when
 // customizing padding or font-size on labels.
 $tag-pill-border-radius:    50% !default;
+
+$tag-pill-rd-width:         20px !default;
+$tag-pill-rd-height:        20px !default;
+$tag-pill-rd-line-height:   15px !default;
+$tag-pill-rd-border-radius: 10px !default;
+$tag-pill-rd-line-height:   15px !default;
 
 // Modals
 

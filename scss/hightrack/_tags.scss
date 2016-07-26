@@ -1,0 +1,6 @@
+.tag-pill-rd {
+  min-width: $tag-pill-rd-width;
+  height: $tag-pill-rd-height;
+  line-height: $tag-pill-rd-line-height;
+  @include border-radius($tag-pill-rd-border-radius);
+}
