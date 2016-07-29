@@ -25,11 +25,6 @@ $event-title-size: 0.7333rem;
 	}
 }
 
-.fc {
-	.ht-main-table-head {
-	    border-style: hidden;
-	}
-}
 .ht-head-table{
 	td, th {
    		border-style: none !important;
@@ -42,6 +37,10 @@ $event-title-size: 0.7333rem;
 
 .calendar-sm {
 	margin-bottom: 11px;
+	
+	.ht-main-table-head {
+	    border-style: hidden;
+	}
 	
 	& .fc-today 
 	{
@@ -108,6 +107,14 @@ $event-title-size: 0.7333rem;
 }
 
 .calendar {
+	.fc-head{
+		border: hidden;
+	}
+
+	.ht-main-table-head {
+	    border-style: 1px solid;
+	}
+
 	& .fc-today 
 	{
 		& .ht-today-calendar-background{
@@ -140,7 +147,7 @@ $event-title-size: 0.7333rem;
 		margin-left: 11px;
 	    margin-right: 11px;
 	    margin-bottom: 0;
-	    border: 1px solid #ddd;
+	    /*border: 1px solid #ddd;*/
 	}
 
 	.fc-day-number{
@@ -651,9 +658,9 @@ hr.fc-divider {
 	border-bottom: 0 hidden transparent; 
 }
 
-.fc-row:first-child table {
-	border-top: 0 hidden transparent; /* no top border on first row */
-}
+/*.fc-row:first-child table {*/
+	/*border-top: 0 hidden transparent;*/ /* no top border on first row */
+/*}*/
 
 
 /* Day Row (used within the header and the DayGrid)
