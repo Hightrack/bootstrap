@@ -38,10 +38,17 @@ $event-title-size: 0.7333rem;
 .calendar-sm {
 	margin-bottom: 11px;
 	
+	.fc-day{
+		background-color: #f5f5f5;
+		&.fc-other-month {
+	    	background-color: #fff;
+		}
+	}
+
 	.ht-main-table-head {
 	    border-style: hidden;
 	}
-	
+
 	& .fc-today 
 	{
 		& .ht-today-calendar-background{
@@ -161,7 +168,7 @@ $event-title-size: 0.7333rem;
 	font-size: $event-title-size;
 	/*line-height: 24px;*/
 	padding: 5px;
-	text-transform: UPPERCASE;
+	/*text-transform: UPPERCASE;*/
 }
 
 .fc-title {
