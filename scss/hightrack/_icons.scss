@@ -70,6 +70,42 @@
 		}
 	}
 
+	&.ht-icon-left-arrow-slim{
+		background: $dropdown-white-icon no-repeat;
+		width: 14px;
+		height: 10px;
+		-ms-transform: rotate(90deg); /* IE 9 */
+    	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    	transform: rotate(90deg);
+		&.ht-icon-on{
+			background: $dropdown-on-icon no-repeat;
+		}
+		&.ht-icon-theme{
+			background: $dropdown-theme-icon no-repeat;
+		}
+		&:hover{
+			background: $dropdown-hover-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-right-arrow-slim{
+		background: $dropdown-white-icon no-repeat;
+		width: 14px;
+		height: 10px;
+		-ms-transform: rotate(-90deg); /* IE 9 */
+    	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    	transform: rotate(-90deg);
+		&.ht-icon-on{
+			background: $dropdown-on-icon no-repeat;
+		}
+		&.ht-icon-theme{
+			background: $dropdown-theme-icon no-repeat;
+		}
+		&:hover{
+			background: $dropdown-hover-icon no-repeat;
+		}
+	}
+
 	&.ht-icon-smile{
 		background: $smile-white-icon no-repeat;
 		width: 65px;

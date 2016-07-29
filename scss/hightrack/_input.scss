@@ -138,3 +138,8 @@ input[type='checkbox']:after {
 .custom-control-input:checked ~ .custom-control-indicator{
     border: 0px;
 }
+
+.custom-control-input:checked ~ .custom-control-indicator.ht-nocheck{
+    border: 0px;
+    background-image: none !important;
+}

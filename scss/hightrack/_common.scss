@@ -34,6 +34,11 @@
 	    position: relative;
 	    vertical-align: middle;
 	}
+
+	&.ht-quickbar-active{
+		background-color: #fff;
+		color: $hightrack-textcolor-medium;
+	}
 }
 
 .ht-background-theme-primary{

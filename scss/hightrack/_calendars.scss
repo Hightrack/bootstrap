@@ -6,9 +6,10 @@ $event-title-size: 0.7333rem;
 	}
 
 	.fc-day-number{
-		font-size: 0.9333rem;
+		font-size: .8667rem;
 		text-align: center !important;
 		padding-top: 9px !important;
+		font-weight: 500;
 	}
 
 	.fc-basic-view .fc-body .fc-row {
@@ -40,6 +41,8 @@ $event-title-size: 0.7333rem;
 }
 
 .calendar-sm {
+	margin-bottom: 11px;
+	
 	& .fc-today 
 	{
 		& .ht-today-calendar-background{
@@ -89,7 +92,19 @@ $event-title-size: 0.7333rem;
 	    bottom: 2px;
 	    left: 50%;
 	    margin-left: -3px;
-	    position: absolute;
+	    position: relative;
+	}
+	.fc-toolbar{
+		padding: 0;
+
+		h2{
+			font-size: 15px !important;
+   			color: #333;
+		}
+
+	}
+	.fc-day-number{
+		padding-right: 2px !important;
 	}
 }
 
@@ -117,7 +132,7 @@ $event-title-size: 0.7333rem;
 	}
 
 	.fc-day-header.fc-widget-header{
-		background-color: #eee;
+		/*background-color: #eee;*/
 		text-align: right;
 		padding-left: 2px;
 	}
@@ -125,12 +140,12 @@ $event-title-size: 0.7333rem;
 	.fc-view-container {
 		margin-left: 11px;
 	    margin-right: 11px;
-	    margin-bottom: 11px;
+	    margin-bottom: 0;
 	    border: 1px solid #ddd;
 	}
 
 	.fc-day-number{
-		font-size: 0.7333rem
+		font-size: .7333rem
 	}
 }
 
@@ -194,7 +209,7 @@ $event-title-size: 0.7333rem;
 	.fc-time{
 		position: absolute;
 	    right: 0px;
-	    font-size: 0.733rem;
+	    font-size: .733rem;
 	    line-height: 16px;
 	}
 
@@ -1137,7 +1152,7 @@ a.fc-more:hover {
 .fc-basic-view td.fc-week-number span,
 .fc-basic-view td.fc-day-number {
 	padding-top: 2px;
-	padding-bottom: 2px;
+	/*padding-bottom: 2px;*/
 }
 
 .fc-basic-view .fc-week-number {
