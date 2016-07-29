@@ -89,10 +89,9 @@ $event-title-size: 0.7333rem;
 		height: 4px;
 		border-radius: 4px;
 		background-color: rgba(163,163,163,0.3);
-	    bottom: 2px;
-	    left: 50%;
-	    margin-left: -3px;
-	    position: relative;
+	    bottom: -1px;
+	    margin-left: 15px;
+	    position: absolute;
 	}
 	.fc-toolbar{
 		padding: 0;
