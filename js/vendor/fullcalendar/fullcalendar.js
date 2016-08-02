@@ -6521,7 +6521,7 @@ DayGrid.mixin({
 					// make a replacement <td> for each column the segment occupies. will be one for each colspan
 					for (j = 0; j < colSegsBelow.length; j++) {
 						moreTd = $('<td class="fc-more-cell"/>').attr('rowspan', rowspan);
-						moreTd.append('<div class="ht-event-indicator"></div>');
+						moreTd.append('<div class="ht-event-indicator enri"></div>');
 						segsBelow = colSegsBelow[j];
 						moreLink = this.renderMoreLink(
 							row,
