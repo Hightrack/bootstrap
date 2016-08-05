@@ -36,17 +36,38 @@
 // Colors
 // Basic
 
-$hightrack-primary:             #4b96d3 !default; //#559288 !default;
-$hightrack-primary-medium:      #58abee !default; //#70c1b3 !default;
-$hightrack-primary-light:       #9bcdf5 !default; //#f0f8f7 !default;
+// $hightrack-primary:             #4b96d3 !default; //#559288 !default;
+// $hightrack-primary-medium:      #58abee !default; //#70c1b3 !default;
+// $hightrack-primary-light:       #9bcdf5 !default; //#f0f8f7 !default;
+// $hightrack-primary-bg:          #f1f1f1 !default;
+
+// $hightrack-secondary-dark:      #7b8695 !default;
+// $hightrack-secondary:			      #e0e0e0 !default;
+// $hightrack-secondary-light:     #f7f7f9 !default;
+
+// $hightrack-success:             #70c1b3 !default;
+// $hightrack-success-light:       #80e0c1 !default;
+
+// $hightrack-info:                #4a90e2 !default;
+// $hightrack-info-light:          #5aeef2 !default;
+
+// $hightrack-warning:             #f0ad4e !default;
+// $hightrack-warning-light:       #ffb859 !default;
+
+// $hightrack-danger:              #d3234b !default;
+// $hightrack-danger-light:        #ff4d80 !default;
+
+$hightrack-primary:             #71bf22 !default; //#559288 !default;
+$hightrack-primary-medium:      #80cc2f !default; //#70c1b3 !default;
+$hightrack-primary-light:       #b9eb83 !default; //#f0f8f7 !default;
 $hightrack-primary-bg:          #f1f1f1 !default;
 
 $hightrack-secondary-dark:      #7b8695 !default;
-$hightrack-secondary:			      #e0e0e0 !default;
+$hightrack-secondary:           #e0e0e0 !default;
 $hightrack-secondary-light:     #f7f7f9 !default;
 
-$hightrack-success:             #70c1b3 !default;
-$hightrack-success-light:       #80e0c1 !default;
+$hightrack-success:             #40a33f !default;
+$hightrack-success-light:       #83bc82 !default;
 
 $hightrack-info:                #4a90e2 !default;
 $hightrack-info-light:          #5aeef2 !default;
@@ -54,14 +75,14 @@ $hightrack-info-light:          #5aeef2 !default;
 $hightrack-warning:             #f0ad4e !default;
 $hightrack-warning-light:       #ffb859 !default;
 
-$hightrack-danger:              #d3234b !default;
-$hightrack-danger-light:        #ff4d80 !default;
+$hightrack-danger:              #ea2a29 !default;
+$hightrack-danger-light:        #d96968 !default;
 
 // Text
-$hightrack-textcolor-dark: 		#000 !default;
-$hightrack-textcolor-normal:	#222 !default;
-$hightrack-textcolor-medium:	#333 !default;
-$hightrack-textcolor-white:		#fff !default;
+// $hightrack-textcolor-dark: 		#000 !default;
+// $hightrack-textcolor-normal:	#222 !default;
+// $hightrack-textcolor-medium:	#333 !default;
+// $hightrack-textcolor-white:		#fff !default;
 
 // Quickbar
 $quickbar-height: 60px;
