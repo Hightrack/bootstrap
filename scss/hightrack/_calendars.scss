@@ -39,6 +39,10 @@ $event-title-size-bg: 0.8667rem;
 .calendar-sm {
 	margin-bottom: 11px;
 	
+	.fc-day-number{
+		font-weight: 500;
+	}
+	
 	.fc-day{
 		background-color: #f5f5f5;
 		&.fc-other-month {
@@ -57,7 +61,7 @@ $event-title-size-bg: 0.8667rem;
     		height: 100%;
     		margin-top: 0px;
     		margin-left: 0px;
-		    border: 1px solid #58abee;
+		    border: 1px solid $brand-primary;
 		    position: relative;
 		}
 		& .ht-today-calendar-background-bottom-right{
@@ -65,8 +69,8 @@ $event-title-size-bg: 0.8667rem;
 		    height: 104%;
 			margin-bottom: 4px;
 		    margin-right: -1px;
-		    border-bottom: 1px solid #58abee;
-		    border-right: 1px solid #58abee;
+		    border-bottom: 1px solid $brand-primary;
+		    border-right: 1px solid $brand-primary;
 		    position: absolute;
 		    bottom: 0;
 		    right: 0;
@@ -139,7 +143,7 @@ $event-title-size-bg: 0.8667rem;
 			height: 100%;
     		margin-top: 0px;
     		margin-left: 0px;
-		    border: 1px solid #58abee;
+		    border: 1px solid $brand-primary;
 		    position: relative;
 		}
 		& .ht-today-calendar-background-bottom-right{
@@ -147,8 +151,8 @@ $event-title-size-bg: 0.8667rem;
 		    height: 104%;
 		    margin-bottom: 0px;
 		    margin-right: -1px;
-		    border-bottom: 1px solid #58abee;
-		    border-right: 1px solid #58abee;
+		    border-bottom: 1px solid $brand-primary;
+		    border-right: 1px solid $brand-primary;
 		    position: absolute;
 		    bottom: 0;
 		    right: 0;

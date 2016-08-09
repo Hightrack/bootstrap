@@ -247,6 +247,9 @@
 		&.ht-icon-theme{
 			background: $agendamonth-theme-icon no-repeat;
 		}
+		&.ht-icon-grey{
+			background: $agendamonth-grey-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-agendaweek{
@@ -260,6 +263,9 @@
 		&.ht-icon-theme{
 			background: $agendaweek-theme-icon no-repeat;
 		}
+		&.ht-icon-grey{
+			background: $agendaweek-grey-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-agendaday{
@@ -272,6 +278,9 @@
 		}
 		&.ht-icon-theme{
 			background: $agendaday-theme-icon no-repeat;
+		}
+		&.ht-icon-grey{
+			background: $agendaday-grey-icon no-repeat;
 		}
 	}
 
@@ -416,6 +425,58 @@
 
 		&.ht-icon-theme{
 			background: $note-theme-icon no-repeat;
+		}
+	}
+	&.ht-icon-settings{
+		width: 19px;
+		height: 19px;
+		background: $settings-white-icon;
+
+		&.ht-icon-on{
+			background: $settings-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $settings-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $settings-grey-icon no-repeat;
+		}
+	}
+	&.ht-icon-alarm{
+		width: 18px;
+		height: 21px;
+		background: $alarm-white-icon;
+
+		&.ht-icon-on{
+			background: $alarm-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $alarm-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $alarm-grey-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-repeat{
+		width: 24px;
+		height: 24px;
+		background: $repeat-white-icon;
+
+		&.ht-icon-on{
+			background: $repeat-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $repeat-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $repeat-grey-icon no-repeat;
 		}
 	}
 }

@@ -57,27 +57,6 @@
 // $hightrack-danger:              #d3234b !default;
 // $hightrack-danger-light:        #ff4d80 !default;
 
-$hightrack-primary:             #71bf22 !default; //#559288 !default;
-$hightrack-primary-medium:      #80cc2f !default; //#70c1b3 !default;
-$hightrack-primary-light:       #b9eb83 !default; //#f0f8f7 !default;
-$hightrack-primary-bg:          #f1f1f1 !default;
-
-$hightrack-secondary-dark:      #7b8695 !default;
-$hightrack-secondary:           #e0e0e0 !default;
-$hightrack-secondary-light:     #f7f7f9 !default;
-
-$hightrack-success:             #40a33f !default;
-$hightrack-success-light:       #83bc82 !default;
-
-$hightrack-info:                #4a90e2 !default;
-$hightrack-info-light:          #5aeef2 !default;
-
-$hightrack-warning:             #f0ad4e !default;
-$hightrack-warning-light:       #ffb859 !default;
-
-$hightrack-danger:              #ea2a29 !default;
-$hightrack-danger-light:        #d96968 !default;
-
 // Text
 // $hightrack-textcolor-dark: 		#000 !default;
 // $hightrack-textcolor-normal:	#222 !default;
@@ -89,6 +68,7 @@ $quickbar-height: 60px;
 
 $icon-color-active: $hightrack-textcolor-medium;
 $icon-color-default: #fff;
+$icon-color-grey: #b6b6b6;
 
 // BOOTSTRAP
 // Grayscale and brand colors for use across Bootstrap.
@@ -122,7 +102,7 @@ $brand-warning-light:       $hightrack-warning-light !default;
 $brand-danger:              $hightrack-danger !default;
 $brand-danger-light:        $hightrack-danger-light !default;
 
-$brand-color-background:    #f5f7f9 !default;
+$brand-color-background:    lighten($brand-primary, 50%);//#f5f7f9 !default;
 
 // Options
 //
