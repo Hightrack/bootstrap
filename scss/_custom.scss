@@ -66,9 +66,13 @@
 // Quickbar
 $quickbar-height: 60px;
 
-$icon-color-active: $hightrack-textcolor-medium;
-$icon-color-default: #fff;
-$icon-color-grey: #b6b6b6;
+$icon-color-active: 23333;
+$icon-color-active-light: 23222;
+$icon-color-default: 23fff;
+$icon-color-grey: 23b6b6b6;
+$icon-color-focus: 239d9d9d;
+$icon-color-darker: 233b3b3b;
+$icon-color-danger: $hightrack-danger-icon;
 
 // BOOTSTRAP
 // Grayscale and brand colors for use across Bootstrap.
@@ -82,8 +86,10 @@ $gray-lightest:             #f7f7f9 !default;
 
 // Primary
 $brand-primary:             $hightrack-primary !default;
+$brand-primary-icon:        $hightrack-primary-icon;
 $brand-primary-medium:      $hightrack-primary-medium !default;
 $brand-primary-light:       $hightrack-primary-light !default;
+$brand-primary-light-icon:  $hightrack-primary-light-icon;
 $brand-primary-bg:          $hightrack-primary-bg !default;
 
 $brand-secondary-dark:      $hightrack-secondary-dark !default;
