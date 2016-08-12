@@ -4913,7 +4913,7 @@ Grid.mixin({
 		};
 	},
 
-	getSegSkinCssLight: function(seg, colorPercent) {
+	getSegSkinCssLight: function(seg, colorPercent, transparentBackground) {
 		var event = seg.event;
 		var view = this.view;
 		var source = event.source || {};
@@ -4941,7 +4941,7 @@ Grid.mixin({
 		var aux = moment(event.start);
 		aux = aux.add(1, 'd');
 
-		if (!event.allDay && !aux.isBefore(event.end)){
+		if (!event.allDay && !aux.isBefore(event.end) && transparentBackground){
 			backgroundColor = "transparent";
 			borderColor = "transparent";
 		}
@@ -6140,7 +6140,7 @@ DayGrid.mixin({
 
 
 	// Builds the HTML to be used for the default element for an individual segment
-	fgSegHtml: function(seg, disableResizing) {
+	fgSegHtml: function(seg, disableResizing) { // MONTH
 		var view = this.view;
 		var event = seg.event;
 		var isDraggable = view.isEventDraggable(event);
@@ -6150,7 +6150,8 @@ DayGrid.mixin({
 			seg.isEnd && view.isEventResizableFromEnd(event);
 		var classes = this.getSegClasses(seg, isDraggable, isResizableFromStart || isResizableFromEnd);
 		var skinCss = cssToStr(this.getSegSkinCss(seg));
-		var skinCssLight = cssToStr(this.getSegSkinCssLight(seg, 0.75));
+		var transparentBackground = true;
+		var skinCssLight = cssToStr(this.getSegSkinCssLight(seg, 0.75, transparentBackground));
 
 		var timeHtml = '';
 		var timeText;
@@ -6521,7 +6522,7 @@ DayGrid.mixin({
 					// make a replacement <td> for each column the segment occupies. will be one for each colspan
 					for (j = 0; j < colSegsBelow.length; j++) {
 						moreTd = $('<td class="fc-more-cell"/>').attr('rowspan', rowspan);
-						moreTd.append('<div class="ht-event-indicator enri"></div>');
+						moreTd.append('<div class="ht-event-indicator"></div>');
 						segsBelow = colSegsBelow[j];
 						moreLink = this.renderMoreLink(
 							row,
@@ -7525,7 +7526,7 @@ TimeGrid.mixin({
 
 
 	// Renders the HTML for a single event segment's default rendering
-	fgSegHtml: function(seg, disableResizing) {
+	fgSegHtml: function(seg, disableResizing) { // DAY AND WEEK
 		var view = this.view;
 		var event = seg.event;
 		var isDraggable = view.isEventDraggable(event);
@@ -7533,6 +7534,8 @@ TimeGrid.mixin({
 		var isResizableFromEnd = !disableResizing && seg.isEnd && view.isEventResizableFromEnd(event);
 		var classes = this.getSegClasses(seg, isDraggable, isResizableFromStart || isResizableFromEnd);
 		var skinCss = cssToStr(this.getSegSkinCss(seg));
+		var transparentBackground = false;
+		var skinCssLight = cssToStr(this.getSegSkinCssLight(seg, 0.75, transparentBackground));
 		var timeText;
 		var fullTimeText; // more verbose time text. for the print stylesheet
 		var startTimeText; // just the start time text
@@ -7560,13 +7563,17 @@ TimeGrid.mixin({
 				' href="' + htmlEscape(event.url) + '"' :
 				''
 				) +
-			(skinCss ?
-				' style="' + skinCss + '"' :
+			(skinCssLight ?
+				' style="' + skinCssLight + '"' :
 				''
 				) +
 			'>' +
-				'<div class="ht-event-indicator"></div>'+
-				'<div class="fc-content">' +
+				'<div class="ht-event-indicator"'+
+				(skinCss ?
+					' style="' + skinCss + '"' :
+					''
+					) +'></div>'+
+					'<div class="fc-content">' +
 					(event.title ?
 						'<div class="fc-title">' +
 							htmlEscape(event.title) +
