@@ -60,6 +60,12 @@
 .btn-outlook {
   @include button-variant($hightrack-textcolor-white, $btn-outlook-bg, $btn-outlook-border);
 }
+.btn-apple {
+  @include button-variant($hightrack-textcolor-white, $btn-apple-bg, $btn-apple-border);
+}
+.btn-icloud {
+  @include button-variant($hightrack-textcolor-white, $btn-icloud-bg, $btn-icloud-border);
+}
 
 .btn-outline-facebook {
   @include button-outline-variant($btn-facebook-bg);
@@ -75,6 +81,12 @@
 }
 .btn-outline-outlook {
   @include button-outline-variant($btn-outlook-bg);
+}
+.btn-outline-apple {
+  @include button-outline-variant($btn-apple-bg);
+}
+.btn-outline-icloud {
+  @include button-outline-variant($btn-icloud-bg);
 }
 
 $border-color-complementary: #e2e2e2;
