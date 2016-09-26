@@ -11223,7 +11223,7 @@ function EventManager(options) { // assumed to be a calendar
 
 		normalizeEventTimes(eventProps);
 
-		if (eventProps.end && !eventProps.end.isAfter(eventProps.start)) {
+		if (eventProps.end && !eventProps.end.isAfter(eventProps.start)) { //isSameOrAfter in case you want to allow equal dates
 			eventProps.end = null;
 		}
 
