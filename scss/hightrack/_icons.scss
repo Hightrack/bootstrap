@@ -10,11 +10,17 @@
 		background: $like-white-icon no-repeat;
 		width: 20px;
 		height: 16px;
+
 		&.ht-icon-on{
 			background: $like-red-icon no-repeat;
 		}
+
 		&.ht-icon-theme{
 			background: $like-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $like-grey-icon no-repeat;
 		}
 	}
 
@@ -30,6 +36,10 @@
 		&.ht-icon-theme{
 			background: $matrix-theme-icon no-repeat;
 		}
+
+		&.ht-icon-grey{
+			background: $matrix-grey-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-list{
@@ -43,6 +53,10 @@
 
 		&.ht-icon-theme{
 			background: $list-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $list-grey-icon no-repeat;
 		}
 	}
 
@@ -477,6 +491,42 @@
 
 		&.ht-icon-grey{
 			background: $repeat-grey-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-duration{
+		width: 24px;
+		height: 24px;
+		background: $duration-white-icon;
+
+		&.ht-icon-on{
+			background: $duration-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $duration-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $duration-grey-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-energy{
+		width: 24px;
+		height: 24px;
+		background: $energy-white-icon;
+
+		&.ht-icon-on{
+			background: $energy-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $energy-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $energy-grey-icon no-repeat;
 		}
 	}
 }
