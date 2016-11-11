@@ -529,6 +529,24 @@
 			background: $energy-grey-icon no-repeat;
 		}
 	}
+
+	&.ht-icon-completedlist{
+		width: 21px;
+		height: 17px;
+		background: $completedlist-white-icon;
+
+		&.ht-icon-on{
+			background: $completedlist-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $completedlist-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $completedlist-grey-icon no-repeat;
+		}
+	}
 }
 
 //.btn-group{
