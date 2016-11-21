@@ -547,6 +547,24 @@
 			background: $completedlist-grey-icon no-repeat;
 		}
 	}
+
+	&.ht-icon-burger-menu{
+		width: 29px;
+		height: 18px;
+		background: $burger-menu-white-icon;
+
+		&.ht-icon-on{
+			background: $burger-menu-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $burger-menu-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $burger-menu-grey-icon no-repeat;
+		}
+	}
 }
 
 //.btn-group{
