@@ -212,6 +212,10 @@
 		&.ht-icon-on{
 			background: $nav-task-icon-active no-repeat;
 		}
+
+		&.ht-icon-theme{
+			background: $task-header-theme-icon no-repeat;
+		}
 	}
 	
 	&.ht-icon-track-header{
@@ -221,6 +225,10 @@
 
 		&.ht-icon-on{
 			background: $nav-track-icon-active no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $track-theme-icon no-repeat;
 		}
 	}
 
@@ -691,6 +699,24 @@
 
 		&.ht-icon-grey{
 			background: $tag-grey-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-premium{
+		width: 25px;
+		height: 21px;
+		background: $premium-white-icon;
+
+		&.ht-icon-on{
+			background: $premium-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $premium-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $premium-grey-icon no-repeat;
 		}
 	}
 }
