@@ -601,6 +601,98 @@
 			background: $startdate-grey-icon no-repeat;
 		}
 	}
+
+	&.ht-icon-cancel{
+		width: 15px;
+		height: 15px;
+		background: $cancel-white-icon;
+
+		&.ht-icon-on{
+			background: $cancel-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $cancel-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $cancel-grey-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-folder-closed{
+		width: 19px;
+		height: 20px;
+    	margin-left: -1px;
+    	margin-right: 1px;
+		background: $folder-closed-white-icon;
+
+		&.ht-icon-on{
+			background: $folder-closed-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $folder-closed-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $folder-closed-grey-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-description{
+		width: 24px;
+		height: 24px;
+		background: $description-white-icon;
+
+		&.ht-icon-on{
+			background: $description-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $description-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $description-grey-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-attachment{
+		width: 24px;
+		height: 24px;
+		background: $attachment-white-icon;
+
+		&.ht-icon-on{
+			background: $attachment-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $attachment-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $attachment-grey-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-tag{
+		width: 24px;
+		height: 24px;
+		background: $tag-white-icon;
+
+		&.ht-icon-on{
+			background: $tag-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $tag-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $tag-grey-icon no-repeat;
+		}
+	}
 }
 
 //.btn-group{

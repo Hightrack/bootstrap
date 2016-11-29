@@ -41,6 +41,7 @@ Note that colored icons require you to manually add the `.ht-icon-on` class to t
 	<label class="ht-icon ht-icon-add-bg ht-icon-on"></label>
 	<label class="ht-icon ht-icon-dropdown ht-icon-on"></label>
 	<label class="ht-icon ht-icon-folder ht-icon-on"></label>
+	<label class="ht-icon ht-icon-folder-closed ht-icon-on"></label>
 	<label class="ht-icon ht-icon-options ht-icon-on"></label>
 	<label class="ht-icon ht-icon-agendaday ht-icon-on"></label>
 	<label class="ht-icon ht-icon-agendaweek ht-icon-on"></label>
@@ -55,6 +56,21 @@ Note that colored icons require you to manually add the `.ht-icon-on` class to t
 	<label class="ht-icon ht-icon-inbox ht-icon-on"></label>
 	<label class="ht-icon ht-icon-todo ht-icon-on"></label>
 	<label class="ht-icon ht-icon-delete ht-icon-on"></label>
+	<label class="ht-icon ht-icon-note ht-icon-on"></label>
+	<label class="ht-icon ht-icon-settings ht-icon-on"></label>
+	<label class="ht-icon ht-icon-alarm ht-icon-on"></label>
+	<label class="ht-icon ht-icon-repeat ht-icon-on"></label>
+	<label class="ht-icon ht-icon-duration ht-icon-on"></label>
+	<label class="ht-icon ht-icon-energy ht-icon-on"></label>
+	<label class="ht-icon ht-icon-completedlist ht-icon-on"></label>
+	<label class="ht-icon ht-icon-burger-menu ht-icon-on"></label>
+	<label class="ht-icon ht-icon-duedate ht-icon-on"></label>
+	<label class="ht-icon ht-icon-startdate ht-icon-on"></label>
+	<label class="ht-icon ht-icon-cancel ht-icon-on"></label>
+	<label class="ht-icon ht-icon-description ht-icon-on"></label>
+	<label class="ht-icon ht-icon-attachment ht-icon-on"></label>
+	<label class="ht-icon ht-icon-tag ht-icon-on"></label>
+
 </div>
 {% endexample %}
 
@@ -72,6 +88,7 @@ Note that theme colored icons require you to manually add the `.ht-icon-theme` c
 	<label class="ht-icon ht-icon-add-bg ht-icon-theme"></label>
 	<label class="ht-icon ht-icon-dropdown ht-icon-theme"></label>
 	<label class="ht-icon ht-icon-folder ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-folder-closed ht-icon-theme"></label>
 	<label class="ht-icon ht-icon-options ht-icon-theme"></label>
 	<label class="ht-icon ht-icon-agendaday ht-icon-theme"></label>
 	<label class="ht-icon ht-icon-agendaweek ht-icon-theme"></label>
@@ -86,6 +103,20 @@ Note that theme colored icons require you to manually add the `.ht-icon-theme` c
 	<label class="ht-icon ht-icon-inbox ht-icon-theme"></label>
 	<label class="ht-icon ht-icon-todo ht-icon-theme"></label>
 	<label class="ht-icon ht-icon-delete ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-note ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-settings ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-alarm ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-repeat ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-duration ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-energy ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-completedlist ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-burger-menu ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-duedate ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-startdate ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-cancel ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-description ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-attachment ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-tag ht-icon-theme"></label>
 </div>
 {% endexample %}
 
