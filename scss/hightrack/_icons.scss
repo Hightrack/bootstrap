@@ -22,6 +22,10 @@
 		&.ht-icon-grey{
 			background: $like-grey-icon no-repeat;
 		}
+
+		&.ht-icon-menu{
+			background: $like-menu-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-matrix{
@@ -40,6 +44,9 @@
 		&.ht-icon-grey{
 			background: $matrix-grey-icon no-repeat;
 		}
+		&.ht-icon-menu{
+			background: $matrix-menu-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-list{
@@ -57,6 +64,10 @@
 
 		&.ht-icon-grey{
 			background: $list-grey-icon no-repeat;
+		}
+
+		&.ht-icon-menu{
+			background: $list-menu-icon no-repeat;
 		}
 	}
 
@@ -554,6 +565,10 @@
 		&.ht-icon-grey{
 			background: $completedlist-grey-icon no-repeat;
 		}
+
+		&.ht-icon-menu{
+			background: $completedlist-menu-icon no-repeat;
+		}
 	}
 
 	&.ht-icon-burger-menu{
@@ -589,6 +604,10 @@
 
 		&.ht-icon-grey{
 			background: $duedate-grey-icon no-repeat;
+		}
+
+		&.ht-icon-menu{
+			background: $duedate-menu-icon no-repeat;
 		}
 	}
 
@@ -717,6 +736,72 @@
 
 		&.ht-icon-grey{
 			background: $premium-grey-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-track-todo{
+		width: 23px;
+		height: 19px;
+		background: $track-todo-white-icon;
+
+		&.ht-icon-on{
+			background: $track-todo-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $track-todo-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $track-todo-grey-icon no-repeat;
+		}
+
+		&.ht-icon-menu{
+			background: $track-todo-menu-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-track-overview{
+		width: 22px;
+		height: 17px;
+		background: $track-overview-white-icon;
+
+		&.ht-icon-on{
+			background: $track-overview-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $track-overview-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $track-overview-grey-icon no-repeat;
+		}
+
+		&.ht-icon-menu{
+			background: $track-overview-menu-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-review-overview{
+		width: 22px;
+		height: 17px;
+		background: $track-review-white-icon;
+
+		&.ht-icon-on{
+			background: $track-review-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $track-review-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $track-review-grey-icon no-repeat;
+		}
+
+		&.ht-icon-menu{
+			background: $track-review-menu-icon no-repeat;
 		}
 	}
 }

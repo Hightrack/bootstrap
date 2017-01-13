@@ -1,12 +1,12 @@
 // Colors
 // Basic
 
-$hightrack-primary:             #4b96d3 !default; //#559288 !default;
-$hightrack-primary-medium:      #58abee !default; //#70c1b3 !default;
-$hightrack-primary-icon:        2358abee;
-$hightrack-primary-light:       #9bcdf5 !default; //#f0f8f7 !default;
+$hightrack-primary:             #444444 !default;
+$hightrack-primary-medium:      #333333 !default;
+$hightrack-primary-icon:        230099ff;
+$hightrack-primary-light:       #cccccc !default;
 $hightrack-primary-light-icon:  239bcdf5;
-$hightrack-primary-bg:          #f1f1f1 !default;
+$hightrack-primary-bg:          #808080 !default;
 
 $hightrack-secondary-dark:      #7b8695 !default;
 $hightrack-secondary:			#e0e0e0 !default;
@@ -36,16 +36,16 @@ $hightrack-textcolor-medium:	#333 !default;
 $hightrack-textcolor-white:		#fff !default;
 
 // Icons
-$hightrack-icon-menu:			23ffffff;
-$hightrack-icon-navbar:			23ffffff;
+$hightrack-icon-menu:			230099ff;
+$hightrack-icon-navbar:			230099ff;
 
 // Focusbar
-$hightrack-focusbar-btn-color:  rgba(245,245,245,0.3) !important;
-$hightrack-focusbar-btn-color-active: transparent !default;
-$hightrack-focusbar-btn-border-color: rgba(255,255,255,0.5) !important;
+$hightrack-focusbar-btn-color:  transparent !default;
+$hightrack-focusbar-btn-color-active: #eee !default;
+$hightrack-focusbar-btn-border-color: $hightrack-focusbar-btn-color-active;
 
 // Others
-$hightrack-list-header: 		#ddd !default;
-$hightrack-list-header-text:	#333 !default;
-$hightrack-list-group-bg:                 #fff !default;
-$hightrack-list-group-border-color:       #ddd !default;
+$hightrack-list-header: 		#444444 !default;
+$hightrack-list-header-text:	#fff !default;
+$hightrack-list-group-bg:                 #eee;/*#c7c7c7 !default;*/
+$hightrack-list-group-border-color:       $hightrack-primary-bg !default;

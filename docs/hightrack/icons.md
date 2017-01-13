@@ -70,6 +70,9 @@ Note that colored icons require you to manually add the `.ht-icon-on` class to t
 	<label class="ht-icon ht-icon-description ht-icon-on"></label>
 	<label class="ht-icon ht-icon-attachment ht-icon-on"></label>
 	<label class="ht-icon ht-icon-tag ht-icon-on"></label>
+	<label class="ht-icon ht-icon-track-todo ht-icon-on"></label>
+	<label class="ht-icon ht-icon-track-overview ht-icon-on"></label>
+	<label class="ht-icon ht-icon-track-review ht-icon-on"></label>
 
 </div>
 {% endexample %}
@@ -117,6 +120,9 @@ Note that theme colored icons require you to manually add the `.ht-icon-theme` c
 	<label class="ht-icon ht-icon-description ht-icon-theme"></label>
 	<label class="ht-icon ht-icon-attachment ht-icon-theme"></label>
 	<label class="ht-icon ht-icon-tag ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-track-todo ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-track-overview ht-icon-theme"></label>
+	<label class="ht-icon ht-icon-track-review ht-icon-theme"></label>
 </div>
 {% endexample %}
 

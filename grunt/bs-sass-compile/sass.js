@@ -37,7 +37,8 @@ module.exports = function configureRubySass(grunt) {
         files: {
           'dist/css/<%= pkg.name %>-hightrack.css': 'scss/<%= pkg.name %>-hightrack.scss',
           'dist/css/<%= pkg.name %>-hightrack-main-theme.css': 'scss/<%= pkg.name %>-hightrack-main-theme.scss',
-          'dist/css/<%= pkg.name %>-hightrack-green-theme.css': 'scss/<%= pkg.name %>-hightrack-green-theme.scss'
+          'dist/css/<%= pkg.name %>-hightrack-green-theme.css': 'scss/<%= pkg.name %>-hightrack-green-theme.scss',
+          'dist/css/<%= pkg.name %>-hightrack-dark-theme.css': 'scss/<%= pkg.name %>-hightrack-dark-theme.scss'
         }
       }
     }

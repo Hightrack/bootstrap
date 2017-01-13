@@ -133,3 +133,13 @@
 .ht-dock-footer-content1{
 	border-top: 1px solid $brand-primary-light !important;
 }
+
+.ht-list-title {
+	font-size: 0.7333rem;
+  height: 25px;
+  border-radius: 2px 2px 0px 0px;
+  color: $hightrack-list-header-text;
+  padding: 5px;
+  padding-left: 15px;
+  background-color: $hightrack-list-header; //#4444
+}
