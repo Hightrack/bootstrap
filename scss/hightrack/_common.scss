@@ -11,6 +11,38 @@
   padding-bottom: 0 !important;
 }
 
+.ht-trackbar{
+	height: 110px;
+	background-color: $brand-primary; //background: rgba(33,116,147,0.50);
+	border: 0px solid transparent;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: -15px;
+	margin-right: -15px;
+	color: #fff;
+
+	.ht-title{
+		font-size: 1.433em;
+			color: #fff;
+	}
+
+	.ht-actions{
+		color: #fff;
+
+		.btn.btn-flat{
+			font-size: .8333em;
+		}
+	}
+
+	.ht-description{
+		margin-top: -5px;
+		color: #fff;
+		font-size: .8333em;
+	}
+}
+
 .ht-quickbar{
 	height: 60px;
 	background-color: $brand-primary; //background: rgba(33,116,147,0.50);

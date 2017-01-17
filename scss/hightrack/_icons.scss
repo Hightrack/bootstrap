@@ -741,8 +741,9 @@
 
 	&.ht-icon-track-todo{
 		width: 23px;
-		height: 19px;
+		height: 18px;
 		background: $track-todo-white-icon;
+		margin-top: 2px;
 
 		&.ht-icon-on{
 			background: $track-todo-on-icon no-repeat;
@@ -783,7 +784,7 @@
 		}
 	}
 
-	&.ht-icon-review-overview{
+	&.ht-icon-track-review{
 		width: 22px;
 		height: 17px;
 		background: $track-review-white-icon;
@@ -802,6 +803,28 @@
 
 		&.ht-icon-menu{
 			background: $track-review-menu-icon no-repeat;
+		}
+	}
+
+	&.ht-icon-graph{
+		width: 22px;
+		height: 15px;
+		background: $graph-white-icon;
+
+		&.ht-icon-on{
+			background: $graph-on-icon no-repeat;
+		}
+
+		&.ht-icon-theme{
+			background: $graph-theme-icon no-repeat;
+		}
+
+		&.ht-icon-grey{
+			background: $graph-grey-icon no-repeat;
+		}
+
+		&.ht-icon-menu{
+			background: $graph-menu-icon no-repeat;
 		}
 	}
 }
