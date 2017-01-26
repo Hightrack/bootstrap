@@ -270,8 +270,8 @@ module.exports = function (grunt) {
         expand: true,
         cwd: 'js/vendor/fullcalendar',
         src: [
-          'lang/*',
-          'lang-all.js'
+          'locale/*',
+          'locale-all.js'
         ],
         dest: 'dist/js/vendor/fullcalendar'
       },
